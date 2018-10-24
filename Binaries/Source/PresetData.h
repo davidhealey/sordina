@@ -5,23 +5,23 @@
 
 namespace PresetData
 {
-    extern const char*  userPresets;
-    const int           userPresetsSize = 27;
-
-    extern const char*  impulses;
-    const int           impulsesSize = 266;
-
-    extern const char*  preset;
-    const int           presetSize = 1770;
-
     extern const char*  externalFiles;
     const int           externalFilesSize = 1002;
 
     extern const char*  images;
     const int           imagesSize = 28;
 
+    extern const char*  impulses;
+    const int           impulsesSize = 2267;
+
+    extern const char*  preset;
+    const int           presetSize = 1713;
+
     extern const char*  samplemaps;
     const int           samplemapsSize = 28;
+
+    extern const char*  userPresets;
+    const int           userPresetsSize = 27;
 
 }
 

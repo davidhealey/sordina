@@ -65,7 +65,6 @@
         <MODULEPATH id="juce_gui_basics" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_cryptography" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
-        <MODULEPATH id="juce_opengl" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_audio_basics" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_audio_devices" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_audio_formats" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
@@ -101,7 +100,6 @@
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_product_unlocking" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
-        <MODULEPATH id="juce_opengl" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_gui_basics" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_graphics" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
@@ -146,7 +144,6 @@
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_product_unlocking" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
-        <MODULEPATH id="juce_opengl" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_gui_basics" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_graphics" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
@@ -175,7 +172,7 @@
         <MODULEPATH id="hi_tools" path="/media/dave/Work 1/HISE Development Builds/HISE"/>
       </MODULEPATHS>
     </XCODE_IPHONE>
-    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" linuxExtraPkgConfig="x11 xinerama xext">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" linkTimeOptimisation="0"
                        targetName="Sordina" binaryPath="~/.vst/" defines="USE_IPP=0"/>
@@ -184,7 +181,6 @@
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_product_unlocking" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
-        <MODULEPATH id="juce_opengl" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_gui_basics" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
         <MODULEPATH id="juce_graphics" path="/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules"/>
@@ -241,7 +237,6 @@
     <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
-    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_product_unlocking" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
   <JUCEOPTIONS JUCE_QUICKTIME="disabled" USE_BACKEND="disabled" USE_FRONTEND="enabled"
@@ -253,6 +248,7 @@
                ENABLE_CONSOLE_OUTPUT="disabled" HLAC_MEASURE_DECODING_PERFORMANCE="disabled"
                HLAC_DEBUG_LOG="disabled" HLAC_INCLUDE_TEST_SUITE="disabled"
                STANDALONE_STREAMING="disabled" JUCE_ASSERTION_FIRFILTER="disabled"
-               JUCE_DSP_USE_INTEL_MKL="disabled" JUCE_DSP_USE_SHARED_FFTW="disabled"
-               JUCE_DSP_USE_STATIC_FFTW="disabled"/>
+               JUCE_WEB_BROWSER="disabled" JUCE_USE_CURL="disabled" JUCE_DSP_USE_INTEL_MKL="disabled"
+               JUCE_DSP_USE_SHARED_FFTW="disabled" JUCE_DSP_USE_STATIC_FFTW="disabled"
+               JUCE_HEADLESS_PLUGIN_CLIENT="disabled"/>
 </JUCERPROJECT>

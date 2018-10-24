@@ -74,7 +74,6 @@
 #define JUCE_MODULE_AVAILABLE_juce_graphics                 1
 #define JUCE_MODULE_AVAILABLE_juce_gui_basics               1
 #define JUCE_MODULE_AVAILABLE_juce_gui_extra                1
-#define JUCE_MODULE_AVAILABLE_juce_opengl                   1
 #define JUCE_MODULE_AVAILABLE_juce_product_unlocking        1
 
 #define JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED 1
@@ -322,7 +321,7 @@
 #endif
 
 #ifndef    JUCE_USE_CURL
- //#define JUCE_USE_CURL 1
+ #define   JUCE_USE_CURL 0
 #endif
 
 #ifndef    JUCE_CATCH_UNHANDLED_EXCEPTIONS
@@ -397,11 +396,15 @@
  //#define JUCE_USE_XCURSOR 1
 #endif
 
+#ifndef    JUCE_HEADLESS_PLUGIN_CLIENT
+ #define   JUCE_HEADLESS_PLUGIN_CLIENT 0
+#endif
+
 //==============================================================================
 // juce_gui_extra flags:
 
 #ifndef    JUCE_WEB_BROWSER
- //#define JUCE_WEB_BROWSER 1
+ #define   JUCE_WEB_BROWSER 0
 #endif
 
 #ifndef    JUCE_ENABLE_LIVE_CONSTANT_EDITOR

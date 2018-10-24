@@ -17,7 +17,6 @@
 		AF4CA0786579C87D129281E3 = {isa = PBXBuildFile; fileRef = 6241D39E92765E1D37E49F4B; };
 		B988D187C427FB00C36FEB2F = {isa = PBXBuildFile; fileRef = 9CA46004F6DFA4321F318012; };
 		25C26775B97CB0336FD51558 = {isa = PBXBuildFile; fileRef = 0EC83235E71123090955BCC7; };
-		6F4ABEA5B04BD6198554872D = {isa = PBXBuildFile; fileRef = 881768CA4C77AA5AD640F2A2; };
 		8FF2E30802A707BC831D3D58 = {isa = PBXBuildFile; fileRef = A5AE849C6143F548495C6B42; };
 		FDA3B7B3C759A334BFD82ED1 = {isa = PBXBuildFile; fileRef = DC0BE95D64E6A8B11ABA9CEF; };
 		0BFB73792CC60E197FCE7C48 = {isa = PBXBuildFile; fileRef = 4BD609C83134642CC0C98A3C; };
@@ -58,7 +57,6 @@
 		DCA8B4209B4FA1D729AD81BF = {isa = PBXBuildFile; fileRef = 1ED5B9F2DA37A0FEFD86820D; };
 		42746BCBA1D52BFE2030CECC = {isa = PBXBuildFile; fileRef = E26F468ADDD684BFEB0CE3A4; };
 		0C1883E0386F6EFC9FAD9D6D = {isa = PBXBuildFile; fileRef = AE03F30D3DDF6DE38783243A; };
-		E9DA008260A1C2FF7C481C88 = {isa = PBXBuildFile; fileRef = 25E314F0390A9EA80E0BFA2C; };
 		5DF58D4641C58322C1AE8D20 = {isa = PBXBuildFile; fileRef = 3B91525390C93A2DB31B6CD2; };
 		036B4949858F052C49EEA96D = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0D2EFE1542E356C50B14B373 = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "include_juce_audio_formats.mm"; path = "../../JuceLibraryCode/include_juce_audio_formats.mm"; sourceTree = "SOURCE_ROOT"; };
@@ -69,7 +67,6 @@
 		1ED5B9F2DA37A0FEFD86820D = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "include_juce_graphics.mm"; path = "../../JuceLibraryCode/include_juce_graphics.mm"; sourceTree = "SOURCE_ROOT"; };
 		1F0F823D8A2B4950A42C48C4 = {isa = PBXFileReference; lastKnownFileType = file; name = "hi_frontend"; path = "/media/dave/Work 1/HISE Development Builds/HISE/hi_frontend"; sourceTree = "<absolute>"; };
 		234B280EEBF6C38FD68E51DD = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "include_hi_scripting.mm"; path = "../../JuceLibraryCode/include_hi_scripting.mm"; sourceTree = "SOURCE_ROOT"; };
-		25E314F0390A9EA80E0BFA2C = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "include_juce_opengl.mm"; path = "../../JuceLibraryCode/include_juce_opengl.mm"; sourceTree = "SOURCE_ROOT"; };
 		283E160A3A07B7931DAD53A6 = {isa = PBXFileReference; lastKnownFileType = file; name = "hi_dsp_library"; path = "/media/dave/Work 1/HISE Development Builds/HISE/hi_dsp_library"; sourceTree = "<absolute>"; };
 		2AF52B3774EB3E0F56F38808 = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PresetData.cpp; path = ../../Source/PresetData.cpp; sourceTree = "SOURCE_ROOT"; };
 		302F2084123D8D46D55CABA7 = {isa = PBXFileReference; lastKnownFileType = image.png; name = "balanceKnob_200.png"; path = "../../Source/Images/balanceKnob_200.png"; sourceTree = "SOURCE_ROOT"; };
@@ -109,7 +106,6 @@
 		814B8DB21A716554F81B17EC = {isa = PBXFileReference; lastKnownFileType = image.png; name = "knobModulated_200.png"; path = "../../Source/Images/knobModulated_200.png"; sourceTree = "SOURCE_ROOT"; };
 		81F26838DFA78723D2B991AC = {isa = PBXFileReference; lastKnownFileType = folder; name = EmbeddedResources; path = ../../EmbeddedResources; sourceTree = "<group>"; };
 		82DE02B7AA344E8650813F98 = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryData.cpp; path = ../../JuceLibraryCode/BinaryData.cpp; sourceTree = "SOURCE_ROOT"; };
-		881768CA4C77AA5AD640F2A2 = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		8914CE70C172A699C776F769 = {isa = PBXFileReference; lastKnownFileType = file; name = "juce_gui_extra"; path = "/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules/juce_gui_extra"; sourceTree = "<absolute>"; };
 		89773284F6C4D96C298CC016 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sordina/Images.xcassets; sourceTree = "SOURCE_ROOT"; };
 		90868185CD6A0F2705B74337 = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include_hi_streaming.cpp"; path = "../../JuceLibraryCode/include_hi_streaming.cpp"; sourceTree = "SOURCE_ROOT"; };
@@ -145,7 +141,6 @@
 		D4653CD0F664DAE0F957CCD4 = {isa = PBXFileReference; lastKnownFileType = image.png; name = "knobEmpty_200.png"; path = "../../Source/Images/knobEmpty_200.png"; sourceTree = "SOURCE_ROOT"; };
 		D6C3FA53EA28938645060DA9 = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryData.h; path = ../../JuceLibraryCode/BinaryData.h; sourceTree = "SOURCE_ROOT"; };
 		D9C1AB00633F63A9A620D610 = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "include_hi_sampler.cpp"; path = "../../JuceLibraryCode/include_hi_sampler.cpp"; sourceTree = "SOURCE_ROOT"; };
-		DADCD66344E47671A7F11275 = {isa = PBXFileReference; lastKnownFileType = file; name = "juce_opengl"; path = "/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules/juce_opengl"; sourceTree = "<absolute>"; };
 		DC0BE95D64E6A8B11ABA9CEF = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC91FB1686A6841643009DE1 = {isa = PBXFileReference; lastKnownFileType = file; name = "juce_graphics"; path = "/media/dave/Work 1/HISE Development Builds/HISE/JUCE/modules/juce_graphics"; sourceTree = "<absolute>"; };
 		DE86B0A06D0B4E72C576BA8E = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = ../../../Images; sourceTree = "<group>"; };
@@ -203,7 +198,6 @@
 					DC91FB1686A6841643009DE1,
 					43FDC6ED827896750206AFA0,
 					8914CE70C172A699C776F769,
-					DADCD66344E47671A7F11275,
 					1CA2F4780EF5663C47843A93, ); name = "Juce Modules"; sourceTree = "<group>"; };
 		5A6D6D302356F6880E40E96D = {isa = PBXGroup; children = (
 					706C7B63991289FDE8F4E90E,
@@ -238,7 +232,6 @@
 					1ED5B9F2DA37A0FEFD86820D,
 					E26F468ADDD684BFEB0CE3A4,
 					AE03F30D3DDF6DE38783243A,
-					25E314F0390A9EA80E0BFA2C,
 					3B91525390C93A2DB31B6CD2,
 					46276A4B8DEF0CD518F3CA54, ); name = "Juce Library Code"; sourceTree = "<group>"; };
 		3205093F7BDA10E625755066 = {isa = PBXGroup; children = (
@@ -258,7 +251,6 @@
 					6241D39E92765E1D37E49F4B,
 					9CA46004F6DFA4321F318012,
 					0EC83235E71123090955BCC7,
-					881768CA4C77AA5AD640F2A2,
 					A5AE849C6143F548495C6B42,
 					DC0BE95D64E6A8B11ABA9CEF, ); name = Frameworks; sourceTree = "<group>"; };
 		52E18B7B15773FD325F68720 = {isa = PBXGroup; children = (
@@ -543,7 +535,6 @@
 					DCA8B4209B4FA1D729AD81BF,
 					42746BCBA1D52BFE2030CECC,
 					0C1883E0386F6EFC9FAD9D6D,
-					E9DA008260A1C2FF7C481C88,
 					5DF58D4641C58322C1AE8D20, ); runOnlyForDeploymentPostprocessing = 0; };
 		34483CEAEA970C667D38CBAA = {isa = PBXNativeTarget; buildConfigurationList = 15F77A047DA259D807725C53; buildPhases = (
 					B6809E9440364E3E08D41E0E, ); buildRules = ( ); dependencies = (  ); name = "Sordina - Shared Code"; productName = Sordina; productReference = 9A652DEAE16BC685DA21D386; productType = "com.apple.product-type.library.static"; };
