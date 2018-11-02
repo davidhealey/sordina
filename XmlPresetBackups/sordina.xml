@@ -9,33 +9,11 @@
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptComboBox" id="cmbInstrument" value="3"/>
+            <Control type="ScriptComboBox" id="cmbInstrument" value="1"/>
             <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0" rangeStart="0"
-                     rangeEnd="7202" fileName="{PROJECT_FOLDER}cornet/ct_bucket.wav"/>
+                     rangeEnd="2669" fileName="{PROJECT_FOLDER}frenchHorn/fh_cup.wav"/>
           </Content>
-          <UIData>
-            <ContentProperties DeviceType="Desktop">
-              <Component type="ScriptComboBox" id="cmbInstrument" x="25" y="25" max="7"
-                         items="French Horn&#10;Piccolo Trumpet&#10;Cornet&#10;Trumpet&#10;Trombone&#10;Tuba&#10;Euphonium"
-                         text="Instrument"/>
-              <Component type="ScriptComboBox" id="cmbMutes0" x="200" y="25" items="Straight&#10;Shhh&#10;Cup&#10;Stop"
-                         text="French Horn" max="4" saveInPreset="0" visible="0"/>
-              <Component type="ScriptComboBox" id="cmbMutes1" x="200" y="25" items="Straight&#10;Cup&#10;Felt&#10;Harmon with Stem&#10;Harmon"
-                         text="French Horn" max="5" saveInPreset="0" visible="0"/>
-              <Component type="ScriptComboBox" id="cmbMutes2" x="200" y="25" items="Bucket&#10;Plunger&#10;Cup&#10;Straight&#10;Felt&#10;Harmon with Stem&#10;Harmon&#10;Pixie"
-                         max="8" saveInPreset="0"/>
-              <Component type="ScriptComboBox" id="cmbMutes3" x="200" y="25" items="Harmon&#10;Harmon with Stem&#10;Felt&#10;Pixie&#10;Bucket&#10;Plunger&#10;Cup&#10;Straight"
-                         max="8" visible="0" saveInPreset="0"/>
-              <Component type="ScriptComboBox" id="cmbMutes4" x="200" y="25" items="Bucket&#10;Harmon&#10;Harmon with Stem&#10;Shhh&#10;Cup&#10;Mic a Mute&#10;Straight 2&#10;Plunger&#10;Straight"
-                         max="9" saveInPreset="0" visible="0"/>
-              <Component type="ScriptComboBox" id="cmbMutes5" x="200" y="25" items="Bucket&#10;Harmon&#10;Harmon with Stem&#10;Shhh&#10;Cup&#10;Mic a Mute&#10;Straight 2&#10;Plunger&#10;Straight"
-                         max="9" visible="0" saveInPreset="0"/>
-              <Component type="ScriptComboBox" id="cmbMutes6" x="200" y="25" items="Straight"
-                         visible="0" saveInPreset="0"/>
-              <Component type="ScriptAudioWaveform" id="AudioWaveform1" x="31" y="147"
-                         width="530" height="277" processorId="Convolution Reverb"/>
-            </ContentProperties>
-          </UIData>
+          <UIData Source="sordinaUIData"/>
         </Processor>
       </ChildProcessors>
     </Processor>
@@ -67,8 +45,8 @@
         </Processor>
         <Processor Type="Convolution" ID="Convolution Reverb" Bypassed="0" DryGain="-100"
                    WetGain="0" Latency="0" ImpulseLength="1" ProcessInput="1" UseBackgroundThread="1"
-                   Predelay="0" HiCut="20000" Damping="0" FileName="{PROJECT_FOLDER}cornet/ct_bucket.wav"
-                   min="0" max="7202" loopStart="0" loopEnd="0">
+                   Predelay="0" HiCut="20000" Damping="0" FileName="{PROJECT_FOLDER}frenchHorn/fh_cup.wav"
+                   min="0" max="2669" loopStart="0" loopEnd="2669">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>

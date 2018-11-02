@@ -26,20 +26,14 @@ reg file = ""; //Currently loaded IR
 const var ConvolutionReverb = Synth.getAudioSampleProcessor("Convolution Reverb"); //Convo reverb effect
 
 const var instruments = [];
-reg instName;
 
 //Get instrument names from manifest
 for (k in Manifest.data) //Each instrument name
 {
     instruments.push(k); //Array of instrument names
-    instName = k;
-
-    //Load each of the instrument's IR files so that they are added to the pool on export
-    for (m in Manifest.data[k].files) //Each IR
-    {
-        loadIR(Manifest.data[instName].folder, Manifest.data[instName].files[m]);
-    }
 }
+
+Engine.loadAudioFilesIntoPool();
 
 const var cmbInstrument = Content.getComponent("cmbInstrument");
 cmbInstrument.setControlCallback(cmbInstrumentCB);
