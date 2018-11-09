@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ContentProperties DeviceType="Desktop">
-  <Component type="ScriptComboBox" id="cmbInstrument" x="25" y="25" max="7"
-             items="French Horn&#10;Piccolo Trumpet&#10;Cornet&#10;Trumpet&#10;Trombone&#10;Tuba&#10;Euphonium"
+  <Component type="ScriptComboBox" id="cmbInstrument" x="25" y="25" max="8"
+             items="French Horn&#10;Piccolo Trumpet&#10;Cornet&#10;Trumpet&#10;Trombone&#10;Bass Trombone&#10;Tuba&#10;Euphonium"
              text="Instrument"/>
   <Component type="ScriptComboBox" id="cmbMutes0" x="200" y="25" items="Straight&#10;Shhh&#10;Cup&#10;Stop"
              text="French Horn" max="4" saveInPreset="0"/>
@@ -11,13 +11,13 @@
   <Component type="ScriptComboBox" id="cmbMutes2" x="200" y="25" items="Bucket&#10;Plunger&#10;Cup&#10;Straight&#10;Felt&#10;Harmon with Stem&#10;Harmon&#10;Pixie"
              max="8" saveInPreset="0" visible="0"/>
   <Component type="ScriptComboBox" id="cmbMutes3" x="200" y="25" items="Harmon&#10;Harmon with Stem&#10;Felt&#10;Pixie&#10;Bucket&#10;Plunger&#10;Cup&#10;Straight"
-             max="8" visible="0" saveInPreset="0"/>
+             max="8" saveInPreset="0" visible="0"/>
   <Component type="ScriptComboBox" id="cmbMutes4" x="200" y="25" items="Bucket&#10;Harmon&#10;Harmon with Stem&#10;Shhh&#10;Cup&#10;Mic a Mute&#10;Straight 2&#10;Plunger&#10;Straight"
              max="9" saveInPreset="0" visible="0"/>
   <Component type="ScriptComboBox" id="cmbMutes5" x="200" y="25" items="Bucket&#10;Harmon&#10;Harmon with Stem&#10;Shhh&#10;Cup&#10;Mic a Mute&#10;Straight 2&#10;Plunger&#10;Straight"
-             max="9" visible="0" saveInPreset="0"/>
+             max="9" saveInPreset="0" visible="0"/>
   <Component type="ScriptComboBox" id="cmbMutes6" x="200" y="25" items="Straight"
-             visible="0" saveInPreset="0"/>
-  <Component type="ScriptAudioWaveform" id="AudioWaveform1" x="31" y="147"
-             width="530" height="277" processorId="Convolution Reverb"/>
+             saveInPreset="0" visible="0"/>
+  <Component type="ScriptComboBox" id="cmbMutes7" x="200" y="25" items="Straight"
+             saveInPreset="0" visible="0"/>
 </ContentProperties>

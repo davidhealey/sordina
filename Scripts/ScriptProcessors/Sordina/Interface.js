@@ -36,11 +36,12 @@ for (k in Manifest.data) //Each instrument name
 Engine.loadAudioFilesIntoPool();
 
 const var cmbInstrument = Content.getComponent("cmbInstrument");
+cmbInstrument.set("items", instruments.join("\n"));
 cmbInstrument.setControlCallback(cmbInstrumentCB);
 
 const var cmbMutes = [];
 //Get all mute combo boxes
-for (i = 0; i < 7; i++)
+for (i = 0; i < 8; i++)
 {
     cmbMutes[i] = Content.getComponent("cmbMutes"+i);
     cmbMutes[i].setControlCallback(cmbMutesCB);
@@ -49,22 +50,27 @@ for (i = 0; i < 7; i++)
 
 inline function cmbInstrumentCB(control, value)
 {    
-    for (i = 0; i < instruments.length-1; i++)
+    for (i = 0; i < instruments.length; i++)
     {
         cmbMutes[i].showControl(i == value-1);
     }
+    
+    //Select first mute for instrument if none selected
+    if (cmbMutes[value-1].getItemText() == "") cmbMutes[value-1].setValue(1);    
+    
+    loadIR();
 }
 
 inline function cmbMutesCB(control, value)
-{
-    local folder = Manifest.data[cmbInstrument.getItemText()].folder;
-    local file = Manifest.data[cmbInstrument.getItemText()].files[control.getItemText()];
-        
-    loadIR(folder, file);
+{    
+    loadIR();
 }
 
-inline function loadIR(folder, file)
+inline function loadIR()
 {
+    local idx = cmbInstrument.getValue()-1;    
+    local folder = Manifest.data[cmbInstrument.getItemText()].folder;
+    local file = Manifest.data[cmbInstrument.getItemText()].files[cmbMutes[idx].getItemText()];
     ConvolutionReverb.setFile("{PROJECT_FOLDER}"+folder+"/"+file+".wav");
 }function onNoteOn()
 {
