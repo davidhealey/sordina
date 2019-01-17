@@ -18,6 +18,7 @@
 */
 
 include("manifest.js");
+include("VuMeter.js");
 
 Content.makeFrontInterface(600, 500);
 
@@ -47,6 +48,15 @@ for (i = 0; i < 8; i++)
     cmbMutes[i].setControlCallback(cmbMutesCB);
     cmbMutes[i].set("items", Manifest.data[instruments[i]].mutes.join("\n"));
 }
+
+
+//VU Meters
+const var inputMeter = VuMeter.createVuMeter("inputMeter", 0, 0);
+VuMeter.setModule(inputMeter, Synth.getEffect("Input"));
+
+const var outputMeter = VuMeter.createVuMeter("outputMeter", 300, 0);
+
+//UI Callback Functions
 
 inline function cmbInstrumentCB(control, value)
 {    
