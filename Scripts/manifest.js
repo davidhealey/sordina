@@ -1,5 +1,5 @@
 /*
-    Copyright 2018 David Healey
+    Copyright 2018, 2019 David Healey
 
     This file is part of Sordina.
 
@@ -19,186 +19,143 @@
 
 namespace Manifest
 {
-    const var impulses = {
-        "French Horn Straight":{
-            file:"frenchHorn/fh_straight.wav",
-            wahwah:false
+    const var patches = {
+        "French Horn":{
+            "folder":"frenchHorn",
+            "impulses":{
+                "Humes and Berg Cup": {file:"Humes and Berg Cup.wav"},
+                "Humes and Berg Philharmonic Straight": {file:"Humes and Berg Philharmonic Straight.wav"},
+                "Humes and Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
+                "Humes and Berg Stop": {file:"Humes and Berg Stop.wav"},
+                "Humes and Berg Straight": {file:"Humes and Berg Straight.wav"},
+                "The Warburton Tunable": {file:"The Warburton Tunable.wav"}
+            }
         },
-        "French Horn Sh":{
-            file:"frenchHorn/fh_sh.wav",
-            wahwah:false
+        "Piccolo Trumpet":{
+            "folder":"piccoloTrumpet",
+            "impulses":{
+                "Denis Wick Straight": {file:"Denis Wick Straight.wav"},
+                "Felt": {file:"Felt.wav"},
+                "Jo Ral Brass Bottom Straight": {file:"Jo Ral Brass Bottom Straight.wav"},
+                "Jo Ral Practice": {file:"Jo Ral Practice.wav"},
+                "Tom Crown Cup": {file:"Tom Crown Cup.wav"},
+                "Tom Crown Harmon Stem In": {file:"Tom Crown Harmon Stem In.wav", wahwah:true},
+                "Tom Crown Harmon Stem Out": {file:"Tom Crown Harmon Stem Out.wav", wahwah:true},
+                "Tom Crown Practice": {file:"Tom Crown Practice.wav"},
+                "Wallace Straight": {file:"Wallace Straight.wav"}
+            }
         },
-        "French Horn Cup":{
-            file:"frenchHorn/fh_cup.wav",
-            wahwah:false
+        "Trumpet":{
+            "folder":"trumpet",
+            "impulses":{
+              "Jo Ral Brass Bottom Bucket": {file:"Jo Ral Brass Bottom Bucket.wav"},
+              "Jo Ral Brass Bottom Straight": {file:"Jo Ral Brass Bottom Straight.wav"},
+              "Jo Ral Bubble Stem In": {file:"Jo Ral Bubble Stem In.wav", wahwah:true},
+              "Jo Ral Bubble Stem Out": {file:"Jo Ral Bubble Stem Out.wav", wahwah:true},
+              "Jo Ral Plastic Straight": {file:"Jo Ral Plastic Straight.wav"},
+              "Jo Ral TriTone Cup": {file:"Jo Ral TriTone Cup.wav"},
+              "Denis Wick Adjustable Cup": {file:"Denis Wick Adjustable Cup.wav"},
+              "Denis Wick Adjustable Cup Close": {file:"Denis Wick Adjustable Cup Close.wav"},
+              "Denis Wick Harmon Stem In": {file:"Denis Wick Harmon Stem In.wav", wahwah:true},
+              "Denis Wick Harmon Stem Out": {file:"Denis Wick Harmon Stem Out.wav", wahwah:true},
+              "Denis Wick Pianissimo Straight": {file:"Denis Wick Pianissimo Straight.wav"},
+              "Denis Wick Practice": {file:"Denis Wick Practice.wav"},
+              "Denis Wick Straight": {file:"Denis Wick Straight.wav"},
+              "Humes and Berg Cup": {file:"Humes and Berg Cup.wav"},
+              "Humes and Berg Harmon Stem In": {file:"Humes and Berg Harmon Stem In.wav", wahwah:true},
+              "Humes and Berg Harmon Stem Out": {file:"Humes and Berg Harmon Stem Out.wav", wahwah:true},
+              "Humes and Berg Melowah": {file:"Humes and Berg Melowah.wav"},
+              "Humes and Berg Pixie": {file:"Humes and Berg Pixie.wav", wahwah:true},
+              "Tom Crown Aluminium Straight": {file:"Tom Crown Aluminium Straight.wav"},
+              "Tom Crown Harmon Stem In": {file:"Tom Crown Harmon Stem In.wav", wahwah:true},
+              "Tom Crown Harmon Stem Out": {file:"Tom Crown Harmon Stem Out.wav", wahwah:true},
+              "Pro Tec Fiber Straight": {file:"Pro Tec Fiber Straight.wav"},
+              "Plunger 1": {file:"Plunger 1.wav", wahwah:true},
+              "Plunger 2": {file:"Plunger 2.wav", wahwah:true},
+              "Mute Tube": {file:"Mute Tube.wav"},
+              "Felt": {file:"Felt.wav"},
+              "Leblanc Straight": {file:"Leblanc Straight.wav"},
+              "Bremner Sshh": {file:"Bremner Sshh.wav"}
+            }
         },
-        "French Horn Stop":{
-            file:"frenchHorn/fh_stop.wav",
-            wahwah:false
+        "Trombone":{
+            "folder":"trombone",
+            "impulses":{
+              "Buzz" : {file:"Buzz.wav"},
+              "Humes and Berg Cleartone" : {file:"Humes and Berg Cleartone.wav"},
+              "Humes and Berg Cup" : {file:"Humes and Berg Cup.wav"},
+              "Humes and Berg Derby" : {file:"Humes and Berg Derby.wav", wahwah:true},
+              "Humes and Berg Mic A Mute" : {file:"Humes and Berg Mic A Mute.wav"},
+              "Humes and Berg Pixie" : {file:"Humes and Berg Pixie.wav", wahwah:true},
+              "Humes and Berg Sh Sh" : {file:"Humes and Berg Sh Sh.wav"},
+              "Humes and Berg Straight" : {file:"Humes and Berg Straight.wav"},
+              "Humes and Berg Velvet Tone" : {file:"Humes and Berg Velvet Tone.wav"},
+              "Humes and Berg WahWah Stem In" : {file:"Humes and Berg WahWah Stem In.wav", wahwah:true},
+              "Humes and Berg WahWah Stem Out" : {file:"Humes and Berg WahWah Stem Out.wav", wahwah:true},
+              "Jo Ral Brass Bottom Straight" : {file:"Jo Ral Brass Bottom Straight.wav"},
+              "Jo Ral Bubble Mute Stem In" : {file:"Jo Ral Bubble Mute Stem In.wav", wahwah:true},
+              "Jo Ral Bubble Mute Stem Out" : {file:"Jo Ral Bubble Mute Stem Out.wav", wahwah:true},
+              "Jo Ral Bucket" : {file:"Jo Ral Bucket.wav"},
+              "Jo Ral Cup" : {file:"Jo Ral Cup.wav"},
+              "Liberty Practice" : {file:"Liberty Practice.wav"},
+              "Plunger" : {file:"Plunger.wav", wahwah:true},
+              "Soulo Straight" : {file:"Soulo Straight.wav"}
+            }
         },
-        "Piccolo Trumpet Straight":{
-            file:"piccoloTrumpet/ptr_straight.wav",
-            wahwah:false
+        "Bass Trombone":{
+            "folder":"bassTrombone",
+            "impulses":{
+              "Humes and Berg Brass Straight": {file:"Humes and Berg Brass Straight.wav"},
+              "Humes and Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
+              "Humes and Berg WaWah": {file:"Humes and Berg WaWah.wav", wahwah:true},
+              "Humes and Berg Mic A Mute": {file:"Humes and Berg Mic A Mute.wav"},
+              "Humes and Berg Velvet Tone": {file:"Humes and Berg Velvet Tone.wav"},
+              "Jo Ral Brass Bottom Straight": {file:"Jo Ral Brass Bottom Straight.wav"},
+              "Jo Ral Bubble Mute Stem Out": {file:"Jo Ral Bubble Mute Stem Out.wav", wahwah:true},
+              "Jo Ral Bubble Mute Stem In": {file:"Jo Ral Bubble Mute Stem In.wav", wahwah:true},
+              "Jo Ral Cup": {file:"Jo Ral Cup.wav"},
+              "Jo Ral Bucket": {file:"Jo Ral Bucket.wav"},
+              "Denis Wick Straight": {file:"Denis Wick Straight.wav"},
+              "Denis Wick Cup": {file:"Denis Wick Cup.wav"},
+              "Plunger": {file:"Plunger.wav", wahwah:true}
+            }
         },
-        "Piccolo Trumpet Cup":{
-            file:"piccoloTrumpet/ptr_cup.wav",
-            wahwah:false
-        },
-        "Piccolo Trumpet Felt":{
-            file:"piccoloTrumpet/ptr_felt.wav",
-            wahwah:false
-        },
-        "Piccolo Trumpet Harmon Stem":{
-            file:"piccoloTrumpet/ptr_harmon_stem.wav",
-            wahwah:false
-        },
-        "Piccolo Trumpet Harmon":{
-            file:"piccoloTrumpet/ptr_harmon.wav",
-            wahwah:false
-        },
-        "Cornet Straight":{
-            file:"cornet/ct_straight.wav",
-            wahwah:false
-        },
-        "Cornet Cup":{
-            file:"cornet/ct_cup.wav",
-            wahwah:false
-        },
-        "Cornet Felt":{
-            file:"cornet/ct_felt.wav",
-            wahwah:false
-        },
-        "Cornet Harmon Stem":{
-            file:"cornet/ct_harmon_stem.wav",
-            wahwah:false
-        },
-        "Cornet Harmon":{
-            file:"cornet/ct_harmon.wav",
-            wahwah:false
-        },
-        "Cornet Bucket":{
-            file:"cornet/ct_bucket.wav",
-            wahwah:false
-        },
-        "Cornet Plunger":{
-            file:"cornet/ct_plunger.wav",
-            wahwah:false
-        },
-        "Cornet Pixie":{
-            file:"cornet/ct_pixie.wav",
-            wahwah:false
-        },
-        "Trumpet Straight":{
-            file:"trumpet/tr_straight.wav",
-            wahwah:false
-        },
-        "Trumpet Cup":{
-            file:"trumpet/tr_cup.wav",
-            wahwah:false
-        },
-        "Trumpet Felt":{
-            file:"trumpet/tr_felt.wav",
-            wahwah:false
-        },
-        "Trumpet Harmon Stem":{
-            file:"trumpet/tr_harmon_stem.wav",
-            wahwah:false
-        },
-        "Trumpet Harmon":{
-            file:"trumpet/tr_harmon.wav",
-            wahwah:false
-        },
-        "Trumpet Bucket":{
-            file:"trumpet/tr_bucket.wav",
-            wahwah:false
-        },
-        "Trumpet Plunger":{
-            file:"trumpet/tr_plunger.wav",
-            wahwah:false
-        },
-        "Trumpet Pixie":{
-            file:"trumpet/tr_pixie.wav",
-            wahwah:false
-        },
-        "Trombone Straight":{
-            file:"trombone/tb_straight.wav",
-            wahwah:false
-        },
-        "Trombone Straight 2":{
-            file:"trombone/tb_straight2.wav",
-            wahwah:false
-        },
-        "Trombone Cup":{
-            file:"trombone/tb_cup.wav",
-            wahwah:false
-        },
-        "Trombone Sh":{
-            file:"trombone/tb_sh.wav",
-            wahwah:false
-        },
-        "Trombone Harmon Stem":{
-            file:"trombone/tb_harmon_stem.wav",
-            wahwah:false
-        },
-        "Trombone Harmon":{
-            file:"trombone/tb_harmon.wav",
-            wahwah:false
-        },
-        "Trombone Bucket":{
-            file:"trombone/tb_bucket.wav",
-            wahwah:false
-        },
-        "Trombone Plunger":{
-            file:"trombone/tb_plunger.wav",
-            wahwah:false
-        },
-        "Trombone Mic A Mute":{
-            file:"trombone/tb_micAMute.wav",
-            wahwah:false
-        },
-        "Bass Trombone Straight":{
-            file:"bassTrombone/bstr_straight.wav",
-            wahwah:false
-        },
-        "Bass Trombone Straight 2":{
-            file:"bassTrombone/bstr_straight2.wav",
-            wahwah:false
-        },
-        "Bass Trombone Cup":{
-            file:"bassTrombone/bstr_cup.wav",
-            wahwah:false
-        },
-        "Bass Trombone Sh":{
-            file:"bassTrombone/bstr_sh.wav",
-            wahwah:false
-        },
-        "Bass Trombone Harmon Stem":{
-            file:"bassTrombone/bstr_harmon_stem.wav",
-            wahwah:false
-        },
-        "Bass Trombone Harmon":{
-            file:"bassTrombone/bstr_harmon.wav",
-            wahwah:false
-        },
-        "Bass Trombone Bucket":{
-            file:"bassTrombone/bstr_bucket.wav",
-            wahwah:false
-        },
-        "Bass Trombone Plunger":{
-            file:"bassTrombone/bstr_plunger.wav",
-            wahwah:false
-        },
-        "Bass Trombone Mic A Mute":{
-            file:"bassTrombone/bstr_micAMute.wav",
-            wahwah:false
-        },
-        "Tuba Straight":{
-            file:"tuba/tu_straight.wav",
-            wahwah:false
+        "Tuba":{
+            "folder":"tuba",
+            "impulses":{
+              "Humes and Berg Straight" : {file:"Humes and Berg Straight.wav"},
+              "Jo Ral Straight" : {file:"Jo Ral Straight.wav"},
+              "Schlipf Practice" : {file:"Schlipf Practice.wav"},
+              "Voigt Practice" : {file:"Voigt Practice.wav"}
+            }
         },
         "Euphonium":{
-            file:"euphonium/eu_straight.wav",
-            wahwah:false
+            "folder":"euphonium",
+            "impulses":{
+              "Denis Wick Practice" : {file:"Denis Wick Practice.wav"},
+              "Humes and Berg Straight" : {file:"Humes and Berg Straight.wav"},
+              "Jo Ral Straight" : {file:"Jo Ral Straight.wav"}
+            }
+        },
+        "Flugelhorn":{
+            "folder":"flugelhorn",
+            "impulses":{
+              "Humes and Berg Aluminium Practice": {file:"Humes and Berg Aluminium Practice.wav"},
+              "Humes and Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
+              "Humes and Berg Aluminium Straight": {file:"Humes and Berg Aluminium Straight.wav"},
+              "Humes and Berg Straight": {file:"Humes and Berg Straight.wav"},
+              "Humes and Berg Cup": {file:"Humes and Berg Cup.wav"},
+              "Humes and Berg Velvet Tone": {file:"Humes and Berg Velvet Tone.wav"},
+              "Humes and Berg Practice": {file:"Humes and Berg Practice.wav"}
+            }
+        },
+        "Saxophone":{
+            "folder":"saxophone",
+            "impulses":{
+              "E-Sax Whisper" : {file:"E-Sax Whisper.wav"},
+              "MMD Sax" : {file:"MMD Sax.wav"},
+              "Sax Mute One" : {file:"Sax Mute One.wav"}
+            }
         }
-    };
+    }
 }
