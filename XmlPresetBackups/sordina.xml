@@ -10,20 +10,22 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptSlider" id="knbGain" value="1.4901161e-06"/>
-            <Control type="ScriptSlider" id="knbMix" value="1"/>
+            <Control type="ScriptSlider" id="knbMix" value="0.5"/>
             <Control type="ScriptSlider" id="knbWahWah" value="1200"/>
             <Control type="ScriptSlider" id="knbLPF" value="20000"/>
             <Control type="ScriptSlider" id="knbHPF" value="20"/>
+            <Control type="ScriptLabel" id="lblStats" value="CPU: 2%, RAM: 2MB"/>
+            <Control type="ScriptLabel" id="lblPreset" value="Trumpet&#10;Humes and Berg Cup"/>
             <Control type="ScriptComboBox" id="cmbInstrument" value="3"/>
-            <Control type="ScriptSlider" id="knbOutput" value="5.5511151e-15"/>
-            <Control type="ScriptedViewport" id="vpIRs" value="2"/>
+            <Control type="ScriptSlider" id="knbOutput" value="1.4901161e-06"/>
+            <Control type="ScriptedViewport" id="vpIRs" value="13"/>
           </Content>
           <UIData Source="sordinaUIData"/>
         </Processor>
         <Processor Type="ScriptProcessor" ID="mixController" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="knbMix" value="1"/>
+            <Control type="ScriptSlider" id="knbMix" value="0.5"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
@@ -59,15 +61,21 @@
           </ChildProcessors>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="CurveEq" ID="wahwaheq" Bypassed="1" NumFilters="1" Band0="6"
+        <Processor Type="Analyser" ID="Analyser1" Bypassed="0" BufferSize="16384"
+                   PreviewType="1">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+        <Processor Type="CurveEq" ID="wahwaheq" Bypassed="0" NumFilters="1" Band0="6"
                    Band1="1200" Band2="0.5" Band3="1" Band4="4">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="Convolution" ID="Convolution Reverb" Bypassed="0" DryGain="-100"
-                   WetGain="0" Latency="0" ImpulseLength="1" ProcessInput="1" UseBackgroundThread="1"
-                   Predelay="0" HiCut="20000" Damping="0" FileName="{PROJECT_FOLDER}trumpet/Jo Ral Bubble Stem In.wav"
-                   min="0" max="2364" loopStart="0" loopEnd="0">
+        <Processor Type="Convolution" ID="Convolution Reverb" Bypassed="0" DryGain="-6.0206003"
+                   WetGain="-6.0206003" Latency="0" ImpulseLength="1" ProcessInput="1"
+                   UseBackgroundThread="1" Predelay="0" HiCut="20000" Damping="-100"
+                   FileName="{PROJECT_FOLDER}trumpet/Humes and Berg Cup.wav" min="0"
+                   max="2520" loopStart="0" loopEnd="0">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
@@ -77,13 +85,8 @@
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="Analyser" ID="Analyser" Bypassed="0" BufferSize="8192"
-                   PreviewType="3">
-          <ChildProcessors/>
-          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
-        </Processor>
-        <Processor Type="SimpleGain" ID="Output" Bypassed="0" Gain="0" Delay="0"
-                   Width="100" Balance="0">
+        <Processor Type="SimpleGain" ID="Output" Bypassed="0" Gain="1.0354387e-06"
+                   Delay="0" Width="100" Balance="0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>
@@ -100,9 +103,14 @@
           </ChildProcessors>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
+        <Processor Type="Analyser" ID="Analyser2" Bypassed="0" BufferSize="16384"
+                   PreviewType="1">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
       </ChildProcessors>
     </Processor>
-    <Processor Type="StreamingSampler" ID="Sampler1" Bypassed="0" Gain="0.45708817"
+    <Processor Type="StreamingSampler" ID="Sampler1" Bypassed="0" Gain="0.49545017"
                Balance="0" VoiceLimit="256" KillFadeTime="20" IconColour="0"
                PreloadSize="8192" BufferSize="4096" VoiceAmount="256" SamplerRepeatMode="3"
                RRGroupAmount="1" PitchTracking="1" OneShot="0" CrossfadeGroups="0"

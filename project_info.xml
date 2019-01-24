@@ -3,7 +3,7 @@
 <ProjectSettings>
   <Name value="Sordina"/>
   <Version value="1.0.0"/>
-  <Description value=""/>
+  <Description value="Instrument mute simulator"/>
   <BundleIdentifier value="com.librewave.sordina"/>
   <PluginCode value="Srdn"/>
   <EmbedAudioFiles value="Yes"/>
@@ -17,4 +17,6 @@
   <RedirectSampleFolder value=""/>
   <AAXCategoryFX value="AAX_ePlugInCategory_Modulation"/>
   <SupportMonoFX value="No"/>
+  <SupportFullDynamicsHLAC value="No"/>
+  <UseRawFrontend value="No"/>
 </ProjectSettings>

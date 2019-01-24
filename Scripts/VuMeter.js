@@ -1,4 +1,8 @@
-
+/*
+    Original Author: Christoph Hart
+    Modifications: David Healey
+    License: Public Domain
+*/
 namespace VuMeter
 {
 	/** Creates a peak meter.
@@ -13,9 +17,6 @@ namespace VuMeter
 		local widget = Content.getComponent(name);
     
 		Content.setPropertiesFromJSON(name, {
-		"width": 32,
-		"height": 100,
-		"textColour": 4283782485,
 		"saveInPreset": false,
 		"opaque": 1
 		});

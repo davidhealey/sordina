@@ -20,15 +20,68 @@
 include("manifest.js");
 include("VuMeter.js");
 
-Content.makeFrontInterface(600, 500);
+Content.makeFrontInterface(700, 300);
 
 Synth.deferCallbacks(true);
 
+Engine.loadFontAs("{PROJECT_FOLDER}Aller_Rg.ttf", "Aller");
+
 reg i;
-reg file = ""; //Currently loaded IR
 const var ConvolutionReverb = Synth.getAudioSampleProcessor("Convolution Reverb"); //Convo reverb effect
 
+//Pool IRs
 Engine.loadAudioFilesIntoPool();
+
+//Performance meter
+const var pnlStats = Content.getComponent("pnlStats");
+const var lblStats = Content.getComponent("lblStats");
+pnlStats.startTimer(250);
+
+pnlStats.setTimerCallback(function()
+{        
+    lblStats.set("text", "CPU: " + Math.round(Engine.getCpuUsage()) + "%" + ", " + "RAM: " + Math.round(Engine.getMemoryUsage()) + "MB");
+});
+
+//Settings panel
+const var btnSettings = Content.getComponent("btnSettings");
+const var btnCloseSettings = Content.getComponent("btnCloseSettings");
+const var pnlSettings = Content.getComponent("pnlSettings");
+pnlSettings.showControl(false);
+btnSettings.setControlCallback(onbtnSettingsControl);
+btnCloseSettings.setControlCallback(onbtnCloseSettingsControl);
+
+inline function onbtnSettingsControl(control, value) {pnlSettings.showControl(true);}
+inline function onbtnCloseSettingsControl(control, value) 
+{
+    pnlSettings.showControl(false);
+    btnSettings.setValue(0); //Reset settings button
+}
+
+//Preset browser
+const var lblPreset = Content.getComponent("lblPreset"); //For displaying preset name
+const var pnlPreset = Content.getComponent("pnlPreset"); //Preset browser
+const var btnPreset = Content.getComponent("btnPreset"); //Button to show preset browser
+const var btnClosePreset = Content.getComponent("btnClosePreset"); //Button to hide preset browser
+pnlPreset.showControl(false);
+btnPreset.setControlCallback(onbtnPresetControl);
+btnClosePreset.setControlCallback(onbtnClosePresetControl);
+
+inline function onbtnPresetControl(control, value){pnlPreset.showControl(true);}
+inline function onbtnClosePresetControl(control, value){pnlPreset.showControl(false);}
+
+//About panel
+const var pnlAbout = Content.getComponent("pnlAbout"); //About panel
+const var btnAbout = Content.getComponent("btnAbout"); //Button to show about panel
+const var btnCloseAbout = Content.getComponent("btnCloseAbout"); //Button to hide about panel
+const var btnURL = Content.getComponent("btnURL");
+pnlAbout.showControl(false);
+btnAbout.setControlCallback(onbtnAboutControl);
+btnCloseAbout.setControlCallback(onbtnCloseAboutControl);
+btnURL.setControlCallback(onbtnURLControl);
+
+inline function onbtnAboutControl(control, value){pnlAbout.showControl(true);}
+inline function onbtnCloseAboutControl(control, value){pnlAbout.showControl(false);}
+inline function onbtnURLControl(control, value){Engine.openWebsite("http://librewave.com");}
 
 //Wahwah control
 const var wahwaheq = Synth.getEffect("wahwaheq");
@@ -39,14 +92,11 @@ const var filter = Synth.getEffect("filter");
 Content.getComponent("knbLPF").setControlCallback(onknbLPFControl);
 
 inline function onknbLPFControl(component, value)
-{
-    //local index = 1 * filter.BandOffset + ParametriqEQ.Gain;
-    
+{    
 	filter.setAttribute(1 * filter.BandOffset + filter.Freq, value);
 }
 
-//IR selection menus
-
+//Patch selection controls - not visible to user
 const var instrumentNames = [];
 const var irNames = {};
 reg temp;
@@ -67,7 +117,7 @@ const var cmbInstrument = Content.getComponent("cmbInstrument");
 cmbInstrument.set("items", instrumentNames.join("\n"));
 cmbInstrument.setControlCallback(oncmbInstrumentControl);
 
-//IR selection viewport
+//IR list viewport
 const var vpIRs = Content.getComponent("vpIRs");
 vpIRs.setControlCallback(onvpIRsControl);
 
@@ -83,6 +133,9 @@ inline function onvpIRsControl(control, value)
     local folder = Manifest.patches[instrument].folder;
     local file = Manifest.patches[instrument].impulses[irName].file;
     local wah = Manifest.patches[instrument].impulses[irName].wahwah || false;
+    
+    //Display selected instrument and preset name
+    lblPreset.set("text", instrument + "\n" + irName);
     
     loadIR(folder, file);
     //enableWahWah(wah);
@@ -103,7 +156,11 @@ inline function enableWahWah(state)
 {    
     knbWahWah.set("enabled", state);
     wahwaheq.setBypassed(1-state);
-}function onNoteOn()
+}
+
+//Load up the last used preset
+Engine.loadNextUserPreset(true);
+Engine.loadPreviousUserPreset(true);function onNoteOn()
 {
 	
 }
