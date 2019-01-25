@@ -7,10 +7,10 @@
     <Control type="ScriptSlider" id="knbWahWah" value="1200"/>
     <Control type="ScriptSlider" id="knbLPF" value="20000"/>
     <Control type="ScriptSlider" id="knbHPF" value="20"/>
-    <Control type="ScriptLabel" id="lblStats" value="CPU: 1%, RAM: 2MB"/>
+    <Control type="ScriptLabel" id="lblStats" value="CPU: 1%, RAM: 1MB"/>
     <Control type="ScriptLabel" id="lblPreset" value="Tuba&#10;Humes &amp; Berg Straight"/>
     <Control type="ScriptComboBox" id="cmbInstrument" value="6"/>
-    <Control type="ScriptSlider" id="knbOutput" value="1.4901161e-06"/>
+    <Control type="ScriptSlider" id="knbOutput" value="-1.9999986"/>
     <Control type="ScriptedViewport" id="vpIRs" value="0"/>
   </Content>
   <MidiAutomation/>
