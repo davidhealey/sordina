@@ -35,9 +35,9 @@
     <Component type="ScriptPanel" id="outputMeter" x="455" y="104" width="16"
                height="100" bgColour="4279505940" itemColour="4290305535" itemColour2="4279505940"
                textColour="4283782485" opaque="1" parentComponent="guiContainer"/>
-    <Component type="ScriptSlider" id="knbWahWah" x="0" y="89" width="128" height="48"
-               parentComponent="guiContainer" mode="Frequency" min="275" max="1200"
-               stepSize="1" suffix=" Hz" middlePosition="500" processorId="wahwaheq"
+    <Component type="ScriptSlider" id="knbWahWah" x="475" y="7" width="128"
+               height="48" parentComponent="guiContainer" mode="Frequency" min="275"
+               max="1200" stepSize="1" suffix=" Hz" middlePosition="500" processorId="wahwaheq"
                parameterId="Freq" pluginParameterName="WahWah" defaultValue="275"
                visible="0"/>
     <Component type="ScriptSlider" id="knbLPF" x="390" y="40" width="60" height="50"
@@ -56,31 +56,35 @@
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                itemColour="0" bgColour="0" itemColour2="0" textColour="0">
       <Component type="ScriptLabel" id="lblStats" x="0" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 2%, RAM: 2MB" fontSize="11"
+                 parentComponent="pnlStats" text="CPU: 2%, RAM: 0MB" fontSize="11"
                  alignment="left" textColour="2983523071" fontName="DejaVu Sans"
                  editable="0"/>
     </Component>
-    <Component type="ScriptLabel" id="lblPreset" x="226" y="210" width="246"
-               height="40" parentComponent="guiContainer" text="Trumpet&#10;Humes and Berg Cup"
+    <Component type="ScriptLabel" id="lblPreset" x="226" y="215" width="246"
+               height="40" parentComponent="guiContainer" text="Trumpet&#10;Tom Crown Aluminium Straight"
                multiline="1" editable="0" fontName="Aller" fontSize="16" textColour="3103784959"
                alignment="left"/>
-    <Component type="ScriptButton" id="btnPreset" x="224" y="202" width="251"
+    <Component type="ScriptButton" id="btnPreset" x="224" y="207" width="251"
                height="52" parentComponent="guiContainer" itemColour="0" itemColour2="0"
                bgColour="0" filmstripImage="{PROJECT_FOLDER}empty.png" scaleFactor="0.40000001"
                saveInPreset="0"/>
     <Component type="ScriptButton" id="btnSettings" x="652" y="6" width="33"
                height="33" parentComponent="guiContainer" saveInPreset="0" numStrips="6"
-               filmstripImage="{PROJECT_FOLDER}3.png" scaleFactor=".5"/>
+               filmstripImage="{PROJECT_FOLDER}settings-button.png" scaleFactor="0.5"/>
+    <Component type="ScriptButton" id="btnAbout" x="277" y="277" width="145"
+               height="22" parentComponent="guiContainer" itemColour="0" itemColour2="0"
+               bgColour="0" filmstripImage="{PROJECT_FOLDER}empty.png" scaleFactor="0.40000001"
+               saveInPreset="0"/>
     <Component type="ScriptPanel" id="pnlSettings" x="0" y="0" width="700" height="300"
                parentComponent="guiContainer" bgColour="0" itemColour="0" itemColour2="0"
                borderSize="0" borderRadius="0" textColour="0" visible="0">
       <Component type="ScriptImage" id="imgSettings" x="0" y="0" width="700" height="300"
                  parentComponent="pnlSettings" fileName="{PROJECT_FOLDER}empty-background.png"
-                 scale=".5"/>
-      <Component type="ScriptFloatingTile" id="fltSettings" x="125" y="50" width="450"
-                 height="200" parentComponent="pnlSettings" ContentType="CustomSettings"
+                 scale="0.5"/>
+      <Component type="ScriptFloatingTile" id="fltSettings" x="125" y="80" width="450"
+                 height="150" parentComponent="pnlSettings" ContentType="CustomSettings"
                  bgColour="4278190080" itemColour="4287243318" itemColour2="4288684343"
-                 Data="{&#13;&#10;  &quot;Driver&quot;: false,&#13;&#10;  &quot;Device&quot;: false,&#13;&#10;  &quot;Output&quot;: false,&#13;&#10;  &quot;BufferSize&quot;: false,&#13;&#10;  &quot;SampleRate&quot;: false,&#13;&#10;  &quot;GlobalBPM&quot;: false,&#13;&#10;  &quot;StreamingMode&quot;: false,&#13;&#10;  &quot;GraphicRendering&quot;: true,&#13;&#10;  &quot;ScaleFactor&quot;: true,&#13;&#10;  &quot;SustainCC&quot;: false,&#13;&#10;  &quot;VoiceAmountMultiplier&quot;: false,&#13;&#10;  &quot;ClearMidiCC&quot;: true,&#13;&#10;  &quot;SampleLocation&quot;: false,&#13;&#10;  &quot;DebugMode&quot;: true,&#13;&#10;  &quot;ScaleFactorList&quot;: [&#13;&#10;    1,&#13;&#10;    1.25,&#13;&#10;    1.5,&#13;&#10;    2&#13;&#10;  ]&#13;&#10;}"
+                 Data="{&#13;&#10;  &quot;Driver&quot;: false,&#13;&#10;  &quot;Device&quot;: false,&#13;&#10;  &quot;Output&quot;: false,&#13;&#10;  &quot;BufferSize&quot;: false,&#13;&#10;  &quot;SampleRate&quot;: false,&#13;&#10;  &quot;GlobalBPM&quot;: false,&#13;&#10;  &quot;StreamingMode&quot;: false,&#13;&#10;  &quot;GraphicRendering&quot;: true,&#13;&#10;  &quot;ScaleFactor&quot;: true,&#13;&#10;  &quot;SustainCC&quot;: false,&#13;&#10;  &quot;VoiceAmountMultiplier&quot;: false,&#13;&#10;  &quot;ClearMidiCC&quot;: false,&#13;&#10;  &quot;SampleLocation&quot;: false,&#13;&#10;  &quot;DebugMode&quot;: true,&#13;&#10;  &quot;ScaleFactorList&quot;: [&#13;&#10;    1,&#13;&#10;    1.25,&#13;&#10;    1.5,&#13;&#10;    2&#13;&#10;  ]&#13;&#10;}"
                  itemColour3="4278190080"/>
       <Component type="ScriptButton" id="btnCloseSettings" x="666" y="14" width="20"
                  height="20" parentComponent="pnlSettings" saveInPreset="0" numStrips="6"
@@ -99,10 +103,6 @@
                  height="20" parentComponent="pnlPreset" filmstripImage="{PROJECT_FOLDER}close-button.png"
                  numStrips="6" scaleFactor="0.5" saveInPreset="0"/>
     </Component>
-    <Component type="ScriptButton" id="btnAbout" x="277" y="277" width="145"
-               height="22" parentComponent="guiContainer" itemColour="0" itemColour2="0"
-               bgColour="0" filmstripImage="{PROJECT_FOLDER}empty.png" scaleFactor="0.40000001"
-               saveInPreset="0"/>
     <Component type="ScriptPanel" id="pnlAbout" x="0" y="0" width="700" height="300"
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                visible="0">
@@ -121,17 +121,17 @@
                  numStrips="6" scaleFactor="0.5" saveInPreset="0"/>
     </Component>
   </Component>
-  <Component type="ScriptPanel" id="pnlAdmin" x="39" y="157" width="336" height="292"
+  <Component type="ScriptPanel" id="pnlAdmin" x="0" y="308" width="340" height="283"
              itemColour="4278190080" itemColour2="4278190080" visible="0">
-    <Component type="ScriptComboBox" id="cmbInstrument" x="21" y="27" max="9"
+    <Component type="ScriptComboBox" id="cmbInstrument" x="21" y="16" max="9"
                text="Impulse Responses" width="150" items="French Horn&#10;Piccolo Trumpet&#10;Trumpet&#10;Trombone&#10;Bass Trombone&#10;Tuba&#10;Euphonium&#10;Flugelhorn&#10;Saxophone"
-               parentComponent="pnlAdmin"/>
-    <Component type="ScriptSlider" id="knbOutput" x="173" y="16" width="150"
-               height="50" parentComponent="pnlAdmin" text="Output Gain" mode="Decibel"
+               parentComponent="pnlAdmin" height="31"/>
+    <Component type="ScriptSlider" id="knbOutput" x="173" y="5" width="150"
+               height="49" parentComponent="pnlAdmin" text="Output Gain" mode="Decibel"
                min="-100" max="36" stepSize="0.1" suffix=" dB" middlePosition="-18"
                processorId="Output" parameterId="Gain"/>
-    <Component type="ScriptedViewport" id="vpIRs" x="41" y="85" width="265"
-               height="185" useList="1" items="Jo Ral Brass Bottom Bucket&#10;Jo Ral Brass Bottom Straight&#10;Jo Ral Bubble Stem In&#10;Jo Ral Bubble Stem Out&#10;Jo Ral Plastic Straight&#10;Jo Ral TriTone Cup&#10;Denis Wick Adjustable Cup&#10;Denis Wick Adjustable Cup Close&#10;Denis Wick Harmon Stem In&#10;Denis Wick Harmon Stem Out&#10;Denis Wick Pianissimo Straight&#10;Denis Wick Practice&#10;Denis Wick Straight&#10;Humes and Berg Cup&#10;Humes and Berg Harmon Stem In&#10;Humes and Berg Harmon Stem Out&#10;Humes and Berg Melowah&#10;Humes and Berg Pixie&#10;Tom Crown Aluminium Straight&#10;Tom Crown Harmon Stem In&#10;Tom Crown Harmon Stem Out&#10;Pro Tec Fiber Straight&#10;Plunger 1&#10;Plunger 2&#10;Mute Tube&#10;Felt&#10;Leblanc Straight&#10;Bremner Sshh"
+    <Component type="ScriptedViewport" id="vpIRs" x="41" y="59" width="267"
+               height="208" useList="1" items="Jo Ral Brass Bottom Bucket&#10;Jo Ral Brass Bottom Straight&#10;Jo Ral Bubble Stem In&#10;Jo Ral Bubble Stem Out&#10;Jo Ral Plastic Straight&#10;Jo Ral TriTone Cup&#10;Denis Wick Adjustable Cup&#10;Denis Wick Adjustable Cup Close&#10;Denis Wick Harmon Stem In&#10;Denis Wick Harmon Stem Out&#10;Denis Wick Pianissimo Straight&#10;Denis Wick Practice&#10;Denis Wick Straight&#10;Humes &amp; Berg Cup&#10;Humes &amp; Berg Harmon Stem In&#10;Humes &amp; Berg Harmon Stem Out&#10;Humes &amp; Berg Melowah&#10;Humes &amp; Berg Pixie&#10;Tom Crown Aluminium Straight&#10;Tom Crown Harmon Stem In&#10;Tom Crown Harmon Stem Out&#10;Pro Tec Fiber Straight&#10;Plunger 1&#10;Plunger 2&#10;Mute Tube&#10;Felt&#10;Leblanc Straight&#10;Bremner Sshh"
                parentComponent="pnlAdmin"/>
   </Component>
 </ContentProperties>

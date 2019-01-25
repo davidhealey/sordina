@@ -23,11 +23,11 @@ namespace Manifest
         "French Horn":{
             "folder":"frenchHorn",
             "impulses":{
-                "Humes and Berg Cup": {file:"Humes and Berg Cup.wav"},
-                "Humes and Berg Philharmonic Straight": {file:"Humes and Berg Philharmonic Straight.wav"},
-                "Humes and Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
-                "Humes and Berg Stop": {file:"Humes and Berg Stop.wav"},
-                "Humes and Berg Straight": {file:"Humes and Berg Straight.wav"},
+                "Humes & Berg Cup": {file:"Humes and Berg Cup.wav"},
+                "Humes & Berg Philharmonic Straight": {file:"Humes and Berg Philharmonic Straight.wav"},
+                "Humes & Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
+                "Humes & Berg Stop": {file:"Humes and Berg Stop.wav"},
+                "Humes & Berg Straight": {file:"Humes and Berg Straight.wav"},
                 "The Warburton Tunable": {file:"The Warburton Tunable.wav"}
             }
         },
@@ -61,11 +61,11 @@ namespace Manifest
               "Denis Wick Pianissimo Straight": {file:"Denis Wick Pianissimo Straight.wav"},
               "Denis Wick Practice": {file:"Denis Wick Practice.wav"},
               "Denis Wick Straight": {file:"Denis Wick Straight.wav"},
-              "Humes and Berg Cup": {file:"Humes and Berg Cup.wav"},
-              "Humes and Berg Harmon Stem In": {file:"Humes and Berg Harmon Stem In.wav", wahwah:true},
-              "Humes and Berg Harmon Stem Out": {file:"Humes and Berg Harmon Stem Out.wav", wahwah:true},
-              "Humes and Berg Melowah": {file:"Humes and Berg Melowah.wav"},
-              "Humes and Berg Pixie": {file:"Humes and Berg Pixie.wav", wahwah:true},
+              "Humes & Berg Cup": {file:"Humes and Berg Cup.wav"},
+              "Humes & Berg Harmon Stem In": {file:"Humes and Berg Harmon Stem In.wav", wahwah:true},
+              "Humes & Berg Harmon Stem Out": {file:"Humes and Berg Harmon Stem Out.wav", wahwah:true},
+              "Humes & Berg Melowah": {file:"Humes and Berg Melowah.wav"},
+              "Humes & Berg Pixie": {file:"Humes and Berg Pixie.wav", wahwah:true},
               "Tom Crown Aluminium Straight": {file:"Tom Crown Aluminium Straight.wav"},
               "Tom Crown Harmon Stem In": {file:"Tom Crown Harmon Stem In.wav", wahwah:true},
               "Tom Crown Harmon Stem Out": {file:"Tom Crown Harmon Stem Out.wav", wahwah:true},
@@ -82,16 +82,16 @@ namespace Manifest
             "folder":"trombone",
             "impulses":{
               "Buzz" : {file:"Buzz.wav"},
-              "Humes and Berg Cleartone" : {file:"Humes and Berg Cleartone.wav"},
-              "Humes and Berg Cup" : {file:"Humes and Berg Cup.wav"},
-              "Humes and Berg Derby" : {file:"Humes and Berg Derby.wav", wahwah:true},
-              "Humes and Berg Mic A Mute" : {file:"Humes and Berg Mic A Mute.wav"},
-              "Humes and Berg Pixie" : {file:"Humes and Berg Pixie.wav", wahwah:true},
-              "Humes and Berg Sh Sh" : {file:"Humes and Berg Sh Sh.wav"},
-              "Humes and Berg Straight" : {file:"Humes and Berg Straight.wav"},
-              "Humes and Berg Velvet Tone" : {file:"Humes and Berg Velvet Tone.wav"},
-              "Humes and Berg WahWah Stem In" : {file:"Humes and Berg WahWah Stem In.wav", wahwah:true},
-              "Humes and Berg WahWah Stem Out" : {file:"Humes and Berg WahWah Stem Out.wav", wahwah:true},
+              "Humes & Berg Cleartone" : {file:"Humes and Berg Cleartone.wav"},
+              "Humes & Berg Cup" : {file:"Humes and Berg Cup.wav"},
+              "Humes & Berg Derby" : {file:"Humes and Berg Derby.wav", wahwah:true},
+              "Humes & Berg Mic A Mute" : {file:"Humes and Berg Mic A Mute.wav"},
+              "Humes & Berg Pixie" : {file:"Humes and Berg Pixie.wav", wahwah:true},
+              "Humes & Berg Sh Sh" : {file:"Humes and Berg Sh Sh.wav"},
+              "Humes & Berg Straight" : {file:"Humes and Berg Straight.wav"},
+              "Humes & Berg Velvet Tone" : {file:"Humes and Berg Velvet Tone.wav"},
+              "Humes & Berg WahWah Stem In" : {file:"Humes and Berg WahWah Stem In.wav", wahwah:true},
+              "Humes & Berg WahWah Stem Out" : {file:"Humes and Berg WahWah Stem Out.wav", wahwah:true},
               "Jo Ral Brass Bottom Straight" : {file:"Jo Ral Brass Bottom Straight.wav"},
               "Jo Ral Bubble Mute Stem In" : {file:"Jo Ral Bubble Mute Stem In.wav", wahwah:true},
               "Jo Ral Bubble Mute Stem Out" : {file:"Jo Ral Bubble Mute Stem Out.wav", wahwah:true},
@@ -105,11 +105,11 @@ namespace Manifest
         "Bass Trombone":{
             "folder":"bassTrombone",
             "impulses":{
-              "Humes and Berg Brass Straight": {file:"Humes and Berg Brass Straight.wav"},
-              "Humes and Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
-              "Humes and Berg WaWah": {file:"Humes and Berg WaWah.wav", wahwah:true},
-              "Humes and Berg Mic A Mute": {file:"Humes and Berg Mic A Mute.wav"},
-              "Humes and Berg Velvet Tone": {file:"Humes and Berg Velvet Tone.wav"},
+              "Humes & Berg Brass Straight": {file:"Humes and Berg Brass Straight.wav"},
+              "Humes & Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
+              "Humes & Berg WaWah": {file:"Humes and Berg WaWah.wav", wahwah:true},
+              "Humes & Berg Mic A Mute": {file:"Humes and Berg Mic A Mute.wav"},
+              "Humes & Berg Velvet Tone": {file:"Humes and Berg Velvet Tone.wav"},
               "Jo Ral Brass Bottom Straight": {file:"Jo Ral Brass Bottom Straight.wav"},
               "Jo Ral Bubble Mute Stem Out": {file:"Jo Ral Bubble Mute Stem Out.wav", wahwah:true},
               "Jo Ral Bubble Mute Stem In": {file:"Jo Ral Bubble Mute Stem In.wav", wahwah:true},
@@ -123,7 +123,7 @@ namespace Manifest
         "Tuba":{
             "folder":"tuba",
             "impulses":{
-              "Humes and Berg Straight" : {file:"Humes and Berg Straight.wav"},
+              "Humes & Berg Straight" : {file:"Humes and Berg Straight.wav"},
               "Jo Ral Straight" : {file:"Jo Ral Straight.wav"},
               "Schlipf Practice" : {file:"Schlipf Practice.wav"},
               "Voigt Practice" : {file:"Voigt Practice.wav"}
@@ -133,20 +133,20 @@ namespace Manifest
             "folder":"euphonium",
             "impulses":{
               "Denis Wick Practice" : {file:"Denis Wick Practice.wav"},
-              "Humes and Berg Straight" : {file:"Humes and Berg Straight.wav"},
+              "Humes & Berg Straight" : {file:"Humes and Berg Straight.wav"},
               "Jo Ral Straight" : {file:"Jo Ral Straight.wav"}
             }
         },
         "Flugelhorn":{
             "folder":"flugelhorn",
             "impulses":{
-              "Humes and Berg Aluminium Practice": {file:"Humes and Berg Aluminium Practice.wav"},
-              "Humes and Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
-              "Humes and Berg Aluminium Straight": {file:"Humes and Berg Aluminium Straight.wav"},
-              "Humes and Berg Straight": {file:"Humes and Berg Straight.wav"},
-              "Humes and Berg Cup": {file:"Humes and Berg Cup.wav"},
-              "Humes and Berg Velvet Tone": {file:"Humes and Berg Velvet Tone.wav"},
-              "Humes and Berg Practice": {file:"Humes and Berg Practice.wav"}
+              "Humes & Berg Aluminium Practice": {file:"Humes and Berg Aluminium Practice.wav"},
+              "Humes & Berg Sh Sh": {file:"Humes and Berg Sh Sh.wav"},
+              "Humes & Berg Aluminium Straight": {file:"Humes and Berg Aluminium Straight.wav"},
+              "Humes & Berg Straight": {file:"Humes and Berg Straight.wav"},
+              "Humes & Berg Cup": {file:"Humes and Berg Cup.wav"},
+              "Humes & Berg Velvet Tone": {file:"Humes and Berg Velvet Tone.wav"},
+              "Humes & Berg Practice": {file:"Humes and Berg Practice.wav"}
             }
         },
         "Saxophone":{
