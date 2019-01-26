@@ -2,15 +2,15 @@
 
 <Preset Version="1.0.0">
   <Content Processor="Interface">
-    <Control type="ScriptSlider" id="knbGain" value="1.4901161e-06"/>
+    <Control type="ScriptSlider" id="knbGain" value="3"/>
     <Control type="ScriptSlider" id="knbMix" value="1"/>
     <Control type="ScriptSlider" id="knbWahWah" value="1200"/>
     <Control type="ScriptSlider" id="knbLPF" value="20000"/>
     <Control type="ScriptSlider" id="knbHPF" value="20"/>
-    <Control type="ScriptLabel" id="lblStats" value="CPU: 1%, RAM: 1MB"/>
+    <Control type="ScriptLabel" id="lblStats" value="CPU: 4%"/>
     <Control type="ScriptLabel" id="lblPreset" value="Trombone&#10;Jo Ral Brass Bottom Straight"/>
     <Control type="ScriptComboBox" id="cmbInstrument" value="4"/>
-    <Control type="ScriptSlider" id="knbOutput" value="3.0000014"/>
+    <Control type="ScriptSlider" id="knbInput" value="0"/>
     <Control type="ScriptedViewport" id="vpIRs" value="11"/>
   </Content>
   <MidiAutomation/>
