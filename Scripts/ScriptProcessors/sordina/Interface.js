@@ -35,11 +35,11 @@ Engine.loadAudioFilesIntoPool();
 //Performance meter
 const var pnlStats = Content.getComponent("pnlStats");
 const var lblStats = Content.getComponent("lblStats");
-pnlStats.startTimer(250);
+pnlStats.startTimer(1000);
 
 pnlStats.setTimerCallback(function()
 {        
-    lblStats.set("text", "CPU: " + Math.round(Engine.getCpuUsage()) + "%" + ", " + "RAM: " + Math.round(Engine.getMemoryUsage()) + "MB");
+    lblStats.set("text", "CPU: " + Engine.doubleToString(Engine.getCpuUsage(), 2) + "%");
 });
 
 //Settings panel
@@ -117,23 +117,26 @@ const var cmbInstrument = Content.getComponent("cmbInstrument");
 cmbInstrument.set("items", instrumentNames.join("\n"));
 cmbInstrument.setControlCallback(oncmbInstrumentControl);
 
-//IR list viewport
+inline function oncmbInstrumentControl(control, value)
+{
+    local instrument = cmbInstrument.getItemText(); //Name of selected instrument
+    
+    //Populate list of IRs
+    vpIRs.set("items", irNames[instrument].join("\n"));
+}
+
+//IR selection viewport
 const var vpIRs = Content.getComponent("vpIRs");
 vpIRs.setControlCallback(onvpIRsControl);
 
-inline function oncmbInstrumentControl(control, value)
-{
-    vpIRs.set("items", irNames[cmbInstrument.getItemText()].join("\n"));
-}
-
 inline function onvpIRsControl(control, value)
-{   
+{
     local instrument = cmbInstrument.getItemText();
     local irName = irNames[instrument][value];
     local folder = Manifest.patches[instrument].folder;
     local file = Manifest.patches[instrument].impulses[irName].file;
     local wah = Manifest.patches[instrument].impulses[irName].wahwah || false;
-    
+     
     //Display selected instrument and preset name
     lblPreset.set("text", instrument + "\n" + irName);
     
@@ -141,10 +144,22 @@ inline function onvpIRsControl(control, value)
     //enableWahWah(wah);
 }
 
+//Automatable preset selection menu;
+const var userPresets = Engine.getUserPresetList(); //Array of user preset names
+const var cmbPreset = Content.getComponent("cmbPreset"); //Combo box - list of presets
+cmbPreset.set("items", userPresets.join("\n"));
+cmbPreset.setControlCallback(oncmbPresetControl);
+
+inline function oncmbPresetControl(control, value)
+{
+    Engine.loadUserPreset(control.getItemText()); //Load selected preset
+}
+
 //VU Meters
 const var inputMeter = VuMeter.createVuMeter("inputMeter");
 VuMeter.setModule(inputMeter, Synth.getEffect("Input"));
 const var outputMeter = VuMeter.createVuMeter("outputMeter");
+VuMeter.setModule(outputMeter, Synth.getEffect("Output"));
 
 //Functions
 inline function loadIR(folder, file)

@@ -9,16 +9,13 @@
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="knbGain" value="1.4901161e-06"/>
+            <Control type="ScriptSlider" id="knbGain" value="16"/>
             <Control type="ScriptSlider" id="knbMix" value="1"/>
             <Control type="ScriptSlider" id="knbWahWah" value="1200"/>
             <Control type="ScriptSlider" id="knbLPF" value="20000"/>
             <Control type="ScriptSlider" id="knbHPF" value="20"/>
-            <Control type="ScriptLabel" id="lblStats" value="CPU: 2%, RAM: 0MB"/>
-            <Control type="ScriptLabel" id="lblPreset" value="Trumpet&#10;Tom Crown Aluminium Straight"/>
             <Control type="ScriptComboBox" id="cmbInstrument" value="3"/>
-            <Control type="ScriptSlider" id="knbOutput" value="1.4901161e-06"/>
-            <Control type="ScriptedViewport" id="vpIRs" value="18"/>
+            <Control type="ScriptedViewport" id="vpIRs" value="21"/>
           </Content>
           <UIData Source="sordinaUIData"/>
         </Processor>
@@ -43,8 +40,8 @@
     </Processor>
     <Processor Type="EffectChain" ID="FX" Bypassed="0">
       <ChildProcessors>
-        <Processor Type="SimpleGain" ID="Input" Bypassed="0" Gain="1.0354387e-06"
-                   Delay="0" Width="100" Balance="0">
+        <Processor Type="SimpleGain" ID="Input" Bypassed="0" Gain="0" Delay="0"
+                   Width="100" Balance="0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>
@@ -61,7 +58,7 @@
           </ChildProcessors>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="Analyser" ID="Analyser1" Bypassed="0" BufferSize="16384"
+        <Processor Type="Analyser" ID="Analyser1" Bypassed="0" BufferSize="8192"
                    PreviewType="1">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
@@ -73,8 +70,8 @@
         </Processor>
         <Processor Type="Convolution" ID="Convolution Reverb" Bypassed="0" DryGain="-100"
                    WetGain="0" Latency="0" ImpulseLength="1" ProcessInput="1" UseBackgroundThread="1"
-                   Predelay="0" HiCut="20000" Damping="-100" FileName="{PROJECT_FOLDER}trumpet/Tom Crown Aluminium Straight.wav"
-                   min="0" max="2578" loopStart="0" loopEnd="0">
+                   Predelay="0" HiCut="20000" Damping="-100" FileName="{PROJECT_FOLDER}trumpet/Tom Crown Harmon Stem Out.wav"
+                   min="0" max="2277" loopStart="0" loopEnd="0">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
@@ -84,8 +81,8 @@
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="SimpleGain" ID="Output" Bypassed="0" Gain="1.0354387e-06"
-                   Delay="0" Width="100" Balance="0">
+        <Processor Type="SimpleGain" ID="Output" Bypassed="0" Gain="16" Delay="0"
+                   Width="100" Balance="0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>

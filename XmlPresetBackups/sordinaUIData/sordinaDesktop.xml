@@ -5,17 +5,19 @@
              height="600" itemColour="0" itemColour2="0" textColour="0" bgColour="0">
     <Component type="ScriptImage" id="imgSkin" x="0" y="0" width="700" height="300"
                parentComponent="guiContainer" scale="0.5" fileName="{PROJECT_FOLDER}skin.png"/>
-    <Component type="ScriptSlider" id="knbGain" x="560" y="107" processorId="Input"
-               parameterId="Gain" mode="Decibel" min="-100" max="12" stepSize="0.1"
+    <Component type="ScriptSlider" id="knbGain" x="560" y="107" processorId="Output"
+               parameterId="Gain" mode="Decibel" min="-100" max="36" stepSize="0.1"
                suffix=" dB" middlePosition="-18" parentComponent="guiContainer"
                height="92" width="92" numStrips="128" scaleFactor="0.5" mouseSensitivity="0.69999999"
-               showValuePopup="Below" filmstripImage="{PROJECT_FOLDER}knob-large.png"/>
+               showValuePopup="Below" filmstripImage="{PROJECT_FOLDER}knob-large.png"
+               isPluginParameter="1" pluginParameterName="Gain"/>
     <Component type="ScriptSlider" id="knbMix" x="50" y="107" stepSize="0.1"
                suffix=" %" middlePosition="0.5" processorId="mixController"
                parameterId="knbMix" mode="NormalizedPercentage" defaultValue="1"
                parentComponent="guiContainer" height="92" width="92" numStrips="128"
                scaleFactor="0.5" mouseSensitivity="0.69999999" showValuePopup="Below"
-               filmstripImage="{PROJECT_FOLDER}knob-large.png"/>
+               filmstripImage="{PROJECT_FOLDER}knob-large.png" isPluginParameter="1"
+               pluginParameterName="Mix"/>
     <Component type="ScriptFloatingTile" id="fltAnalyser1" x="250" y="104" ContentType="AudioAnalyser"
                bgColour="3355443" itemColour="4007320175" itemColour2="4473924"
                textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#13;&#10;  &quot;Index&quot;: 2&#13;&#10;}"
@@ -55,15 +57,14 @@
     <Component type="ScriptPanel" id="pnlStats" x="10" y="278" width="150" height="22"
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                itemColour="0" bgColour="0" itemColour2="0" textColour="0">
-      <Component type="ScriptLabel" id="lblStats" x="0" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 2%, RAM: 0MB" fontSize="11"
-                 alignment="left" textColour="2983523071" fontName="DejaVu Sans"
-                 editable="0"/>
+      <Component type="ScriptLabel" id="lblStats" x="-5" y="0" width="150" height="22"
+                 parentComponent="pnlStats" text="CPU: 1.10%" fontSize="11" alignment="left"
+                 textColour="2983523071" fontName="DejaVu Sans" editable="0" saveInPreset="0"/>
     </Component>
     <Component type="ScriptLabel" id="lblPreset" x="226" y="215" width="246"
-               height="40" parentComponent="guiContainer" text="Trumpet&#10;Tom Crown Aluminium Straight"
+               height="40" parentComponent="guiContainer" text="Trumpet &amp; Cornet&#10;Tom Crown Harmon Stem Out"
                multiline="1" editable="0" fontName="Aller" fontSize="16" textColour="3103784959"
-               alignment="left"/>
+               alignment="left" saveInPreset="0"/>
     <Component type="ScriptButton" id="btnPreset" x="224" y="207" width="251"
                height="52" parentComponent="guiContainer" itemColour="0" itemColour2="0"
                bgColour="0" filmstripImage="{PROJECT_FOLDER}empty.png" scaleFactor="0.40000001"
@@ -121,17 +122,16 @@
                  numStrips="6" scaleFactor="0.5" saveInPreset="0"/>
     </Component>
   </Component>
-  <Component type="ScriptPanel" id="pnlAdmin" x="0" y="308" width="340" height="283"
+  <Component type="ScriptPanel" id="pnlAdmin" x="0" y="308" width="611" height="286"
              itemColour="4278190080" itemColour2="4278190080" visible="0">
     <Component type="ScriptComboBox" id="cmbInstrument" x="21" y="16" max="9"
-               text="Impulse Responses" width="150" items="French Horn&#10;Piccolo Trumpet&#10;Trumpet&#10;Trombone&#10;Bass Trombone&#10;Tuba&#10;Euphonium&#10;Flugelhorn&#10;Saxophone"
-               parentComponent="pnlAdmin" height="31"/>
-    <Component type="ScriptSlider" id="knbOutput" x="173" y="5" width="150"
-               height="49" parentComponent="pnlAdmin" text="Output Gain" mode="Decibel"
-               min="-100" max="36" stepSize="0.1" suffix=" dB" middlePosition="-18"
-               processorId="Output" parameterId="Gain"/>
-    <Component type="ScriptedViewport" id="vpIRs" x="41" y="59" width="267"
-               height="208" useList="1" items="Jo Ral Brass Bottom Bucket&#10;Jo Ral Brass Bottom Straight&#10;Jo Ral Bubble Stem In&#10;Jo Ral Bubble Stem Out&#10;Jo Ral Plastic Straight&#10;Jo Ral TriTone Cup&#10;Denis Wick Adjustable Cup&#10;Denis Wick Adjustable Cup Close&#10;Denis Wick Harmon Stem In&#10;Denis Wick Harmon Stem Out&#10;Denis Wick Pianissimo Straight&#10;Denis Wick Practice&#10;Denis Wick Straight&#10;Humes &amp; Berg Cup&#10;Humes &amp; Berg Harmon Stem In&#10;Humes &amp; Berg Harmon Stem Out&#10;Humes &amp; Berg Melowah&#10;Humes &amp; Berg Pixie&#10;Tom Crown Aluminium Straight&#10;Tom Crown Harmon Stem In&#10;Tom Crown Harmon Stem Out&#10;Pro Tec Fiber Straight&#10;Plunger 1&#10;Plunger 2&#10;Mute Tube&#10;Felt&#10;Leblanc Straight&#10;Bremner Sshh"
-               parentComponent="pnlAdmin"/>
+               text="Impulse Responses" width="150" items="French Horn&#10;Piccolo Trumpet&#10;Trumpet &amp; Cornet&#10;Trombone&#10;Bass Trombone&#10;Tuba&#10;Euphonium&#10;Flugelhorn&#10;Saxophone"
+               parentComponent="pnlAdmin" height="31" pluginParameterName="Instrument"/>
+    <Component type="ScriptedViewport" id="vpIRs" x="19" y="62" width="312"
+               height="203" useList="1" items="Jo Ral Brass Bottom Bucket&#10;Jo Ral Brass Bottom Straight&#10;Jo Ral Bubble Stem In&#10;Jo Ral Bubble Stem Out&#10;Jo Ral Plastic Straight&#10;Jo Ral TriTone Cup&#10;Denis Wick Adjustable Cup&#10;Denis Wick Adjustable Cup Close&#10;Denis Wick Harmon Stem In&#10;Denis Wick Harmon Stem Out&#10;Denis Wick Pianissimo Straight&#10;Denis Wick Practice&#10;Denis Wick Straight&#10;Humes &amp; Berg Cup&#10;Humes &amp; Berg Harmon Stem In&#10;Humes &amp; Berg Harmon Stem Out&#10;Humes &amp; Berg Melowah&#10;Humes &amp; Berg Pixie&#10;Humes &amp; Berg Bucket&#10;Tom Crown Aluminium Straight&#10;Tom Crown Harmon Stem In&#10;Tom Crown Harmon Stem Out&#10;Pro Tec Fiber Straight&#10;Plunger 1&#10;Plunger&#10;Mute Tube&#10;Felt&#10;Leblanc Straight&#10;Bremner Sshh"
+               parentComponent="pnlAdmin" pluginParameterName="Mute" isMetaParameter="1"/>
+    <Component type="ScriptComboBox" id="cmbPreset" x="339" y="14" width="253"
+               height="42" max="92" parentComponent="pnlAdmin" items="Bass Trombone/Bucket/Humes &amp; Berg Velvet Tone&#10;Bass Trombone/Bucket/Jo Ral Aluminium&#10;Bass Trombone/Cup/Denis Wick Aluminium&#10;Bass Trombone/Cup/Humes &amp; Berg Mic-A-Mute&#10;Bass Trombone/Cup/Jo Ral Aluminium&#10;Bass Trombone/Harmon/Humes &amp; Berg Wa-Wah&#10;Bass Trombone/Harmon/Jo Ral Bubble Stem In&#10;Bass Trombone/Harmon/Jo Ral Bubble Stem Out&#10;Bass Trombone/Misc/Plunger&#10;Bass Trombone/Practice/Humes &amp; Berg Sh Sh&#10;Bass Trombone/Straight/Denis Wick Aluminium&#10;Bass Trombone/Straight/Humes &amp; Berg Stonelined&#10;Bass Trombone/Straight/Jo Ral Brass Bottom&#10;Euphonium/Practice/Denis Wick Aluminium&#10;Euphonium/Straight/Humes &amp; Berg Stonelined&#10;Euphonium/Straight/Jo Ral Aluminium&#10;Flugelhorn/Bucket/Humes &amp; Berg Velvet Tone&#10;Flugelhorn/Cup/Humes &amp; Berg Stonelined&#10;Flugelhorn/Practice/Humes &amp; Berg Aluminium&#10;Flugelhorn/Practice/Humes &amp; Berg Sh Sh&#10;Flugelhorn/Practice/Humes &amp; Berg Stonelined&#10;Flugelhorn/Straight/Humes &amp; Berg Aluminium&#10;Flugelhorn/Straight/Humes &amp; Berg Stonelined&#10;French Horn/Cup/Humes &amp; Berg Stonelined&#10;French Horn/Practice/Humes &amp; Berg Sh Sh&#10;French Horn/Stop/Humes &amp; Berg Stonelined&#10;French Horn/Straight/Humes &amp; Berg Philharmonic&#10;French Horn/Straight/Humes &amp; Berg Stonelined&#10;French Horn/Straight/The Warburton Tunable&#10;Piccolo Trumpet/Cup/Tom Crown Aluminium&#10;Piccolo Trumpet/Harmon/Tom Crown Stem In&#10;Piccolo Trumpet/Harmon/Tom Crown Stem Out&#10;Piccolo Trumpet/Misc/Felt&#10;Piccolo Trumpet/Practice/Jo Ral Aluminium&#10;Piccolo Trumpet/Practice/Tom Crown Aluminium&#10;Piccolo Trumpet/Straight/Denis Wick Aluminium&#10;Piccolo Trumpet/Straight/Jo Ral Brass Bottom&#10;Piccolo Trumpet/Straight/Wallace Aluminium&#10;Saxophone/Practice/E-Sax Whisper&#10;Saxophone/Practice/MMD&#10;Saxophone/Practice/Sax Mute One&#10;Trombone/Bucket/Humes &amp; Berg Velvet Tone&#10;Trombone/Bucket/Jo Ral Aluminium&#10;Trombone/Cup/Humes &amp; Berg Mic-A-Mute&#10;Trombone/Cup/Humes &amp; Berg Stonelined&#10;Trombone/Cup/Jo Ral Aluminium&#10;Trombone/Harmon/H&amp;B Wa-Wah Stem In&#10;Trombone/Harmon/H&amp;B Wa-Wah Stem Out&#10;Trombone/Harmon/Jo Ral Bubble Stem In&#10;Trombone/Harmon/Jo Ral Bubble Stem Out&#10;Trombone/Misc/Buzz&#10;Trombone/Misc/Humes &amp; Berg Cleartone&#10;Trombone/Misc/Humes &amp; Berg Derby Hat&#10;Trombone/Misc/Humes &amp; Berg Pixie&#10;Trombone/Misc/Plunger&#10;Trombone/Practice/Humes &amp; Berg Sh Sh&#10;Trombone/Practice/Liberty Practice&#10;Trombone/Straight/Humes &amp; Berg Stonelined&#10;Trombone/Straight/Jo Ral Brass Bottom&#10;Trombone/Straight/Soulo&#10;Trumpet &amp; Cornet/Bucket/Humes &amp; Berg Stonelined&#10;Trumpet &amp; Cornet/Bucket/Jo Ral Brass Bottom&#10;Trumpet &amp; Cornet/Cup/Denis Wick Adjustable Close&#10;Trumpet &amp; Cornet/Cup/Denis Wick Adjustable&#10;Trumpet &amp; Cornet/Cup/Humes &amp; Berg Stonelined&#10;Trumpet &amp; Cornet/Cup/Jo Ral TriTone&#10;Trumpet &amp; Cornet/Harmon/Denis Wick Stem In&#10;Trumpet &amp; Cornet/Harmon/Denis Wick Stem Out&#10;Trumpet &amp; Cornet/Harmon/Humes &amp; Berg Stem In&#10;Trumpet &amp; Cornet/Harmon/Humes &amp; Berg Stem Out&#10;Trumpet &amp; Cornet/Harmon/Jo Ral Bubble Stem In&#10;Trumpet &amp; Cornet/Harmon/Jo Ral Bubble Stem Out&#10;Trumpet &amp; Cornet/Harmon/Tom Crown Stem In&#10;Trumpet &amp; Cornet/Harmon/Tom Crown Stem Out&#10;Trumpet &amp; Cornet/Misc/Felt&#10;Trumpet &amp; Cornet/Misc/Humes &amp; Berg Pixie&#10;Trumpet &amp; Cornet/Misc/Plunger&#10;Trumpet &amp; Cornet/Practice/Bremner Sshh&#10;Trumpet &amp; Cornet/Practice/Denis Wick Aluminium&#10;Trumpet &amp; Cornet/Practice/Humes &amp; Berg Mel-O-Wah&#10;Trumpet &amp; Cornet/Practice/Mute Tube&#10;Trumpet &amp; Cornet/Straight/Denis Wick Aluminium&#10;Trumpet &amp; Cornet/Straight/Denis Wick Pianissimo&#10;Trumpet &amp; Cornet/Straight/Jo Ral Brass Bottom&#10;Trumpet &amp; Cornet/Straight/Jo Ral Plastic&#10;Trumpet &amp; Cornet/Straight/Leblanc Aluminium&#10;Trumpet &amp; Cornet/Straight/Pro Tec Fiber&#10;Trumpet &amp; Cornet/Straight/Tom Crown Aluminium&#10;Tuba/Practice/Schlipf&#10;Tuba/Practice/Voigt&#10;Tuba/Straight/Humes &amp; Berg Stonelined&#10;Tuba/Straight/Jo Ral Aluminium"
+               saveInPreset="0" text="Preset" isPluginParameter="1" pluginParameterName="Preset"/>
   </Component>
 </ContentProperties>

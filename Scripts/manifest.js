@@ -45,7 +45,7 @@ namespace Manifest
                 "Wallace Straight": {file:"Wallace Straight.wav"}
             }
         },
-        "Trumpet":{
+        "Trumpet & Cornet":{
             "folder":"trumpet",
             "impulses":{
               "Jo Ral Brass Bottom Bucket": {file:"Jo Ral Brass Bottom Bucket.wav"},
