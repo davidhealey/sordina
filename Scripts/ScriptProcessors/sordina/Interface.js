@@ -138,7 +138,14 @@ inline function onvpIRsControl(control, value)
     local wah = Manifest.patches[instrument].impulses[irName].wahwah || false;
      
     //Display selected instrument and preset name
-    lblPreset.set("text", instrument + "\n" + irName);
+    if (Engine.getCurrentUserPresetName() == "")
+    {
+        lblPreset.set("text", "Trumpet & Cornet\nTom Crown Harmon Stem Out");
+    }
+    else
+    {
+        lblPreset.set("text", instrument + "\n" + irName);
+    }
     
     loadIR(folder, file);
     //enableWahWah(wah);
@@ -171,11 +178,7 @@ inline function enableWahWah(state)
 {    
     knbWahWah.set("enabled", state);
     wahwaheq.setBypassed(1-state);
-}
-
-//Load up the last used preset
-Engine.loadNextUserPreset(true);
-Engine.loadPreviousUserPreset(true);function onNoteOn()
+}function onNoteOn()
 {
 	
 }

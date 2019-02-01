@@ -71,7 +71,7 @@
         <Processor Type="Convolution" ID="Convolution Reverb" Bypassed="0" DryGain="-100"
                    WetGain="0" Latency="0" ImpulseLength="1" ProcessInput="1" UseBackgroundThread="1"
                    Predelay="0" HiCut="20000" Damping="-100" FileName="{PROJECT_FOLDER}trumpet/Tom Crown Harmon Stem Out.wav"
-                   min="0" max="2277" loopStart="0" loopEnd="0">
+                   min="0" max="2277" loopStart="0" loopEnd="2277">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
