@@ -58,11 +58,11 @@
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                itemColour="0" bgColour="0" itemColour2="0" textColour="0">
       <Component type="ScriptLabel" id="lblStats" x="-5" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 2.21%" fontSize="11" alignment="left"
+                 parentComponent="pnlStats" text="CPU: 3.31%" fontSize="11" alignment="left"
                  textColour="2983523071" fontName="DejaVu Sans" editable="0" saveInPreset="0"/>
     </Component>
     <Component type="ScriptLabel" id="lblPreset" x="226" y="215" width="246"
-               height="40" parentComponent="guiContainer" text="Trumpet &amp; Cornet&#10;Tom Crown Harmon Stem Out"
+               height="40" parentComponent="guiContainer" text="Trumpet &amp; Cornet&#10;Tom Crown Harmon Stem In"
                multiline="1" editable="0" fontName="Aller" fontSize="16" textColour="3103784959"
                alignment="left" saveInPreset="0"/>
     <Component type="ScriptButton" id="btnPreset" x="224" y="207" width="251"
@@ -98,7 +98,7 @@
                  parentComponent="pnlPreset" fileName="{PROJECT_FOLDER}empty-background.png"/>
       <Component type="ScriptFloatingTile" id="fltPreset" x="10" y="36" width="680"
                  height="256" ContentType="PresetBrowser" bgColour="1908258" itemColour="4292340963"
-                 itemColour2="4294951115" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: true,&#13;&#10;  &quot;ShowFolderButton&quot;: true,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: true,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: true,&#13;&#10;  &quot;NumColumns&quot;: 3&#13;&#10;}"
+                 itemColour2="4294951115" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: false,&#13;&#10;  &quot;ShowFolderButton&quot;: false,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: false,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: false,&#13;&#10;  &quot;NumColumns&quot;: 3&#13;&#10;}"
                  parentComponent="pnlPreset"/>
       <Component type="ScriptButton" id="btnClosePreset" x="666" y="14" width="20"
                  height="20" parentComponent="pnlPreset" filmstripImage="{PROJECT_FOLDER}close-button.png"
