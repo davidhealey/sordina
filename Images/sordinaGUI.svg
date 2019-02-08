@@ -4612,9 +4612,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="294.50134"
-     inkscape:cy="76.859257"
+     inkscape:zoom="1"
+     inkscape:cx="390.95929"
+     inkscape:cy="435.75859"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -12082,7 +12082,9 @@
          sodipodi:role="line">Gain</tspan></text>
     <g
        id="g3070"
-       transform="translate(1.1721989,0.75998068)">
+       transform="translate(1.1721989,0.75998068)"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192">
       <text
          inkscape:export-ydpi="192"
          inkscape:export-xdpi="192"
@@ -13139,5 +13141,57 @@
          d="m 22.8,62.4 c -0.8,2.7 -0.5,5.3 0.9,7.7 h 0.1 c 1.4,2.5 3.5,4 6.2,4.8 2.7,0.7 5.3,0.4 7.8,-1 2.5,-1.5 4,-3.5 4.8,-6.2 v -0.1 c 0.7,-2.7 0.3,-5.3 -1.1,-7.7 -1.4,-2.5 -3.5,-4.1 -6.2,-4.8 -2.7,-0.8 -5.4,-0.4 -7.8,1 -2.5,1.4 -4,3.5 -4.7,6.3 z m 6,-4 c 1.9,-1.1 3.8,-1.4 5.8,-0.8 2,0.5 3.6,1.7 4.7,3.6 1.1,1.8 1.3,3.8 0.8,5.8 -0.6,2 -1.8,3.6 -3.6,4.6 v 0.1 c -1.9,1 -3.8,1.3 -5.8,0.7 C 28.6,71.9 27.1,70.7 26,68.8 25,67 24.7,65.1 25.2,63 25.8,61 27,59.5 28.8,58.4 Z"
          id="path3170" />
     </g>
+    <circle
+       r="16.441963"
+       cy="183.75833"
+       cx="-45.583927"
+       id="circle2913"
+       style="opacity:0.25;fill:#000000;fill-opacity:0.96373058;stroke:none;stroke-width:3.55670881;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal;filter:url(#filter960)"
+       transform="matrix(0.30972901,0,0,0.30972901,106.72283,177.11392)" />
+    <circle
+       style="opacity:1;fill:#808080;fill-opacity:0.96373058;stroke:none;stroke-width:0.98663378;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="circle2915"
+       cx="92.604164"
+       cy="234.02921"
+       r="4.5610137" />
+    <circle
+       r="0.38818699"
+       cy="230.85425"
+       cx="94.06031"
+       id="circle2917"
+       style="opacity:1;fill:#ffffff;fill-opacity:0.96373058;stroke:none;stroke-width:1.32019532;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    <text
+       id="text2921"
+       y="227.2672"
+       x="88.277504"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.21851683px;line-height:1.25;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.95;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.09294711"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.21851683px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.09294711"
+         y="227.2672"
+         x="88.277504"
+         id="tspan2919"
+         sodipodi:role="line">Wah</tspan></text>
+    <circle
+       inkscape:export-ydpi="192"
+       inkscape:export-xdpi="192"
+       transform="matrix(0.30972901,0,0,0.30972901,106.72283,70.75136)"
+       style="opacity:0.25;fill:#000000;fill-opacity:0.96373058;stroke:none;stroke-width:3.55670881;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal;filter:url(#filter960)"
+       id="circle2923"
+       cx="-45.583927"
+       cy="183.75833"
+       r="16.441963" />
+    <text
+       inkscape:export-ydpi="192"
+       inkscape:export-xdpi="192"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.21851683px;line-height:1.25;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.95;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.09294711"
+       x="88.277512"
+       y="120.90467"
+       id="text2927"><tspan
+         sodipodi:role="line"
+         id="tspan2925"
+         x="88.277512"
+         y="120.90467"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.21851683px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.09294711">Wah</tspan></text>
   </g>
 </svg>

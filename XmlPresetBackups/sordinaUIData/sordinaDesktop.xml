@@ -37,11 +37,11 @@
     <Component type="ScriptPanel" id="outputMeter" x="455" y="104" width="16"
                height="100" bgColour="4279505940" itemColour="4290305535" itemColour2="4279505940"
                textColour="4283782485" opaque="1" parentComponent="guiContainer"/>
-    <Component type="ScriptSlider" id="knbWahWah" x="475" y="7" width="128"
-               height="48" parentComponent="guiContainer" mode="Frequency" min="275"
-               max="1200" stepSize="1" suffix=" Hz" middlePosition="500" processorId="wahwaheq"
-               parameterId="Freq" pluginParameterName="WahWah" defaultValue="275"
-               visible="0"/>
+    <Component type="ScriptSlider" id="knbWahWah" x="320" y="40" width="60"
+               height="50" parentComponent="guiContainer" suffix="%" middlePosition="0.5"
+               pluginParameterName="Wah" filmstripImage="{PROJECT_FOLDER}knob-small.png"
+               numStrips="127" scaleFactor="0.5" mouseSensitivity="0.5" mode="NormalizedPercentage"
+               isPluginParameter="1" showTextBox="0"/>
     <Component type="ScriptSlider" id="knbLPF" x="390" y="40" width="60" height="50"
                parentComponent="guiContainer" mode="Frequency" min="500" max="20000"
                stepSize="1" suffix=" Hz" middlePosition="1500" isPluginParameter="1"
@@ -58,11 +58,11 @@
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                itemColour="0" bgColour="0" itemColour2="0" textColour="0">
       <Component type="ScriptLabel" id="lblStats" x="-5" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 3.31%" fontSize="11" alignment="left"
+                 parentComponent="pnlStats" text="CPU: 2.81%" fontSize="11" alignment="left"
                  textColour="2983523071" fontName="DejaVu Sans" editable="0" saveInPreset="0"/>
     </Component>
     <Component type="ScriptLabel" id="lblPreset" x="226" y="215" width="246"
-               height="40" parentComponent="guiContainer" text="Trumpet &amp; Cornet&#10;Tom Crown Harmon Stem In"
+               height="40" parentComponent="guiContainer" text="Trumpet &amp; Cornet&#10;Tom Crown Harmon Stem Out"
                multiline="1" editable="0" fontName="Aller" fontSize="16" textColour="3103784959"
                alignment="left" saveInPreset="0"/>
     <Component type="ScriptButton" id="btnPreset" x="224" y="207" width="251"

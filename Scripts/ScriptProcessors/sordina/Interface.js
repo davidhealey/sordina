@@ -84,8 +84,15 @@ inline function onbtnCloseAboutControl(control, value){pnlAbout.showControl(fals
 inline function onbtnURLControl(control, value){Engine.openWebsite("http://librewave.com");}
 
 //Wahwah control
-const var wahwaheq = Synth.getEffect("wahwaheq");
+const var wahwah = Synth.getEffect("wahwah");
 const var knbWahWah = Content.getComponent("knbWahWah");
+
+knbWahWah.setControlCallback(onknbWahWahControl);
+
+inline function onknbWahWahControl(control, value)
+{
+    Synth.sendController(95, 127*value); //WahWah filter uses CC95
+}
 
 //User controllable filter
 const var filter = Synth.getEffect("filter");
@@ -148,7 +155,7 @@ inline function onvpIRsControl(control, value)
     }
     
     loadIR(folder, file);
-    //enableWahWah(wah);
+    enableWahWah(wah);
 }
 
 //Automatable preset selection menu;
@@ -176,8 +183,9 @@ inline function loadIR(folder, file)
 
 inline function enableWahWah(state)
 {    
+    knbWahWah.setValue(0); //Reset wahwah knob
     knbWahWah.set("enabled", state);
-    wahwaheq.setBypassed(1-state);
+    wahwah.setBypassed(1-state);
 }function onNoteOn()
 {
 	
