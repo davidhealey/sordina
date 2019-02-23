@@ -2,7 +2,7 @@
 
 <ContentProperties DeviceType="Desktop">
   <Component type="ScriptPanel" id="guiContainer" x="0" y="0" width="700"
-             height="600" itemColour="0" itemColour2="0" textColour="0" bgColour="0">
+             height="300" itemColour="0" itemColour2="0" textColour="0" bgColour="0">
     <Component type="ScriptImage" id="imgSkin" x="0" y="0" width="700" height="300"
                parentComponent="guiContainer" scale="0.5" fileName="{PROJECT_FOLDER}skin.png"/>
     <Component type="ScriptSlider" id="knbGain" x="560" y="107" processorId="Output"
@@ -58,11 +58,11 @@
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                itemColour="0" bgColour="0" itemColour2="0" textColour="0">
       <Component type="ScriptLabel" id="lblStats" x="-5" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 2.81%" fontSize="11" alignment="left"
+                 parentComponent="pnlStats" text="CPU: 3.70%" fontSize="11" alignment="left"
                  textColour="2983523071" fontName="DejaVu Sans" editable="0" saveInPreset="0"/>
     </Component>
     <Component type="ScriptLabel" id="lblPreset" x="226" y="215" width="246"
-               height="40" parentComponent="guiContainer" text="Trumpet &amp; Cornet&#10;Tom Crown Harmon Stem Out"
+               height="40" parentComponent="guiContainer" text="Trumpet &amp; Cornet&#10;Humes &amp; Berg Harmon Stem In"
                multiline="1" editable="0" fontName="Aller" fontSize="16" textColour="3103784959"
                alignment="left" saveInPreset="0"/>
     <Component type="ScriptButton" id="btnPreset" x="224" y="207" width="251"
@@ -80,7 +80,7 @@
                parentComponent="guiContainer" bgColour="0" itemColour="0" itemColour2="0"
                borderSize="0" borderRadius="0" textColour="0" visible="0">
       <Component type="ScriptImage" id="imgSettings" x="0" y="0" width="700" height="300"
-                 parentComponent="pnlSettings" fileName="{PROJECT_FOLDER}empty-background.png"
+                 parentComponent="pnlSettings" fileName="{PROJECT_FOLDER}skin-empty.png"
                  scale="0.5"/>
       <Component type="ScriptFloatingTile" id="fltSettings" x="125" y="80" width="450"
                  height="150" parentComponent="pnlSettings" ContentType="CustomSettings"
@@ -92,12 +92,11 @@
                  scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}close-button.png"/>
     </Component>
     <Component type="ScriptPanel" id="pnlPreset" x="0" y="0" width="700" height="300"
-               parentComponent="guiContainer" borderSize="0" borderRadius="0"
-               visible="0">
+               parentComponent="guiContainer" borderSize="0" borderRadius="0">
       <Component type="ScriptImage" id="imgPresetBG" x="0" y="0" width="700" height="300"
-                 parentComponent="pnlPreset" fileName="{PROJECT_FOLDER}empty-background.png"/>
-      <Component type="ScriptFloatingTile" id="fltPreset" x="10" y="36" width="680"
-                 height="256" ContentType="PresetBrowser" bgColour="1908258" itemColour="4292340963"
+                 parentComponent="pnlPreset" fileName="{PROJECT_FOLDER}skin-empty.png"/>
+      <Component type="ScriptFloatingTile" id="fltPreset" x="10" y="38" width="680"
+                 height="232" ContentType="PresetBrowser" bgColour="1908258" itemColour="4292340963"
                  itemColour2="4294951115" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: false,&#13;&#10;  &quot;ShowFolderButton&quot;: false,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: false,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: false,&#13;&#10;  &quot;NumColumns&quot;: 3&#13;&#10;}"
                  parentComponent="pnlPreset"/>
       <Component type="ScriptButton" id="btnClosePreset" x="666" y="14" width="20"
@@ -122,7 +121,7 @@
                  numStrips="6" scaleFactor="0.5" saveInPreset="0"/>
     </Component>
   </Component>
-  <Component type="ScriptPanel" id="pnlAdmin" x="0" y="308" width="611" height="286"
+  <Component type="ScriptPanel" id="pnlAdmin" x="0" y="1" width="611" height="286"
              itemColour="4278190080" itemColour2="4278190080" visible="0">
     <Component type="ScriptComboBox" id="cmbInstrument" x="21" y="16" max="9"
                text="Impulse Responses" width="150" items="French Horn&#10;Piccolo Trumpet&#10;Trumpet &amp; Cornet&#10;Trombone&#10;Bass Trombone&#10;Tuba&#10;Euphonium&#10;Flugelhorn&#10;Saxophone"

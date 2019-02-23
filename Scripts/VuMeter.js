@@ -23,6 +23,8 @@ namespace VuMeter
     	
 		widget.setPaintRoutine(function(g)
 		{
+		    g.rotate(Math.PI / 2.0, [this.getWidth()/2, this.getHeight()/2]);
+
 			g.fillAll(this.get("bgColour"));
 			
 			g.setColour(this.get("itemColour"));

@@ -4604,6 +4604,106 @@
        fx="-68.944493"
        fy="114.76381"
        r="2.2579509" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4714"
+       id="linearGradient2975"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1428571,0,0,2.6666666,509.61817,-613.71049)"
+       x1="86.254166"
+       y1="217.61507"
+       x2="86.254166"
+       y2="296.2063" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient847"
+       id="radialGradient2983"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3411081,0,0,1.9020405,491.27628,-247.46183)"
+       cx="90.336784"
+       cy="121.59053"
+       fx="90.336784"
+       fy="121.59053"
+       r="92.604164" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3015">
+      <rect
+         inkscape:export-ydpi="192"
+         inkscape:export-xdpi="192"
+         y="-70.418694"
+         x="509.61819"
+         height="79.375"
+         width="185.20833"
+         id="rect3017"
+         style="opacity:0.8;fill:url(#linearGradient3019);fill-opacity:1;stroke:none;stroke-width:1.49341643;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4714"
+       id="linearGradient3019"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(509.61819,-288.04373)"
+       x1="86.254166"
+       y1="217.61507"
+       x2="86.254166"
+       y2="296.2063" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3025">
+      <rect
+         inkscape:export-ydpi="192"
+         inkscape:export-xdpi="192"
+         y="-70.418694"
+         x="509.61819"
+         height="79.375"
+         width="185.20833"
+         id="rect3027"
+         style="opacity:0.8;fill:url(#linearGradient3029);fill-opacity:1;stroke:none;stroke-width:1.49341643;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4714"
+       id="linearGradient3029"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(509.61819,-288.04376)"
+       x1="86.254166"
+       y1="217.61507"
+       x2="86.254166"
+       y2="296.2063" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter2999"
+       x="-0.040223006"
+       width="1.080446"
+       y="-0.34289037"
+       height="1.6857807">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="6.274865"
+         id="feGaussianBlur3001" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient896"
+       id="linearGradient2959"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.44000005,222.24999,94.882435)"
+       x1="92.604164"
+       y1="195.97728"
+       x2="92.604164"
+       y2="217.36041" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient884"
+       id="linearGradient2968"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.45152544,222.24999,92.374288)"
+       x1="92.604164"
+       y1="164.70834"
+       x2="92.604164"
+       y2="217.36041" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -4612,9 +4712,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="390.95929"
-     inkscape:cy="435.75859"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="1269.5447"
+     inkscape:cy="388.29999"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4654,6 +4754,16 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-217.625)">
+    <rect
+       y="-33.377026"
+       x="509.61819"
+       height="211.66666"
+       width="211.66667"
+       id="rect2981"
+       style="opacity:1;fill:url(#radialGradient2983);fill-opacity:1;stroke:none;stroke-width:2.60712147;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png" />
     <g
        inkscape:export-xdpi="192"
        inkscape:export-ydpi="192"
@@ -4715,9 +4825,9 @@
          style="opacity:0.8;fill:none;fill-opacity:1;stroke-width:0.23068011" />
     </g>
     <rect
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.26458332"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.35683832"
        id="rect98763"
-       width="254.26459"
+       width="462.49167"
        height="271.46249"
        x="-44.185417"
        y="69.722916" />
@@ -12131,15 +12241,6 @@
        y="163.79605"
        inkscape:export-xdpi="192"
        inkscape:export-ydpi="192" />
-    <rect
-       style="opacity:0.1;fill:url(#linearGradient97729);fill-opacity:1;stroke:none;stroke-width:1.638726;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       id="rect97653"
-       width="185.20833"
-       height="23.893223"
-       x="0"
-       y="166.74429"
-       inkscape:export-xdpi="192"
-       inkscape:export-ydpi="192" />
     <circle
        r="16.441963"
        cy="183.75833"
@@ -12184,6 +12285,15 @@
          x="107.00526"
          id="tspan97645"
          sodipodi:role="line">LPF</tspan></text>
+    <rect
+       style="opacity:0.1;fill:url(#linearGradient97729);fill-opacity:1;stroke:none;stroke-width:1.638726;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect97653"
+       width="185.20833"
+       height="23.893223"
+       x="0"
+       y="166.74429"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192" />
     <rect
        y="184.81667"
        x="0"
@@ -13193,5 +13303,197 @@
          x="88.277512"
          y="120.90467"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.21851683px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.09294711">Wah</tspan></text>
+    <g
+       inkscape:export-ydpi="192"
+       inkscape:export-xdpi="192"
+       id="g2934"
+       transform="translate(223.4222,0.75998068)">
+      <text
+         inkscape:export-ydpi="192"
+         inkscape:export-xdpi="192"
+         id="text2928"
+         y="225.0246"
+         x="-224.72447"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.84638262px;line-height:1.25;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#b0dee9;fill-opacity:0.30901292;stroke:none;stroke-width:0.10796315;filter:url(#filter41459)"
+         xml:space="preserve"
+         transform="matrix(1.0790535,0,0,1.0790535,247.86176,-124.20241)"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.84638262px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#b0dee9;fill-opacity:0.30901292;stroke-width:0.10796315"
+           y="225.0246"
+           x="-224.72447"
+           id="tspan2926"
+           sodipodi:role="line">Sordina</tspan></text>
+      <text
+         inkscape:export-ydpi="192"
+         inkscape:export-xdpi="192"
+         id="text2932"
+         y="118.61118"
+         x="5.3720312"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46666718px;line-height:1.25;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#1c2224;fill-opacity:1;stroke:none;stroke-width:0.11649802"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46666718px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#1c2224;stroke-width:0.11649802"
+           y="118.61118"
+           x="5.3720312"
+           id="tspan2930"
+           sodipodi:role="line">Sordina</tspan></text>
+    </g>
+    <rect
+       y="-70.418694"
+       x="509.61819"
+       height="79.375"
+       width="185.20833"
+       id="rect2979"
+       style="opacity:0.05;fill:#53676c;fill-opacity:1;stroke:none;stroke-width:1.49341643;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal;filter:url(#filter42215)"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath3025)"
+       transform="matrix(1.1428572,0,0,2.6666666,-72.802613,154.40615)"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png" />
+    <rect
+       y="-70.418678"
+       x="509.61819"
+       height="79.375"
+       width="185.20833"
+       id="rect2977"
+       style="opacity:0.2;fill:#666666;fill-opacity:1;stroke:none;stroke-width:1.49341643;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal;filter:url(#filter42813)"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath3015)"
+       transform="matrix(1.1428572,0,0,2.6666666,-72.802613,154.40615)"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png" />
+    <rect
+       style="opacity:0.8;fill:url(#linearGradient2975);fill-opacity:1;stroke:none;stroke-width:2.60712147;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect2973"
+       width="211.66667"
+       height="211.66666"
+       x="509.61819"
+       y="-33.377026"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png" />
+    <g
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       id="g3039"
+       transform="matrix(4.4531516,0,0,4.4531516,519.59261,-445.6118)"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png">
+      <text
+         inkscape:export-ydpi="192"
+         inkscape:export-xdpi="192"
+         id="text3033"
+         y="225.0246"
+         x="-224.72447"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.84638262px;line-height:1.25;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#b0dee9;fill-opacity:0.30901292;stroke:none;stroke-width:0.10796315;filter:url(#filter41459)"
+         xml:space="preserve"
+         transform="matrix(1.0790535,0,0,1.0790535,247.86176,-124.20241)"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.84638262px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#b0dee9;fill-opacity:0.30901292;stroke-width:0.10796315"
+           y="225.0246"
+           x="-224.72447"
+           id="tspan3031"
+           sodipodi:role="line">Sordina</tspan></text>
+      <text
+         inkscape:export-ydpi="192"
+         inkscape:export-xdpi="192"
+         id="text3037"
+         y="118.61118"
+         x="5.3720312"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46666718px;line-height:1.25;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#1c2224;fill-opacity:1;stroke:none;stroke-width:0.11649802"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46666718px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#1c2224;stroke-width:0.11649802"
+           y="118.61118"
+           x="5.3720312"
+           id="tspan3035"
+           sodipodi:role="line">Sordina</tspan></text>
+    </g>
+    <text
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       id="text3043"
+       y="225.0246"
+       x="-224.72447"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.84638262px;line-height:1.25;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.1;fill:#b0dee9;fill-opacity:0.30901292;stroke:none;stroke-width:0.10796315;filter:url(#filter41459)"
+       xml:space="preserve"
+       transform="matrix(4.8051889,0,0,4.8051889,1623.3586,-998.70398)"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.84638262px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#b0dee9;fill-opacity:0.30901292;stroke-width:0.10796315"
+         y="225.0246"
+         x="-224.72447"
+         id="tspan3041"
+         sodipodi:role="line">Sordina</tspan></text>
+    <text
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       id="text3047"
+       y="82.581718"
+       x="543.51508"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.70335388px;line-height:1.25;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#1c2224;fill-opacity:1;stroke:none;stroke-width:0.51878339"
+       xml:space="preserve"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.70335388px;font-family:'Classic Robot';-inkscape-font-specification:'Classic Robot, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#1c2224;stroke-width:0.51878339"
+         y="82.581718"
+         x="543.51508"
+         id="tspan3045"
+         sodipodi:role="line">Sordina</tspan></text>
+    <g
+       transform="matrix(0.14659551,0,0,0.14659551,595.24223,149.80082)"
+       id="layer1-6"
+       inkscape:label="Layer 1"
+       style="opacity:0.5;fill:#ffffff;filter:url(#filter2999)"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         id="path5361"
+         transform="matrix(0.26458333,0,0,0.26458333,-182.94014,29.444224)"
+         d="M 504.92773,133.28516 V 299.28125 H 623.80078 V 258.07812 H 554.18555 V 133.28516 Z m 135.97657,0 v 165.99609 h 49.25195 V 133.28516 Z m 77.23828,0 v 165.99609 h 85.00976 c 39.78157,0 65.35743,-17.99818 65.35743,-46.41406 0,-21.07503 -13.02496,-37.64977 -33.38868,-41.91211 17.28435,-4.97281 28.17578,-18.94513 28.17579,-35.75781 0,-25.57405 -24.86385,-41.91211 -63.69532,-41.91211 z m 170.6582,0 v 165.99609 h 49.25781 v -44.75586 h 26.04688 l 22.02344,44.75586 h 55.88279 l -33.623,-54.22656 c 17.9969,-10.18229 27.9375,-28.17973 27.9375,-52.80664 0,-37.65104 -25.5724,-58.96289 -70.09182,-58.96289 z m 171.58792,0 v 165.99609 h 138.0547 v -37.88867 h -88.8008 v -26.28516 h 78.3847 V 197.2207 h -78.3847 v -26.04882 h 86.4336 v -37.88672 z m 148.3789,0.23632 54.9375,165.75977 h 32.6758 l 37.416,-124.32031 36.9394,124.32031 h 32.9141 l 54.9414,-165.75977 h -32.6816 l -37.6485,130.47657 -38.1269,-130.47657 h -31.2559 l -37.8906,130.47657 -38.1231,-130.47657 z m 308.3222,0 -72.6953,165.75977 h 32.9141 l 14.6797,-35.04687 h 80.9844 l 14.6855,35.04687 h 34.0977 l -71.75,-165.75977 z m 92.6622,0 65.5957,165.75977 h 32.914 l 66.3047,-165.75977 h -32.6816 l -49.2539,130.47657 -48.7813,-130.47657 z m 185.9277,0 V 299.28125 H 1920 v -27.70508 h -92.5879 v -41.67773 h 80.5117 v -27.70508 h -80.5117 v -40.9668 h 89.7461 v -27.70508 z m -262.959,33.86133 28.8887,69.61914 h -58.252 z m -765.54687,2.8418 h 29.83984 c 9.70892,0 15.86328,5.20969 15.86328,13.73437 0,8.76137 -6.15436,14.44532 -15.86328,14.44532 h -29.83984 z m 170.88476,0.94727 h 28.17579 c 14.68427,0 23.20703,8.05146 23.20703,22.49609 0,14.91841 -8.52276,22.9707 -23.20703,22.9707 h -28.17579 z m -170.88476,61.0957 h 29.83984 c 12.54653,-0.25448 20.60156,5.4449 20.60156,14.44336 0,9.7085 -8.05503,15.86559 -20.60156,15.6289 h -29.83984 z"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:5.58283234px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.481637"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="/media/dave/Work 1/Xtant Audio/Products/Virtual Instruments/Misc/Sordina/HISE/sordina-cover.png"
+       style="opacity:0.8;fill:#ffffff"
+       inkscape:label="Layer 1"
+       id="g2977"
+       transform="matrix(0.14659551,0,0,0.14659551,595.24223,149.80082)">
+      <path
+         inkscape:connector-curvature="0"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:5.58283234px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.481637"
+         d="M 504.92773,133.28516 V 299.28125 H 623.80078 V 258.07812 H 554.18555 V 133.28516 Z m 135.97657,0 v 165.99609 h 49.25195 V 133.28516 Z m 77.23828,0 v 165.99609 h 85.00976 c 39.78157,0 65.35743,-17.99818 65.35743,-46.41406 0,-21.07503 -13.02496,-37.64977 -33.38868,-41.91211 17.28435,-4.97281 28.17578,-18.94513 28.17579,-35.75781 0,-25.57405 -24.86385,-41.91211 -63.69532,-41.91211 z m 170.6582,0 v 165.99609 h 49.25781 v -44.75586 h 26.04688 l 22.02344,44.75586 h 55.88279 l -33.623,-54.22656 c 17.9969,-10.18229 27.9375,-28.17973 27.9375,-52.80664 0,-37.65104 -25.5724,-58.96289 -70.09182,-58.96289 z m 171.58792,0 v 165.99609 h 138.0547 v -37.88867 h -88.8008 v -26.28516 h 78.3847 V 197.2207 h -78.3847 v -26.04882 h 86.4336 v -37.88672 z m 148.3789,0.23632 54.9375,165.75977 h 32.6758 l 37.416,-124.32031 36.9394,124.32031 h 32.9141 l 54.9414,-165.75977 h -32.6816 l -37.6485,130.47657 -38.1269,-130.47657 h -31.2559 l -37.8906,130.47657 -38.1231,-130.47657 z m 308.3222,0 -72.6953,165.75977 h 32.9141 l 14.6797,-35.04687 h 80.9844 l 14.6855,35.04687 h 34.0977 l -71.75,-165.75977 z m 92.6622,0 65.5957,165.75977 h 32.914 l 66.3047,-165.75977 h -32.6816 l -49.2539,130.47657 -48.7813,-130.47657 z m 185.9277,0 V 299.28125 H 1920 v -27.70508 h -92.5879 v -41.67773 h 80.5117 v -27.70508 h -80.5117 v -40.9668 h 89.7461 v -27.70508 z m -262.959,33.86133 28.8887,69.61914 h -58.252 z m -765.54687,2.8418 h 29.83984 c 9.70892,0 15.86328,5.20969 15.86328,13.73437 0,8.76137 -6.15436,14.44532 -15.86328,14.44532 h -29.83984 z m 170.88476,0.94727 h 28.17579 c 14.68427,0 23.20703,8.05146 23.20703,22.49609 0,14.91841 -8.52276,22.9707 -23.20703,22.9707 h -28.17579 z m -170.88476,61.0957 h 29.83984 c 12.54653,-0.25448 20.60156,5.4449 20.60156,14.44336 0,9.7085 -8.05503,15.86559 -20.60156,15.6289 h -29.83984 z"
+         transform="matrix(0.26458333,0,0,0.26458333,-182.94014,29.444224)"
+         id="path2975" />
+    </g>
+    <rect
+       inkscape:export-ydpi="192"
+       inkscape:export-xdpi="192"
+       y="166.74426"
+       x="222.25"
+       height="23.893223"
+       width="185.20833"
+       id="rect2966"
+       style="opacity:0.1;fill:url(#linearGradient2968);fill-opacity:1;stroke:none;stroke-width:1.638726;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    <rect
+       inkscape:export-ydpi="192"
+       inkscape:export-xdpi="192"
+       style="opacity:0.5;fill:url(#linearGradient2959);fill-opacity:1;stroke:none;stroke-width:1.21936929;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect2953"
+       width="185.20833"
+       height="5.8208346"
+       x="222.25"
+       y="184.81665" />
+    <path
+       inkscape:export-ydpi="192"
+       inkscape:export-xdpi="192"
+       inkscape:connector-curvature="0"
+       style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:5.58283234px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.97951651;filter:url(#filter1001)"
+       d="m 303.58051,186.40456 v 2.64492 h 1.89408 v -0.65652 h -1.10922 v -1.9884 z m 2.1666,0 v 2.64492 h 0.78477 v -2.64492 z m 1.23069,0 v 2.64492 h 1.35452 c 0.63387,0 1.04139,-0.28678 1.04139,-0.73954 0,-0.33581 -0.20754,-0.5999 -0.53201,-0.66782 0.2754,-0.0792 0.44894,-0.30186 0.44894,-0.56975 0,-0.40749 -0.39617,-0.66781 -1.0149,-0.66781 z m 2.71921,0 v 2.64492 h 0.78486 v -0.71313 h 0.41502 l 0.35092,0.71313 h 0.89042 l -0.53574,-0.86403 c 0.28675,-0.16224 0.44514,-0.449 0.44514,-0.8414 0,-0.59992 -0.40746,-0.93949 -1.11682,-0.93949 z m 2.73403,0 v 2.64492 h 2.19972 v -0.6037 h -1.41492 v -0.41882 h 1.24895 v -0.60368 h -1.24895 v -0.41505 h 1.3772 v -0.60367 z m 2.36422,0.004 0.87535,2.64116 h 0.52065 l 0.59617,-1.98087 0.58858,1.98087 h 0.52444 l 0.87542,-2.64116 h -0.52073 l -0.59988,2.07897 -0.6075,-2.07897 h -0.49803 l -0.60373,2.07897 -0.60744,-2.07897 z m 4.9127,0 -1.1583,2.64116 h 0.52444 l 0.2339,-0.55842 h 1.29038 l 0.23399,0.55842 h 0.54331 l -1.14324,-2.64116 z m 1.47645,0 1.04519,2.64116 h 0.52444 l 1.05648,-2.64116 h -0.52074 l -0.78479,2.07897 -0.77728,-2.07897 z m 2.96252,0 v 2.64116 h 1.98088 v -0.44144 h -1.47527 v -0.66408 h 1.28285 v -0.44144 h -1.28285 v -0.65275 h 1.42999 v -0.44145 z m -4.18991,0.53954 0.4603,1.10929 h -0.92817 z m -12.19797,0.0453 h 0.47546 c 0.1547,0 0.25276,0.083 0.25276,0.21884 0,0.1396 -0.0981,0.23017 -0.25276,0.23017 h -0.47546 z m 2.72282,0.0151 h 0.44894 c 0.23398,0 0.36978,0.12829 0.36978,0.35845 0,0.23771 -0.1358,0.36601 -0.36978,0.36601 h -0.44894 z m -2.72282,0.97348 h 0.47546 c 0.19991,-0.004 0.32826,0.0868 0.32826,0.23014 0,0.15469 -0.12835,0.25279 -0.32826,0.24902 h -0.47546 z"
+       id="path2955" />
+    <path
+       inkscape:export-ydpi="192"
+       inkscape:export-xdpi="192"
+       id="path2957"
+       d="m 303.58051,185.87539 v 2.64492 h 1.89408 v -0.65652 h -1.10922 v -1.9884 z m 2.1666,0 v 2.64492 h 0.78477 v -2.64492 z m 1.23069,0 v 2.64492 h 1.35452 c 0.63387,0 1.04139,-0.28678 1.04139,-0.73954 0,-0.33581 -0.20754,-0.5999 -0.53201,-0.66782 0.2754,-0.0792 0.44894,-0.30186 0.44894,-0.56975 0,-0.40749 -0.39617,-0.66781 -1.0149,-0.66781 z m 2.71921,0 v 2.64492 h 0.78486 v -0.71313 h 0.41502 l 0.35092,0.71313 h 0.89042 l -0.53574,-0.86403 c 0.28675,-0.16224 0.44514,-0.449 0.44514,-0.8414 0,-0.59992 -0.40746,-0.93949 -1.11682,-0.93949 z m 2.73403,0 v 2.64492 h 2.19972 v -0.6037 h -1.41492 v -0.41882 h 1.24895 v -0.60368 h -1.24895 v -0.41505 h 1.3772 v -0.60367 z m 2.36422,0.004 0.87535,2.64116 h 0.52065 l 0.59617,-1.98087 0.58858,1.98087 h 0.52444 l 0.87542,-2.64116 h -0.52073 l -0.59988,2.07897 -0.6075,-2.07897 h -0.49803 l -0.60373,2.07897 -0.60744,-2.07897 z m 4.9127,0 -1.1583,2.64116 h 0.52444 l 0.2339,-0.55842 h 1.29038 l 0.23399,0.55842 h 0.54331 l -1.14324,-2.64116 z m 1.47645,0 1.04519,2.64116 h 0.52444 l 1.05648,-2.64116 h -0.52074 l -0.78479,2.07897 -0.77728,-2.07897 z m 2.96252,0 v 2.64116 h 1.98088 v -0.44144 h -1.47527 v -0.66408 h 1.28285 v -0.44144 h -1.28285 v -0.65275 h 1.42999 v -0.44145 z m -4.18991,0.53954 0.4603,1.10929 h -0.92817 z m -12.19797,0.0453 h 0.47546 c 0.1547,0 0.25276,0.083 0.25276,0.21884 0,0.1396 -0.0981,0.23017 -0.25276,0.23017 h -0.47546 z m 2.72282,0.0151 h 0.44894 c 0.23398,0 0.36978,0.12829 0.36978,0.35845 0,0.23771 -0.1358,0.36601 -0.36978,0.36601 h -0.44894 z m -2.72282,0.97348 h 0.47546 c 0.19991,-0.004 0.32826,0.0868 0.32826,0.23014 0,0.15469 -0.12835,0.25279 -0.32826,0.24902 h -0.47546 z"
+       style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:5.58283234px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dbe3e2;fill-opacity:1;stroke:none;stroke-width:1.97951651"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
