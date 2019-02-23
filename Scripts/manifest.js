@@ -48,10 +48,13 @@ namespace Manifest
         "Trumpet & Cornet":{
             "folder":"trumpet",
             "impulses":{
+              "Alessi Vacchiano Straight": {file:"Alessi Vacchiano Straight.wav"},
               "Jo Ral Brass Bottom Bucket": {file:"Jo Ral Brass Bottom Bucket.wav"},
               "Jo Ral Brass Bottom Straight": {file:"Jo Ral Brass Bottom Straight.wav"},
               "Jo Ral Bubble Stem In": {file:"Jo Ral Bubble Stem In.wav", wahwah:true},
               "Jo Ral Bubble Stem Out": {file:"Jo Ral Bubble Stem Out.wav", wahwah:true},
+              "Jo Ral Bubble 2 Stem In": {file:"Jo Ral Bubble Stem In 2.wav", wahwah:true},
+              "Jo Ral Bubble 2 Stem Out": {file:"Jo Ral Bubble Stem Out 2.wav", wahwah:true},
               "Jo Ral Plastic Straight": {file:"Jo Ral Plastic Straight.wav"},
               "Jo Ral TriTone Cup": {file:"Jo Ral TriTone Cup.wav"},
               "Denis Wick Adjustable Cup": {file:"Denis Wick Adjustable Cup.wav"},
@@ -62,6 +65,7 @@ namespace Manifest
               "Denis Wick Practice": {file:"Denis Wick Practice.wav"},
               "Denis Wick Straight": {file:"Denis Wick Straight.wav"},
               "Humes & Berg Cup": {file:"Humes and Berg Cup.wav"},
+              "Humes & Berg Cup 2": {file:"Humes and Berg Cup 2.wav"},
               "Humes & Berg Harmon Stem In": {file:"Humes and Berg Harmon Stem In.wav", wahwah:true},
               "Humes & Berg Harmon Stem Out": {file:"Humes and Berg Harmon Stem Out.wav", wahwah:true},
               "Humes & Berg Melowah": {file:"Humes and Berg Melowah.wav"},
@@ -72,7 +76,8 @@ namespace Manifest
               "Tom Crown Harmon Stem Out": {file:"Tom Crown Harmon Stem Out.wav", wahwah:true},
               "Pro Tec Fiber Straight": {file:"Pro Tec Fiber Straight.wav"},
               "Plunger 1": {file:"Plunger.wav", wahwah:true}, //Not used
-              "Plunger": {file:"Plunger 2.wav", wahwah:true},
+              "Plunger 2": {file:"Plunger 2.wav", wahwah:true},
+              "Plunger 3": {file:"Plunger 3.wav", wahwah:true},
               "Mute Tube": {file:"Mute Tube.wav"},
               "Felt": {file:"Felt.wav"},
               "Leblanc Straight": {file:"Leblanc Straight.wav"},
@@ -82,9 +87,15 @@ namespace Manifest
         "Trombone":{
             "folder":"trombone",
             "impulses":{
+              "Alessi Vacchiano Straight": {file:"Alessi Vacchiano Straight.wav"},
               "Buzz" : {file:"Buzz.wav"},
+              "Denis Wick Cup" : {file:"Denis Wick Cup.wav"},
+              "Harmon Stem In" : {file:"Harmon Stem In.wav", wahwah:true},
+              "Harmon Stem Out" : {file:"Harmon Stem Out.wav", wahwah:true},
+              "Humes & Berg Bucket" : {file:"Humes and Berg Bucket.wav"},
               "Humes & Berg Cleartone" : {file:"Humes and Berg Cleartone.wav"},
               "Humes & Berg Cup" : {file:"Humes and Berg Cup.wav"},
+              "Humes & Berg Cup 2" : {file:"Humes and Berg Cup 2.wav"},
               "Humes & Berg Derby" : {file:"Humes and Berg Derby.wav", wahwah:true},
               "Humes & Berg Mic A Mute" : {file:"Humes and Berg Mic A Mute.wav"},
               "Humes & Berg Pixie" : {file:"Humes and Berg Pixie.wav", wahwah:true},
@@ -99,8 +110,11 @@ namespace Manifest
               "Jo Ral Bucket" : {file:"Jo Ral Bucket.wav"},
               "Jo Ral Cup" : {file:"Jo Ral Cup.wav"},
               "Liberty Practice" : {file:"Liberty Practice.wav"},
-              "Plunger" : {file:"Plunger.wav", wahwah:true},
-              "Soulo Straight" : {file:"Soulo Straight.wav"}
+              "Plunger 1" : {file:"Plunger.wav", wahwah:true},
+              "Solotone" : {file:"Solotone.wav"},
+              "Soulo Straight" : {file:"Soulo Straight.wav"},
+              "Tom Crown Straight": {file:"Tom Crown Straight.wav"},
+              "Plunger 2" : {file:"Plunger 2.wav", wahwah:true}
             }
         },
         "Bass Trombone":{
@@ -118,7 +132,8 @@ namespace Manifest
               "Jo Ral Bucket": {file:"Jo Ral Bucket.wav"},
               "Denis Wick Straight": {file:"Denis Wick Straight.wav"},
               "Denis Wick Cup": {file:"Denis Wick Cup.wav"},
-              "Plunger": {file:"Plunger.wav", wahwah:true}
+              "Plunger": {file:"Plunger.wav", wahwah:true},
+              "Plunger 2" : {file:"Plunger 2.wav", wahwah:true}
             }
         },
         "Tuba":{
