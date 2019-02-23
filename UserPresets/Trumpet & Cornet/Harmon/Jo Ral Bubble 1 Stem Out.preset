@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset Version="1.0.0">
+  <Content Processor="Interface">
+    <Control type="ScriptSlider" id="knbGain" value="27"/>
+    <Control type="ScriptSlider" id="knbMix" value="1"/>
+    <Control type="ScriptSlider" id="knbWahWah" value="0"/>
+    <Control type="ScriptSlider" id="knbLPF" value="20000"/>
+    <Control type="ScriptSlider" id="knbHPF" value="20"/>
+    <Control type="ScriptComboBox" id="cmbInstrument" value="3"/>
+    <Control type="ScriptedViewport" id="vpIRs" value="4"/>
+  </Content>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Preset>

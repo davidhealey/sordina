@@ -8,7 +8,7 @@
     <Control type="ScriptSlider" id="knbLPF" value="20000"/>
     <Control type="ScriptSlider" id="knbHPF" value="20"/>
     <Control type="ScriptComboBox" id="cmbInstrument" value="3"/>
-    <Control type="ScriptedViewport" id="vpIRs" value="21"/>
+    <Control type="ScriptedViewport" id="vpIRs" value="25"/>
   </Content>
   <MidiAutomation/>
   <MPEData Enabled="0"/>

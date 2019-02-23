@@ -5,10 +5,10 @@
     <Control type="ScriptSlider" id="knbGain" value="23"/>
     <Control type="ScriptSlider" id="knbMix" value="1"/>
     <Control type="ScriptSlider" id="knbWahWah" value="0"/>
-    <Control type="ScriptSlider" id="knbLPF" value="20000"/>
+    <Control type="ScriptSlider" id="knbLPF" value="5390"/>
     <Control type="ScriptSlider" id="knbHPF" value="20"/>
     <Control type="ScriptComboBox" id="cmbInstrument" value="3"/>
-    <Control type="ScriptedViewport" id="vpIRs" value="9"/>
+    <Control type="ScriptedViewport" id="vpIRs" value="12"/>
   </Content>
   <MidiAutomation/>
   <MPEData Enabled="0"/>
