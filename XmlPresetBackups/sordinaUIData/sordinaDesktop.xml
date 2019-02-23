@@ -58,7 +58,7 @@
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                itemColour="0" bgColour="0" itemColour2="0" textColour="0">
       <Component type="ScriptLabel" id="lblStats" x="-5" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 4.09%" fontSize="11" alignment="left"
+                 parentComponent="pnlStats" text="CPU: 1.83%" fontSize="11" alignment="left"
                  textColour="2983523071" fontName="DejaVu Sans" editable="0" saveInPreset="0"/>
     </Component>
     <Component type="ScriptLabel" id="lblPreset" x="226" y="215" width="246"
