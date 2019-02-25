@@ -85,6 +85,7 @@ inline function onbtnURLControl(control, value){Engine.openWebsite("http://libre
 
 //Wahwah control
 const var wahwah = Synth.getEffect("wahwah");
+const var wahGainCC = Synth.getModulator("wahGainCC");
 const var knbWahWah = Content.getComponent("knbWahWah");
 
 knbWahWah.setControlCallback(onknbWahWahControl);
@@ -92,6 +93,14 @@ knbWahWah.setControlCallback(onknbWahWahControl);
 inline function onknbWahWahControl(control, value)
 {
     Synth.sendController(95, 127*value); //WahWah filter uses CC95
+}
+
+inline function enableWahWah(state)
+{    
+    knbWahWah.setValue(0); //Reset wahwah knob
+    knbWahWah.set("enabled", state);
+    wahwah.setBypassed(1-state);
+    wahGainCC.setBypassed(1-state);
 }
 
 //User controllable filter
@@ -175,17 +184,9 @@ VuMeter.setModule(inputMeter, Synth.getEffect("Input"));
 const var outputMeter = VuMeter.createVuMeter("outputMeter");
 VuMeter.setModule(outputMeter, Synth.getEffect("Output"));
 
-//Functions
 inline function loadIR(folder, file)
 {            
     ConvolutionReverb.setFile("{PROJECT_FOLDER}"+folder+"/"+file);
-}
-
-inline function enableWahWah(state)
-{    
-    knbWahWah.setValue(0); //Reset wahwah knob
-    knbWahWah.set("enabled", state);
-    wahwah.setBypassed(1-state);
 }function onNoteOn()
 {
 	
