@@ -47,7 +47,7 @@
     <Processor Type="EffectChain" ID="FX" Bypassed="0">
       <ChildProcessors>
         <Processor Type="PolyphonicFilter" ID="wahwah" Bypassed="0" Gain="9" Frequency="1500"
-                   Q="1" Mode="4" Quality="1.0584719e+09" BipolarIntensity="2.0816682e-17">
+                   Q="1" Mode="4" Quality="1.0578166e+09" BipolarIntensity="2.0816682e-17">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                        Intensity="1">

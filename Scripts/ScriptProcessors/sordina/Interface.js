@@ -26,6 +26,15 @@ Synth.deferCallbacks(true);
 
 Engine.loadFontAs("{PROJECT_FOLDER}Aller_Rg.ttf", "Aller");
 
+Content.setValuePopupData(
+{
+    "fontName": "Aller",
+    "fontSize": 17,
+    "itemColour": 0,
+    "itemColour2": 0xFF222222,
+    "borderSize": 0
+});
+
 reg i;
 const var ConvolutionReverb = Synth.getAudioSampleProcessor("Convolution Reverb"); //Convo reverb effect
 
