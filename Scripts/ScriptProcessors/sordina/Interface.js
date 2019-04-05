@@ -20,7 +20,7 @@
 include("manifest.js");
 include("VuMeter.js");
 
-Content.makeFrontInterface(700, 300);
+Content.makeFrontInterface(700, 600);
 
 Synth.deferCallbacks(true);
 
@@ -51,46 +51,21 @@ pnlStats.setTimerCallback(function()
     lblStats.set("text", "CPU: " + Engine.doubleToString(Engine.getCpuUsage(), 2) + "%");
 });
 
-//Settings panel
-const var btnSettings = Content.getComponent("btnSettings");
-const var btnCloseSettings = Content.getComponent("btnCloseSettings");
-const var pnlSettings = Content.getComponent("pnlSettings");
-pnlSettings.showControl(false);
-btnSettings.setControlCallback(onbtnSettingsControl);
-btnCloseSettings.setControlCallback(onbtnCloseSettingsControl);
-
-inline function onbtnSettingsControl(control, value) {pnlSettings.showControl(true);}
-inline function onbtnCloseSettingsControl(control, value) 
-{
-    pnlSettings.showControl(false);
-    btnSettings.setValue(0); //Reset settings button
-}
-
-//Preset browser
-const var lblPreset = Content.getComponent("lblPreset"); //For displaying preset name
-const var pnlPreset = Content.getComponent("pnlPreset"); //Preset browser
-const var btnPreset = Content.getComponent("btnPreset"); //Button to show preset browser
-const var btnClosePreset = Content.getComponent("btnClosePreset"); //Button to hide preset browser
-pnlPreset.showControl(false);
-btnPreset.setControlCallback(onbtnPresetControl);
-btnClosePreset.setControlCallback(onbtnClosePresetControl);
-
-inline function onbtnPresetControl(control, value){pnlPreset.showControl(true);}
-inline function onbtnClosePresetControl(control, value){pnlPreset.showControl(false);}
+Engine.loadUserPreset("Trumpet & Cornet/Harmon/Jo Ral Bubble Stem In");
 
 //About panel
-const var pnlAbout = Content.getComponent("pnlAbout"); //About panel
-const var btnAbout = Content.getComponent("btnAbout"); //Button to show about panel
-const var btnCloseAbout = Content.getComponent("btnCloseAbout"); //Button to hide about panel
-const var btnURL = Content.getComponent("btnURL");
-pnlAbout.showControl(false);
-btnAbout.setControlCallback(onbtnAboutControl);
-btnCloseAbout.setControlCallback(onbtnCloseAboutControl);
-btnURL.setControlCallback(onbtnURLControl);
+inline function onbtnAboutControl(control, value)
+{
+    Content.getComponent("guiContainer").set("enabled", 1-value);
+    Content.getComponent("pnlAbout").showControl(value);
+}
+Content.getComponent("btnAbout").setControlCallback(onbtnAboutControl);
 
-inline function onbtnAboutControl(control, value){pnlAbout.showControl(true);}
-inline function onbtnCloseAboutControl(control, value){pnlAbout.showControl(false);}
-inline function onbtnURLControl(control, value){Engine.openWebsite("http://librewave.com");}
+inline function onbtnURLControl(control, value)
+{
+    Engine.openWebsite("https://librewave.com");
+}
+Content.getComponent("btnURL").setControlCallback(onbtnURLControl);
 
 //Wahwah control
 const var wahwah = Synth.getEffect("wahwah");
@@ -165,15 +140,14 @@ inline function onvpIRsControl(control, value)
     //Display selected instrument and preset name
     if (Engine.getCurrentUserPresetName() == "")
     {
-        lblPreset.set("text", "Trumpet & Cornet\nTom Crown Harmon Stem Out");
+        ConvolutionReverb.setBypassed(true);
     }
     else
     {
-        lblPreset.set("text", instrument + "\n" + irName);
+        ConvolutionReverb.setBypassed(false);
+        loadIR(folder, file);
+        enableWahWah(wah);
     }
-    
-    loadIR(folder, file);
-    enableWahWah(wah);
 }
 
 //Automatable preset selection menu;
