@@ -47,7 +47,7 @@
     <Processor Type="EffectChain" ID="FX" Bypassed="0">
       <ChildProcessors>
         <Processor Type="PolyphonicFilter" ID="wahwah" Bypassed="0" Gain="9" Frequency="1500"
-                   Q="1" Mode="4" Quality="1.0587341e+09" BipolarIntensity="2.0816682e-17">
+                   Q="1" Mode="4" Quality="1.0518528e+09" BipolarIntensity="2.0816682e-17">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                        Intensity="1">
@@ -103,7 +103,7 @@
         <Processor Type="Convolution" ID="Convolution Reverb" Bypassed="0" DryGain="-100"
                    WetGain="0" Latency="0" ImpulseLength="1" ProcessInput="1" UseBackgroundThread="1"
                    Predelay="0" HiCut="20000" Damping="-100" FileName="{PROJECT_FOLDER}trumpet/Jo Ral Bubble Stem In.wav"
-                   min="0" max="2277" loopStart="0" loopEnd="0">
+                   min="0" max="2277" loopStart="0" loopEnd="2277">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
