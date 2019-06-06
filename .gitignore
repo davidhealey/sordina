@@ -1,5 +1,8 @@
-/Binaries/
-/Presets/
-/Samples/
-/PooledResources/
-/Deliverables/
+Binaries/
+build/
+Documentation/
+Images/dev
+Presets/
+Samples/
+PooledResources/
+Deliverables/

@@ -72,7 +72,7 @@ echo Setting project folder
 
 echo Exporting %plugin_name% Plugins
 %hise_path% clean
-%hise_path% export_ci %plugin_project_path% -t:effect -p:VST -a:x86x64
+%hise_path% export_ci %plugin_project_path% -ipp -t:effect -p:VST -a:x86x64
 call Binaries/batchCompile.bat
 
 :CopyFiles
