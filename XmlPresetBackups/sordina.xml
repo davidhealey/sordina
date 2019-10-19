@@ -9,7 +9,7 @@
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="knbGain" value="20"/>
+            <Control type="ScriptSlider" id="knbGain" value="1.49012e-06"/>
             <Control type="ScriptSlider" id="knbMix" value="1"/>
             <Control type="ScriptSlider" id="knbWahWah" value="0"/>
             <Control type="ScriptSlider" id="knbLPF" value="20000"/>
@@ -26,7 +26,7 @@
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
-              <Component type="ScriptSlider" id="knbMix" x="0" y="0" stepSize="0.0099999998"/>
+              <Component type="ScriptSlider" id="knbMix" x="0" y="0" stepSize="0.01"/>
             </ContentProperties>
           </UIData>
         </Processor>
@@ -34,7 +34,7 @@
     </Processor>
     <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
       <ChildProcessors>
-        <Processor Type="MidiController" ID="wahGainCC" Bypassed="0" Intensity="0.40000001"
+        <Processor Type="MidiController" ID="wahGainCC" Bypassed="0" Intensity="0.4"
                    UseTable="0" Inverted="0" ControllerNumber="95" SmoothTime="500"
                    DefaultValue="0">
           <ChildProcessors/>
@@ -47,7 +47,7 @@
     <Processor Type="EffectChain" ID="FX" Bypassed="0">
       <ChildProcessors>
         <Processor Type="PolyphonicFilter" ID="wahwah" Bypassed="0" Gain="9" Frequency="1500"
-                   Q="1" Mode="4" Quality="1.0518528e+09" BipolarIntensity="2.0816682e-17">
+                   Q="1" Mode="4" Quality="1.06011e+09" BipolarIntensity="2.08167e-17">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                        Intensity="1">
@@ -61,7 +61,7 @@
             </Processor>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors>
-                <Processor Type="MidiController" ID="Midi Controller2" Bypassed="0" Intensity="0.80000001"
+                <Processor Type="MidiController" ID="Midi Controller2" Bypassed="0" Intensity="0.8"
                            UseTable="1" Inverted="1" ControllerNumber="95" SmoothTime="1000"
                            DefaultValue="0" ControllerTableData="36...............vOFFFH+.........vO...f+....9C...vO">
                   <ChildProcessors/>
@@ -78,7 +78,7 @@
           </ChildProcessors>
         </Processor>
         <Processor Type="SimpleGain" ID="Input" Bypassed="0" Gain="0" Delay="0"
-                   Width="100" Balance="0">
+                   Width="100" Balance="0" InvertPolarity="0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>
@@ -100,21 +100,21 @@
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="Convolution" ID="Convolution Reverb" Bypassed="0" DryGain="-100"
+        <Processor Type="Convolution" ID="Convolution Reverb" Bypassed="1" DryGain="-100"
                    WetGain="0" Latency="0" ImpulseLength="1" ProcessInput="1" UseBackgroundThread="1"
-                   Predelay="0" HiCut="20000" Damping="-100" FileName="{PROJECT_FOLDER}trumpet/Jo Ral Bubble Stem In.wav"
-                   min="0" max="2277" loopStart="0" loopEnd="2277">
+                   Predelay="0" HiCut="20000" Damping="-100" FFTType="0" FileName=""
+                   min="0" max="0" loopStart="0" loopEnd="0">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
         <Processor Type="CurveEq" ID="filter" Bypassed="0" NumFilters="2" Band0="1"
                    Band1="20" Band2="1" Band3="1" Band4="1" Band5="0" Band6="20000"
-                   Band7="1" Band8="1" Band9="0">
+                   Band7="1" Band8="1" Band9="0" FFTEnabled="0">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="SimpleGain" ID="Output" Bypassed="0" Gain="20" Delay="0"
-                   Width="100" Balance="0">
+        <Processor Type="SimpleGain" ID="Output" Bypassed="0" Gain="1.03544e-06"
+                   Delay="0" Width="100" Balance="0" InvertPolarity="0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>
@@ -141,14 +141,14 @@
   </ChildProcessors>
   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
   <macro_controls>
-    <macro name="Macro 1" value="0" midi_cc="-1"/>
-    <macro name="Macro 2" value="0" midi_cc="-1"/>
-    <macro name="Macro 3" value="0" midi_cc="-1"/>
-    <macro name="Macro 4" value="0" midi_cc="-1"/>
-    <macro name="Macro 5" value="0" midi_cc="-1"/>
-    <macro name="Macro 6" value="0" midi_cc="-1"/>
-    <macro name="Macro 7" value="0" midi_cc="-1"/>
-    <macro name="Macro 8" value="0" midi_cc="-1"/>
+    <macro name="Macro 1" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
   </macro_controls>
   <MidiAutomation/>
   <MPEData Enabled="0"/>

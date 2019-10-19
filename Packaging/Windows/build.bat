@@ -2,9 +2,9 @@
 
 set project=Sordina
 set xmlFile=sordina
-set workspace=D:\HISEProjects\Effectss\Sordina\HISE
+set workspace=D:\HISEProjects\Effects\Sordina\HISE
 
-set build_plugin=1
+set build_plugin=0
 set build_installer=1
 set clean_project=0
 
@@ -17,9 +17,6 @@ REM  ===========================================================================
 
 %hise_path% set_hise_folder -p:%hise_source%
 %hise_path% set_project_folder -p:%workspace%
-
-echo Changing directory
-cd /d %workspace%
 
 if %clean_project%==1 (
 	echo Cleaning project
@@ -36,9 +33,12 @@ if %build_plugin%==1 (
 echo Copying files
 REM  ====================================================================================
 
+echo Changing directory
+cd /d %workspace%\Packaging\Windows
+
 md build
 
-xcopy /E /Y "Binaries\Compiled\*.*" build\
+xcopy /E /Y %workspace%\"Binaries\Compiled\*.*" build\
 
 del /S "build\*.lib"
 del /S "build\*.exp"
@@ -48,12 +48,12 @@ echo Building installer
 REM  ====================================================================================
 
 if %build_installer%==1 (
-	%hise_path% create-win-installer --noaax
- 	%installer% WinInstaller.iss
+ 	%installer% %workspace%\Packaging\Windows\WinInstaller.iss
 	echo Cleanup
-	xcopy /Y build\"%project% Installer *.exe" Installer\
+	xcopy /Y build\"%project% Installer *.exe" %workspace%\Installer\
 	rd /S /Q build
-	del /S /Q WinInstaller.iss
 )
 
 :end
+
+cmd /k

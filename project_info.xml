@@ -16,7 +16,7 @@
   <AppGroupID value=""/>
   <RedirectSampleFolder value=""/>
   <AAXCategoryFX value="AAX_ePlugInCategory_Modulation"/>
-  <SupportMonoFX value="No"/>
+  <SupportMonoFX value="1"/>
   <SupportFullDynamicsHLAC value="1"/>
   <UseRawFrontend value="No"/>
 </ProjectSettings>

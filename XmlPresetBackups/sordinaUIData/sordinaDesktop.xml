@@ -8,14 +8,14 @@
     <Component type="ScriptSlider" id="knbGain" x="568" y="110" processorId="Output"
                parameterId="Gain" mode="Decibel" min="-100" max="36" stepSize="0.1"
                suffix=" dB" middlePosition="-18" parentComponent="guiContainer"
-               height="92" width="92" numStrips="128" scaleFactor="0.5" mouseSensitivity="0.69999999"
+               height="92" width="92" numStrips="128" scaleFactor="0.5" mouseSensitivity="0.7"
                showValuePopup="Below" filmstripImage="{PROJECT_FOLDER}knob-large.png"
                isPluginParameter="1" pluginParameterName="Gain"/>
     <Component type="ScriptSlider" id="knbMix" x="43" y="110" stepSize="0.1"
                suffix=" %" middlePosition="0.5" processorId="mixController"
                parameterId="knbMix" mode="NormalizedPercentage" defaultValue="1"
                parentComponent="guiContainer" height="92" width="92" numStrips="128"
-               scaleFactor="0.5" mouseSensitivity="0.69999999" showValuePopup="Below"
+               scaleFactor="0.5" mouseSensitivity="0.7" showValuePopup="Below"
                filmstripImage="{PROJECT_FOLDER}knob-large.png" isPluginParameter="1"
                pluginParameterName="Mix"/>
     <Component type="ScriptFloatingTile" id="fltAnalyser1" x="241" y="70" ContentType="AudioAnalyser"
@@ -47,19 +47,19 @@
                stepSize="1" suffix=" Hz" middlePosition="1500" isPluginParameter="1"
                pluginParameterName="LPF" defaultValue="20000" numStrips="127"
                filmstripImage="{PROJECT_FOLDER}knob-small.png" scaleFactor="0.5"
-               mouseSensitivity="0.69999999" showValuePopup="Below"/>
+               mouseSensitivity="0.7" showValuePopup="Below"/>
     <Component type="ScriptSlider" id="knbHPF" x="232" y="246" width="60" height="50"
                parentComponent="guiContainer" mode="Frequency" min="20" max="5000"
                stepSize="1" suffix=" Hz" middlePosition="1500" processorId="filter"
                parameterId="Freq" isPluginParameter="1" pluginParameterName="HPF"
                defaultValue="20" numStrips="127" filmstripImage="{PROJECT_FOLDER}knob-small.png"
-               scaleFactor="0.5" mouseSensitivity="0.69999999" showValuePopup="Below"/>
+               scaleFactor="0.5" mouseSensitivity="0.7" showValuePopup="Below"/>
     <Component type="ScriptPanel" id="pnlStats" x="7" y="575" width="150" height="22"
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                itemColour="0" bgColour="0" itemColour2="0" textColour="0">
       <Component type="ScriptLabel" id="lblStats" x="-5" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 2.95%" fontSize="11" alignment="left"
-                 textColour="2983523071" fontName="DejaVu Sans" editable="0" saveInPreset="0"/>
+                 parentComponent="pnlStats" text="CPU: 0.89%" fontSize="11" alignment="left"
+                 textColour="2983523071" fontName="DejaVu Sans" editable="0"/>
     </Component>
     <Component type="ScriptFloatingTile" id="fltPreset" x="6" y="307" width="688"
                height="262" ContentType="PresetBrowser" bgColour="0" itemColour="4290116863"
@@ -87,10 +87,19 @@
                parentComponent="pnlAbout"/>
     <Component type="ScriptButton" id="btnURL" x="121" y="161" width="145" height="22"
                parentComponent="pnlAbout" itemColour="0" itemColour2="0" bgColour="0"
-               filmstripImage="{PROJECT_FOLDER}empty.png" scaleFactor="0.40000001"
+               filmstripImage="{PROJECT_FOLDER}empty.png" scaleFactor="0.4"
                saveInPreset="0"/>
   </Component>
   <Component type="ScriptButton" id="btnAbout" x="277" y="573" width="145"
              height="24" itemColour="0" itemColour2="0" bgColour="0" filmstripImage="{PROJECT_FOLDER}empty.png"
-             scaleFactor="0.40000001" saveInPreset="0"/>
+             scaleFactor="0.4" saveInPreset="0"/>
+  <Component type="ScriptPanel" id="btnDocs" x="674" y="574" width="20" height="20"
+             itemColour="2591723434" allowCallbacks="Clicks &amp; Hover"/>
+  <Component type="ScriptPanel" id="pnlDocs" x="0" y="54" width="700" height="515"
+             bgColour="4012650293" visible="0">
+    <Component type="ScriptFloatingTile" id="fltDocs" x="5" y="5" width="695"
+               height="508" parentComponent="pnlDocs" ContentType="MarkdownPanel"
+               bgColour="0" itemColour="4289769648" itemColour2="4285563024"
+               Data="{&#13;&#10;  &quot;ShowBack&quot;: false,&#13;&#10;  &quot;ShowSearch&quot;: false,&#13;&#10;  &quot;ShowToc&quot;: true,&#13;&#10;  &quot;BoldFontName&quot;: &quot;&quot;,&#13;&#10;  &quot;FixTocWidth&quot;: 200,&#13;&#10;  &quot;StartURL&quot;: &quot;/&quot;,&#13;&#10;  &quot;ServerUpdateURL&quot;: &quot;&quot;&#13;&#10;}"/>
+  </Component>
 </ContentProperties>

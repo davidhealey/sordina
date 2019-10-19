@@ -1,23 +1,11 @@
-<<<<<<< HEAD
 Binaries/
 build/
 Installer/
-Documentation/
 Images/dev
 Presets/
 Samples/
 PooledResources/
+GnuLinux Deliverables/
 .st*
-.sync-conflict*
-*.sync-conflict*
+*.sync-conflict
 ._build
-=======
-Binaries/
-build/
-Documentation/
-Images/dev
-Presets/
-Samples/
-PooledResources/
-Deliverables/
->>>>>>> b7fff88d2518dde55a8a7d11c55ad500a583170a
