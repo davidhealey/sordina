@@ -41,7 +41,7 @@
                height="50" parentComponent="guiContainer" suffix="%" middlePosition="0.5"
                pluginParameterName="Wah" filmstripImage="{PROJECT_FOLDER}knob-small.png"
                numStrips="127" scaleFactor="0.5" mouseSensitivity="0.5" mode="NormalizedPercentage"
-               isPluginParameter="1" showTextBox="0"/>
+               isPluginParameter="1" showTextBox="0" enabled="0"/>
     <Component type="ScriptSlider" id="knbLPF" x="408" y="246" width="60" height="50"
                parentComponent="guiContainer" mode="Frequency" min="500" max="20000"
                stepSize="1" suffix=" Hz" middlePosition="1500" isPluginParameter="1"
@@ -58,7 +58,7 @@
                parentComponent="guiContainer" borderSize="0" borderRadius="0"
                itemColour="0" bgColour="0" itemColour2="0" textColour="0">
       <Component type="ScriptLabel" id="lblStats" x="-5" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 0.89%" fontSize="11" alignment="left"
+                 parentComponent="pnlStats" text="CPU: 0.60%" fontSize="11" alignment="left"
                  textColour="2983523071" fontName="DejaVu Sans" editable="0"/>
     </Component>
     <Component type="ScriptFloatingTile" id="fltPreset" x="6" y="307" width="688"
@@ -100,6 +100,6 @@
     <Component type="ScriptFloatingTile" id="fltDocs" x="5" y="5" width="695"
                height="508" parentComponent="pnlDocs" ContentType="MarkdownPanel"
                bgColour="0" itemColour="4289769648" itemColour2="4285563024"
-               Data="{&#13;&#10;  &quot;ShowBack&quot;: false,&#13;&#10;  &quot;ShowSearch&quot;: false,&#13;&#10;  &quot;ShowToc&quot;: true,&#13;&#10;  &quot;BoldFontName&quot;: &quot;&quot;,&#13;&#10;  &quot;FixTocWidth&quot;: 200,&#13;&#10;  &quot;StartURL&quot;: &quot;/&quot;,&#13;&#10;  &quot;ServerUpdateURL&quot;: &quot;&quot;&#13;&#10;}"/>
+               Data="{&#13;&#10;  &quot;ShowBack&quot;: false,&#13;&#10;  &quot;ShowSearch&quot;: false,&#13;&#10;  &quot;ShowToc&quot;: true,&#13;&#10;  &quot;BoldFontName&quot;: &quot;&quot;,&#13;&#10;  &quot;FixTocWidth&quot;: 200,&#13;&#10;  &quot;StartURL&quot;: &quot;/&quot;,&#13;&#10;  &quot;ServerUpdateURL&quot;: &quot;https://docs.librewave.com/content/sordina&quot;&#13;&#10;}"/>
   </Component>
 </ContentProperties>
