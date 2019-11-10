@@ -18,8 +18,8 @@ As with real mutes each of Sordina’s virtual mutes has a different character a
 Here’s an A/B comparison of a trombone playing with a real bucket mute and the original un-muted recording being processed by Sordina’s virtual bucket mute.
 
 ## Quick Start
-![sordina-ardour-insert](/images/custom/sordina-ardour-insert.png) 
-As the plugin is intended to alter the sound of an audio signal it should be placed either after a VST instrument in the plugin chain, on a track containing audio, on an audio bus, or on the master output.
+![sordina-ardour-insert](/images/custom/sordina-ardour-insert.png)
+The plugin alters the sound of an audio signal and should be placed either after a virtual instrument in the plugin chain, on a track containing audio, on an audio bus, or on the master output.
 
 Sordina can be added to a DAW track as either an insert or send effect. This guide will assume it’s being used as an insert.
 
