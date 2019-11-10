@@ -2,7 +2,7 @@
 
 <ProjectSettings>
   <Name value="Sordina"/>
-  <Version value="1.0.0"/>
+  <Version value="1.0.1"/>
   <Description value="Instrument mute simulator"/>
   <BundleIdentifier value="com.librewave.sordina"/>
   <PluginCode value="Srdn"/>
@@ -19,4 +19,7 @@
   <SupportMonoFX value="1"/>
   <SupportFullDynamicsHLAC value="1"/>
   <UseRawFrontend value="No"/>
+  <EmbedImageFiles value="Yes"/>
+  <ExtraDefinitionsLinux value="ENABLE_ALL_PEAK_METERS=1"/>
+  <VST3Support value="No"/>
 </ProjectSettings>
