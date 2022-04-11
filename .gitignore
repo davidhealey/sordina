@@ -1,11 +1,16 @@
 Binaries/
-build/
 Installer/
-Images/dev
-Presets/
-Samples/
+AudioFiles/
+*Documentation/
+Expansions/
+*Presets/
+*Samples/
+*AdditionalSourceCode/
 PooledResources/
-GnuLinux Deliverables/
-.st*
-*.sync-conflict
-._build
+Packaging/
+*build
+*/dev
+*.hxi
+*.hxp
+*.hr*
+*.ch*
