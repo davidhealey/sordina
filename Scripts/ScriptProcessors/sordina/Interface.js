@@ -8,9 +8,9 @@
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Sordina is distributed in the hope that it will be useful,s
+    Sordina is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
@@ -23,7 +23,7 @@ include("paths.js");
 
 Content.makeFrontInterface(700, 600);
 
-Synth.deferCallbacks(true);
+Synth.deferCallbacks(false);
 
 Engine.loadFontAs("{PROJECT_FOLDER}Aller_Rg.ttf", "Aller");
 

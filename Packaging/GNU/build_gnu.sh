@@ -1,17 +1,17 @@
 # GNU BUILD SCRIPT
 
 project=Sordina
-version=1.0.0
 xmlFile=sordina
-workspace=/media/john/SHARED/HISEProjects/Effects/Sordina/HISE
+version=1.0.1
+workspace=/mnt/samba/projects/Effects/Sordina/HISE
 
 build_ipp=0
-build_no_ipp=1
+build_no_ipp=0
 build_installer=1
 
-hise_path=/media/john/SHARED/HISE/projects/standalone/Builds/LinuxMakefile/build/HISE\ Standalone
-projucer_path=/media/john/SHARED/HISE/tools/projucer/Projucer
-makeself=/media/john/SHARED/makeself
+hise_path=/mnt/samba/hise_builds/HISE/projects/standalone/Builds/LinuxMakefile/build/HISE\ Standalone
+projucer_path=/mnt/samba/hise_builds/HISE/tools/projucer/Projucer
+makeself="$workspace"/Packaging/GNU/makeself
 
 #Create temp directory for packaging
 package="$workspace"/Packaging/GNU/temp
@@ -27,29 +27,26 @@ then
   "$hise_path" set_project_folder -p:"$workspace"
   "$hise_path" set_version -v:$version
 
-  echo Making the Projucer accessible for this project
-  chmod +x "$projucer_path"
-
   mkdir -p "$workspace"/Binaries
   cd "$workspace"/Binaries
-
-  if (($build_ipp==1))
-  then
-    echo Building the plugins
-    echo With IPP
-    "$hise_path" clean -p:"$workspace"
-    chmod +x "$workspace"/Binaries/batchCompileLinux.sh
-    sh "$workspace"/Binaries/batchCompileLinux.sh
-    cp "$workspace"/Binaries/Builds/LinuxMakefile/build/"$project".so $package/ipp
-  fi
   
   if (($build_no_ipp==1))
   then
+    echo Building the plugins
     echo Without IPP
     "$hise_path" clean -p:"$workspace"
-    chmod +x "$workspace"/Binaries/batchCompileLinux.sh
+    "$hise_path" export_ci XmlPresetBackups/$xmlFile.xml -t:effect -p:VST -a:x64
     sh "$workspace"/Binaries/batchCompileLinux.sh
     cp "$workspace"/Binaries/Builds/LinuxMakefile/build/"$project".so $package/no_ipp
+  fi
+  
+  if (($build_ipp==1))
+  then
+    echo With IPP
+    "$hise_path" clean -p:"$workspace"
+    "$hise_path" export_ci XmlPresetBackups/$xmlFile.xml -t:effect -p:VST -a:x64 -ipp
+    sh "$workspace"/Binaries/batchCompileLinux.sh
+    cp "$workspace"/Binaries/Builds/LinuxMakefile/build/"$project".so $package/ipp
   fi
 fi
 

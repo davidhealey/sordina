@@ -2,7 +2,7 @@
 
 PLUGIN_NAME="Sordina.so"
 
-read -r -p "Would you like to install the plugin with the proprietary IPP library? " ipp
+read -r -p "Would you like to install the plugin with the proprietary IPP library for reduced CPU usage? " ipp
 
 if [[ "$ipp" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then

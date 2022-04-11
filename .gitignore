@@ -3,6 +3,8 @@ build/
 Installer/
 Images/dev
 Presets/
+Packaging/GNU/temp
+Packaging/GNU/makeself
 Samples/
 PooledResources/
 GnuLinux Deliverables/

@@ -1,106 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ContentProperties DeviceType="Desktop">
-  <Component type="ScriptPanel" id="guiContainer" x="0" y="0" width="700"
-             height="600" itemColour="0" itemColour2="0" textColour="0" bgColour="0">
-    <Component type="ScriptImage" id="imgSkin" x="0" y="0" width="700" height="600"
-               parentComponent="guiContainer" scale="0.5" fileName="{PROJECT_FOLDER}skin.png"/>
-    <Component type="ScriptSlider" id="knbGain" x="568" y="110" processorId="Output"
-               parameterId="Gain" mode="Decibel" min="-100" max="36" stepSize="0.1"
-               suffix=" dB" middlePosition="-18" parentComponent="guiContainer"
-               height="92" width="92" numStrips="128" scaleFactor="0.5" mouseSensitivity="0.7"
-               showValuePopup="Below" filmstripImage="{PROJECT_FOLDER}knob-large.png"
+  <Component type="ScriptPanel" id="guiContainer" x="0.0" y="0.0" width="700.0"
+             height="600.0" itemColour="0" itemColour2="0" textColour="0"
+             bgColour="0">
+    <Component type="ScriptImage" id="imgSkin" x="0.0" y="0.0" width="700.0"
+               height="600.0" parentComponent="guiContainer" scale="0.5" fileName="{PROJECT_FOLDER}skin.png"/>
+    <Component type="ScriptSlider" id="knbGain" x="568.0" y="110.0" processorId="Output"
+               parameterId="Gain" mode="Decibel" min="-100.0" max="36.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="guiContainer"
+               height="92.0" width="92.0" numStrips="128.0" scaleFactor="0.5"
+               mouseSensitivity="0.699999988079071" showValuePopup="Below" filmstripImage="{PROJECT_FOLDER}knob-large.png"
                isPluginParameter="1" pluginParameterName="Gain"/>
-    <Component type="ScriptSlider" id="knbMix" x="43" y="110" stepSize="0.1"
+    <Component type="ScriptSlider" id="knbMix" x="43.0" y="110.0" stepSize="0.1000000014901161"
                suffix=" %" middlePosition="0.5" processorId="mixController"
-               parameterId="knbMix" mode="NormalizedPercentage" defaultValue="1"
-               parentComponent="guiContainer" height="92" width="92" numStrips="128"
-               scaleFactor="0.5" mouseSensitivity="0.7" showValuePopup="Below"
+               parameterId="knbMix" mode="NormalizedPercentage" defaultValue="1.0"
+               parentComponent="guiContainer" height="92.0" width="92.0" numStrips="128.0"
+               scaleFactor="0.5" mouseSensitivity="0.699999988079071" showValuePopup="Below"
                filmstripImage="{PROJECT_FOLDER}knob-large.png" isPluginParameter="1"
                pluginParameterName="Mix"/>
-    <Component type="ScriptFloatingTile" id="fltAnalyser1" x="241" y="70" ContentType="AudioAnalyser"
-               bgColour="3355443" itemColour="4007320175" itemColour2="4473924"
-               textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#13;&#10;  &quot;Index&quot;: 2&#13;&#10;}"
-               parentComponent="guiContainer" height="143" width="218"/>
-    <Component type="ScriptFloatingTile" id="fltAnalyser2" x="241" y="70" ContentType="AudioAnalyser"
-               bgColour="3355443" itemColour="3426507914" itemColour2="4473924"
-               textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser2&quot;,&#13;&#10;  &quot;Index&quot;: 2&#13;&#10;}"
-               parentComponent="guiContainer" height="143" width="218"/>
-    <Component type="ScriptFloatingTile" id="fltFilter" x="241" y="70" width="218"
-               height="143" parentComponent="guiContainer" itemColour="805306367"
+    <Component type="ScriptFloatingTile" id="fltAnalyser1" x="241.0" y="70.0"
+               ContentType="AudioAnalyser" bgColour="3355443" itemColour="4007320175"
+               itemColour2="4473924" textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#13;&#10;  &quot;Index&quot;: 2&#13;&#10;}"
+               parentComponent="guiContainer" height="143.0" width="218.0"/>
+    <Component type="ScriptFloatingTile" id="fltAnalyser2" x="241.0" y="70.0"
+               ContentType="AudioAnalyser" bgColour="3355443" itemColour="3426507914"
+               itemColour2="4473924" textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser2&quot;,&#13;&#10;  &quot;Index&quot;: 2&#13;&#10;}"
+               parentComponent="guiContainer" height="143.0" width="218.0"/>
+    <Component type="ScriptFloatingTile" id="fltFilter" x="241.0" y="70.0" width="218.0"
+               height="143.0" parentComponent="guiContainer" itemColour="805306367"
                ContentType="FilterDisplay" bgColour="3355443" itemColour2="1325400063"
                Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;filter&quot;,&#13;&#10;  &quot;Index&quot;: -1&#13;&#10;}"
                textColour="16777215"/>
-    <Component type="ScriptPanel" id="inputMeter" x="193" y="69" width="31"
-               height="145" bgColour="4280033060" itemColour="4294704073" itemColour2="4280757042"
-               textColour="4283782485" opaque="1" parentComponent="guiContainer"/>
-    <Component type="ScriptPanel" id="outputMeter" x="477" y="69" width="31"
-               height="145" bgColour="4280033060" itemColour="4290305535" itemColour2="4280757042"
-               textColour="4283782485" opaque="1" parentComponent="guiContainer"/>
-    <Component type="ScriptSlider" id="knbWahWah" x="320" y="246" width="60"
-               height="50" parentComponent="guiContainer" suffix="%" middlePosition="0.5"
+    <Component type="ScriptPanel" id="inputMeter" x="193.0" y="69.0" width="31.0"
+               height="145.0" bgColour="4280033060" itemColour="4294704073"
+               itemColour2="4280757042" textColour="4283782485" opaque="1" parentComponent="guiContainer"/>
+    <Component type="ScriptPanel" id="outputMeter" x="477.0" y="69.0" width="31.0"
+               height="145.0" bgColour="4280033060" itemColour="4290305535"
+               itemColour2="4280757042" textColour="4283782485" opaque="1" parentComponent="guiContainer"/>
+    <Component type="ScriptSlider" id="knbWahWah" x="320.0" y="246.0" width="60.0"
+               height="50.0" parentComponent="guiContainer" suffix="%" middlePosition="0.5"
                pluginParameterName="Wah" filmstripImage="{PROJECT_FOLDER}knob-small.png"
-               numStrips="127" scaleFactor="0.5" mouseSensitivity="0.5" mode="NormalizedPercentage"
-               isPluginParameter="1" showTextBox="0" enabled="0"/>
-    <Component type="ScriptSlider" id="knbLPF" x="408" y="246" width="60" height="50"
-               parentComponent="guiContainer" mode="Frequency" min="500" max="20000"
-               stepSize="1" suffix=" Hz" middlePosition="1500" isPluginParameter="1"
-               pluginParameterName="LPF" defaultValue="20000" numStrips="127"
+               numStrips="127.0" scaleFactor="0.5" mouseSensitivity="0.5" mode="NormalizedPercentage"
+               isPluginParameter="1" showTextBox="0"/>
+    <Component type="ScriptSlider" id="knbLPF" x="408.0" y="246.0" width="60.0"
+               height="50.0" parentComponent="guiContainer" mode="Frequency"
+               min="500.0" max="20000.0" stepSize="1.0" suffix=" Hz" middlePosition="1500.0"
+               isPluginParameter="1" pluginParameterName="LPF" defaultValue="20000.0"
+               numStrips="127.0" filmstripImage="{PROJECT_FOLDER}knob-small.png"
+               scaleFactor="0.5" mouseSensitivity="0.699999988079071" showValuePopup="Below"/>
+    <Component type="ScriptSlider" id="knbHPF" x="232.0" y="246.0" width="60.0"
+               height="50.0" parentComponent="guiContainer" mode="Frequency"
+               min="20.0" max="5000.0" stepSize="1.0" suffix=" Hz" middlePosition="1500.0"
+               processorId="filter" parameterId="Freq" isPluginParameter="1"
+               pluginParameterName="HPF" defaultValue="20.0" numStrips="127.0"
                filmstripImage="{PROJECT_FOLDER}knob-small.png" scaleFactor="0.5"
-               mouseSensitivity="0.7" showValuePopup="Below"/>
-    <Component type="ScriptSlider" id="knbHPF" x="232" y="246" width="60" height="50"
-               parentComponent="guiContainer" mode="Frequency" min="20" max="5000"
-               stepSize="1" suffix=" Hz" middlePosition="1500" processorId="filter"
-               parameterId="Freq" isPluginParameter="1" pluginParameterName="HPF"
-               defaultValue="20" numStrips="127" filmstripImage="{PROJECT_FOLDER}knob-small.png"
-               scaleFactor="0.5" mouseSensitivity="0.7" showValuePopup="Below"/>
-    <Component type="ScriptPanel" id="pnlStats" x="7" y="575" width="150" height="22"
-               parentComponent="guiContainer" borderSize="0" borderRadius="0"
-               itemColour="0" bgColour="0" itemColour2="0" textColour="0">
-      <Component type="ScriptLabel" id="lblStats" x="-5" y="0" width="150" height="22"
-                 parentComponent="pnlStats" text="CPU: 0.54%" fontSize="11" alignment="left"
-                 textColour="2983523071" fontName="DejaVu Sans" editable="0"/>
+               mouseSensitivity="0.699999988079071" showValuePopup="Below"/>
+    <Component type="ScriptPanel" id="pnlStats" x="7.0" y="575.0" width="150.0"
+               height="22.0" parentComponent="guiContainer" borderSize="0.0"
+               borderRadius="0.0" itemColour="0" bgColour="0" itemColour2="0"
+               textColour="0">
+      <Component type="ScriptLabel" id="lblStats" x="-5.0" y="0.0" width="150.0"
+                 height="22.0" parentComponent="pnlStats" text="CPU: 0.18%" fontSize="11.0"
+                 alignment="left" textColour="2983523071" fontName="DejaVu Sans"
+                 editable="0"/>
     </Component>
-    <Component type="ScriptFloatingTile" id="fltPreset" x="6" y="307" width="688"
-               height="262" ContentType="PresetBrowser" bgColour="0" itemColour="4290116863"
+    <Component type="ScriptFloatingTile" id="fltPreset" x="6.0" y="307.0" width="688.0"
+               height="262.0" ContentType="PresetBrowser" bgColour="0" itemColour="4290116863"
                itemColour2="4294951115" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: true,&#13;&#10;  &quot;ShowFolderButton&quot;: false,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: false,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: true,&#13;&#10;  &quot;NumColumns&quot;: 3&#13;&#10;}"
                textColour="4292406527" parentComponent="guiContainer"/>
   </Component>
-  <Component type="ScriptPanel" id="pnlAdmin" x="1" y="305" width="611" height="286"
-             itemColour="4278190080" itemColour2="4278190080" visible="0">
-    <Component type="ScriptComboBox" id="cmbInstrument" x="21" y="16" max="9"
-               text="Impulse Responses" width="150" items="French Horn&#10;Piccolo Trumpet&#10;Trumpet &amp; Cornet&#10;Trombone&#10;Bass Trombone&#10;Tuba&#10;Euphonium&#10;Flugelhorn&#10;Saxophone"
-               parentComponent="pnlAdmin" height="31" pluginParameterName="Instrument"/>
-    <Component type="ScriptedViewport" id="vpIRs" x="19" y="62" width="312"
-               height="203" useList="1" items="Alessi Vacchiano Straight&#10;Jo Ral Brass Bottom Bucket&#10;Jo Ral Brass Bottom Straight&#10;Jo Ral Bubble Stem In&#10;Jo Ral Bubble Stem Out&#10;Jo Ral Bubble 2 Stem In&#10;Jo Ral Bubble 2 Stem Out&#10;Jo Ral Plastic Straight&#10;Jo Ral TriTone Cup&#10;Denis Wick Adjustable Cup&#10;Denis Wick Adjustable Cup Close&#10;Denis Wick Harmon Stem In&#10;Denis Wick Harmon Stem Out&#10;Denis Wick Pianissimo Straight&#10;Denis Wick Practice&#10;Denis Wick Straight&#10;Humes &amp; Berg Cup&#10;Humes &amp; Berg Cup 2&#10;Humes &amp; Berg Harmon Stem In&#10;Humes &amp; Berg Harmon Stem Out&#10;Humes &amp; Berg Melowah&#10;Humes &amp; Berg Pixie&#10;Humes &amp; Berg Bucket&#10;Tom Crown Aluminium Straight&#10;Tom Crown Harmon Stem In&#10;Tom Crown Harmon Stem Out&#10;Pro Tec Fiber Straight&#10;Plunger 1&#10;Plunger 2&#10;Plunger 3&#10;Mute Tube&#10;Felt&#10;Leblanc Straight&#10;Bremner Sshh"
+  <Component type="ScriptPanel" id="pnlAdmin" x="1.0" y="305.0" width="611.0"
+             height="286.0" itemColour="4278190080" itemColour2="4278190080"
+             visible="0">
+    <Component type="ScriptComboBox" id="cmbInstrument" x="21.0" y="16.0" max="9"
+               text="Impulse Responses" width="150.0" items="French Horn&#10;Piccolo Trumpet&#10;Trumpet &amp; Cornet&#10;Trombone&#10;Bass Trombone&#10;Tuba&#10;Euphonium&#10;Flugelhorn&#10;Saxophone"
+               parentComponent="pnlAdmin" height="31.0" pluginParameterName="Instrument"/>
+    <Component type="ScriptedViewport" id="vpIRs" x="19.0" y="62.0" width="312.0"
+               height="203.0" useList="1" items="Alessi Vacchiano Straight&#10;Jo Ral Brass Bottom Bucket&#10;Jo Ral Brass Bottom Straight&#10;Jo Ral Bubble Stem In&#10;Jo Ral Bubble Stem Out&#10;Jo Ral Bubble 2 Stem In&#10;Jo Ral Bubble 2 Stem Out&#10;Jo Ral Plastic Straight&#10;Jo Ral TriTone Cup&#10;Denis Wick Adjustable Cup&#10;Denis Wick Adjustable Cup Close&#10;Denis Wick Harmon Stem In&#10;Denis Wick Harmon Stem Out&#10;Denis Wick Pianissimo Straight&#10;Denis Wick Practice&#10;Denis Wick Straight&#10;Humes &amp; Berg Cup&#10;Humes &amp; Berg Cup 2&#10;Humes &amp; Berg Harmon Stem In&#10;Humes &amp; Berg Harmon Stem Out&#10;Humes &amp; Berg Melowah&#10;Humes &amp; Berg Pixie&#10;Humes &amp; Berg Bucket&#10;Tom Crown Aluminium Straight&#10;Tom Crown Harmon Stem In&#10;Tom Crown Harmon Stem Out&#10;Pro Tec Fiber Straight&#10;Plunger 1&#10;Plunger 2&#10;Plunger 3&#10;Mute Tube&#10;Felt&#10;Leblanc Straight&#10;Bremner Sshh"
                parentComponent="pnlAdmin" pluginParameterName="Mute" isMetaParameter="1"/>
-    <Component type="ScriptComboBox" id="cmbPreset" x="339" y="14" width="253"
-               height="42" max="104" parentComponent="pnlAdmin" items="Bass Trombone/Bucket/Humes &amp; Berg Velvet Tone&#10;Bass Trombone/Bucket/Jo Ral Aluminium&#10;Bass Trombone/Cup/Denis Wick Aluminium&#10;Bass Trombone/Cup/Humes &amp; Berg Mic-A-Mute&#10;Bass Trombone/Cup/Jo Ral Aluminium&#10;Bass Trombone/Harmon/Humes &amp; Berg Wa-Wah&#10;Bass Trombone/Harmon/Jo Ral Bubble Stem In&#10;Bass Trombone/Harmon/Jo Ral Bubble Stem Out&#10;Bass Trombone/Misc/Plunger 1&#10;Bass Trombone/Misc/Plunger 2&#10;Bass Trombone/Practice/Humes &amp; Berg Sh Sh&#10;Bass Trombone/Straight/Denis Wick Aluminium&#10;Bass Trombone/Straight/Humes &amp; Berg Stonelined&#10;Bass Trombone/Straight/Jo Ral Brass Bottom&#10;Euphonium/Practice/Denis Wick Aluminium&#10;Euphonium/Straight/Humes &amp; Berg Stonelined&#10;Euphonium/Straight/Jo Ral Aluminium&#10;Flugelhorn/Bucket/Humes &amp; Berg Velvet Tone&#10;Flugelhorn/Cup/Humes &amp; Berg Stonelined&#10;Flugelhorn/Practice/Humes &amp; Berg Aluminium&#10;Flugelhorn/Practice/Humes &amp; Berg Sh Sh&#10;Flugelhorn/Practice/Humes &amp; Berg Stonelined&#10;Flugelhorn/Straight/Humes &amp; Berg Aluminium&#10;Flugelhorn/Straight/Humes &amp; Berg Stonelined&#10;French Horn/Cup/Humes &amp; Berg Stonelined&#10;French Horn/Practice/Humes &amp; Berg Sh Sh&#10;French Horn/Stop/Humes &amp; Berg Stonelined&#10;French Horn/Straight/Humes &amp; Berg Philharmonic&#10;French Horn/Straight/Humes &amp; Berg Stonelined&#10;French Horn/Straight/The Warburton Tunable&#10;Piccolo Trumpet/Cup/Tom Crown Aluminium&#10;Piccolo Trumpet/Harmon/Tom Crown Stem In&#10;Piccolo Trumpet/Harmon/Tom Crown Stem Out&#10;Piccolo Trumpet/Misc/Felt&#10;Piccolo Trumpet/Practice/Jo Ral Aluminium&#10;Piccolo Trumpet/Practice/Tom Crown Aluminium&#10;Piccolo Trumpet/Straight/Denis Wick Aluminium&#10;Piccolo Trumpet/Straight/Jo Ral Brass Bottom&#10;Piccolo Trumpet/Straight/Wallace Aluminium&#10;Saxophone/Practice/E-Sax Whisper&#10;Saxophone/Practice/MMD&#10;Saxophone/Practice/Sax Mute One&#10;Trombone/Bucket/Humes &amp; Berg Bucket&#10;Trombone/Bucket/Humes &amp; Berg Velvet Tone&#10;Trombone/Bucket/Jo Ral Aluminium&#10;Trombone/Cup/Denis Wick Cup&#10;Trombone/Cup/Humes &amp; Berg  Cup 1&#10;Trombone/Cup/Humes &amp; Berg Cup 2&#10;Trombone/Cup/Humes &amp; Berg Mic-A-Mute&#10;Trombone/Cup/Jo Ral Aluminium&#10;Trombone/Harmon/H&amp;B Wa-Wah Stem In&#10;Trombone/Harmon/H&amp;B Wa-Wah Stem Out&#10;Trombone/Harmon/Jo Ral Bubble Stem In&#10;Trombone/Harmon/Jo Ral Bubble Stem Out&#10;Trombone/Misc/Buzz&#10;Trombone/Misc/Humes &amp; Berg Cleartone&#10;Trombone/Misc/Humes &amp; Berg Derby Hat&#10;Trombone/Misc/Humes &amp; Berg Pixie&#10;Trombone/Misc/Plunger 1&#10;Trombone/Misc/Plunger 2&#10;Trombone/Misc/Solotone&#10;Trombone/Practice/Humes &amp; Berg Sh Sh&#10;Trombone/Practice/Liberty Practice&#10;Trombone/Straight/Alessi Vacchiano&#10;Trombone/Straight/Humes &amp; Berg Stonelined&#10;Trombone/Straight/Jo Ral Brass Bottom&#10;Trombone/Straight/Soulo&#10;Trombone/Straight/Tom Crown Straight&#10;Trumpet &amp; Cornet/Bucket/Humes &amp; Berg Stonelined&#10;Trumpet &amp; Cornet/Bucket/Jo Ral Brass Bottom&#10;Trumpet &amp; Cornet/Cup/Denis Wick Adjustable 1&#10;Trumpet &amp; Cornet/Cup/Denis Wick Adjustable 2&#10;Trumpet &amp; Cornet/Cup/Humes &amp; Berg Cup 1&#10;Trumpet &amp; Cornet/Cup/Humes &amp; Berg Cup 2&#10;Trumpet &amp; Cornet/Cup/Jo Ral TriTone&#10;Trumpet &amp; Cornet/Harmon/Denis Wick Stem In&#10;Trumpet &amp; Cornet/Harmon/Denis Wick Stem Out&#10;Trumpet &amp; Cornet/Harmon/Humes &amp; Berg Stem In&#10;Trumpet &amp; Cornet/Harmon/Humes &amp; Berg Stem Out&#10;Trumpet &amp; Cornet/Harmon/Jo Ral Bubble Stem In&#10;Trumpet &amp; Cornet/Harmon/Jo Ral Bubble Stem Out&#10;Trumpet &amp; Cornet/Harmon/Tom Crown Stem In&#10;Trumpet &amp; Cornet/Harmon/Tom Crown Stem Out&#10;Trumpet &amp; Cornet/Misc/Felt&#10;Trumpet &amp; Cornet/Misc/Humes &amp; Berg Pixie&#10;Trumpet &amp; Cornet/Misc/Plunger 1&#10;Trumpet &amp; Cornet/Misc/Plunger 2&#10;Trumpet &amp; Cornet/Misc/Plunger 3&#10;Trumpet &amp; Cornet/Practice/Bremner Sshh&#10;Trumpet &amp; Cornet/Practice/Denis Wick Aluminium&#10;Trumpet &amp; Cornet/Practice/Humes &amp; Berg Mel-O-Wah&#10;Trumpet &amp; Cornet/Practice/Mute Tube&#10;Trumpet &amp; Cornet/Straight/Alessi Vacchiano&#10;Trumpet &amp; Cornet/Straight/Denis Wick Aluminium&#10;Trumpet &amp; Cornet/Straight/Denis Wick Pianissimo&#10;Trumpet &amp; Cornet/Straight/Jo Ral Brass Bottom&#10;Trumpet &amp; Cornet/Straight/Jo Ral Plastic&#10;Trumpet &amp; Cornet/Straight/Leblanc Aluminium&#10;Trumpet &amp; Cornet/Straight/Pro Tec Fiber&#10;Trumpet &amp; Cornet/Straight/Tom Crown Aluminium&#10;Tuba/Practice/Schlipf&#10;Tuba/Practice/Voigt&#10;Tuba/Straight/Humes &amp; Berg Stonelined&#10;Tuba/Straight/Jo Ral Aluminium"
+    <Component type="ScriptComboBox" id="cmbPreset" x="339.0" y="14.0" width="253.0"
+               height="42.0" max="104" parentComponent="pnlAdmin" items="Tuba/Practice/Voigt&#10;Tuba/Practice/Schlipf&#10;Tuba/Straight/Jo Ral Aluminium&#10;Tuba/Straight/Humes &amp; Berg Stonelined&#10;Trombone/Harmon/H&amp;B Wa-Wah Stem In&#10;Trombone/Harmon/Jo Ral Bubble Stem Out&#10;Trombone/Harmon/H&amp;B Wa-Wah Stem Out&#10;Trombone/Harmon/Jo Ral Bubble Stem In&#10;Trombone/Practice/Humes &amp; Berg Sh Sh&#10;Trombone/Practice/Liberty Practice&#10;Trombone/Bucket/Humes &amp; Berg Velvet Tone&#10;Trombone/Bucket/Jo Ral Aluminium&#10;Trombone/Bucket/Humes &amp; Berg Bucket&#10;Trombone/Cup/Humes &amp; Berg  Cup 1&#10;Trombone/Cup/Humes &amp; Berg Mic-A-Mute&#10;Trombone/Cup/Jo Ral Aluminium&#10;Trombone/Cup/Humes &amp; Berg Cup 2&#10;Trombone/Cup/Denis Wick Cup&#10;Trombone/Straight/Alessi Vacchiano&#10;Trombone/Straight/Tom Crown Straight&#10;Trombone/Straight/Jo Ral Brass Bottom&#10;Trombone/Straight/Humes &amp; Berg Stonelined&#10;Trombone/Straight/Soulo&#10;Trombone/Misc/Humes &amp; Berg Cleartone&#10;Trombone/Misc/Buzz&#10;Trombone/Misc/Solotone&#10;Trombone/Misc/Plunger 1&#10;Trombone/Misc/Plunger 2&#10;Trombone/Misc/Humes &amp; Berg Derby Hat&#10;Trombone/Misc/Humes &amp; Berg Pixie&#10;Piccolo Trumpet/Harmon/Tom Crown Stem In&#10;Piccolo Trumpet/Harmon/Tom Crown Stem Out&#10;Piccolo Trumpet/Practice/Tom Crown Aluminium&#10;Piccolo Trumpet/Practice/Jo Ral Aluminium&#10;Piccolo Trumpet/Cup/Tom Crown Aluminium&#10;Piccolo Trumpet/Straight/Denis Wick Aluminium&#10;Piccolo Trumpet/Straight/Wallace Aluminium&#10;Piccolo Trumpet/Straight/Jo Ral Brass Bottom&#10;Piccolo Trumpet/Misc/Felt&#10;Saxophone/Practice/MMD&#10;Saxophone/Practice/Sax Mute One&#10;Saxophone/Practice/E-Sax Whisper&#10;Euphonium/Practice/Denis Wick Aluminium&#10;Euphonium/Straight/Jo Ral Aluminium&#10;Euphonium/Straight/Humes &amp; Berg Stonelined&#10;French Horn/Practice/Humes &amp; Berg Sh Sh&#10;French Horn/Cup/Humes &amp; Berg Stonelined&#10;French Horn/Straight/The Warburton Tunable&#10;French Horn/Straight/Humes &amp; Berg Stonelined&#10;French Horn/Straight/Humes &amp; Berg Philharmonic&#10;French Horn/Stop/Humes &amp; Berg Stonelined&#10;Trumpet &amp; Cornet/Harmon/Humes &amp; Berg Stem Out&#10;Trumpet &amp; Cornet/Harmon/Jo Ral Bubble Stem Out&#10;Trumpet &amp; Cornet/Harmon/Denis Wick Stem Out&#10;Trumpet &amp; Cornet/Harmon/Jo Ral Bubble Stem In&#10;Trumpet &amp; Cornet/Harmon/Humes &amp; Berg Stem In&#10;Trumpet &amp; Cornet/Harmon/Tom Crown Stem In&#10;Trumpet &amp; Cornet/Harmon/Tom Crown Stem Out&#10;Trumpet &amp; Cornet/Harmon/Denis Wick Stem In&#10;Trumpet &amp; Cornet/Practice/Denis Wick Aluminium&#10;Trumpet &amp; Cornet/Practice/Bremner Sshh&#10;Trumpet &amp; Cornet/Practice/Mute Tube&#10;Trumpet &amp; Cornet/Practice/Humes &amp; Berg Mel-O-Wah&#10;Trumpet &amp; Cornet/Bucket/Jo Ral Brass Bottom&#10;Trumpet &amp; Cornet/Bucket/Humes &amp; Berg Stonelined&#10;Trumpet &amp; Cornet/Cup/Denis Wick Adjustable 1&#10;Trumpet &amp; Cornet/Cup/Denis Wick Adjustable 2&#10;Trumpet &amp; Cornet/Cup/Jo Ral TriTone&#10;Trumpet &amp; Cornet/Cup/Humes &amp; Berg Cup 1&#10;Trumpet &amp; Cornet/Cup/Humes &amp; Berg Cup 2&#10;Trumpet &amp; Cornet/Straight/Denis Wick Aluminium&#10;Trumpet &amp; Cornet/Straight/Tom Crown Aluminium&#10;Trumpet &amp; Cornet/Straight/Jo Ral Plastic&#10;Trumpet &amp; Cornet/Straight/Denis Wick Pianissimo&#10;Trumpet &amp; Cornet/Straight/Pro Tec Fiber&#10;Trumpet &amp; Cornet/Straight/Alessi Vacchiano&#10;Trumpet &amp; Cornet/Straight/Jo Ral Brass Bottom&#10;Trumpet &amp; Cornet/Straight/Leblanc Aluminium&#10;Trumpet &amp; Cornet/Misc/Plunger 3&#10;Trumpet &amp; Cornet/Misc/Plunger 1&#10;Trumpet &amp; Cornet/Misc/Felt&#10;Trumpet &amp; Cornet/Misc/Plunger 2&#10;Trumpet &amp; Cornet/Misc/Humes &amp; Berg Pixie&#10;Flugelhorn/Practice/Humes &amp; Berg Sh Sh&#10;Flugelhorn/Practice/Humes &amp; Berg Aluminium&#10;Flugelhorn/Practice/Humes &amp; Berg Stonelined&#10;Flugelhorn/Bucket/Humes &amp; Berg Velvet Tone&#10;Flugelhorn/Cup/Humes &amp; Berg Stonelined&#10;Flugelhorn/Straight/Humes &amp; Berg Aluminium&#10;Flugelhorn/Straight/Humes &amp; Berg Stonelined&#10;Bass Trombone/Harmon/Humes &amp; Berg Wa-Wah&#10;Bass Trombone/Harmon/Jo Ral Bubble Stem Out&#10;Bass Trombone/Harmon/Jo Ral Bubble Stem In&#10;Bass Trombone/Practice/Humes &amp; Berg Sh Sh&#10;Bass Trombone/Bucket/Humes &amp; Berg Velvet Tone&#10;Bass Trombone/Bucket/Jo Ral Aluminium&#10;Bass Trombone/Cup/Denis Wick Aluminium&#10;Bass Trombone/Cup/Humes &amp; Berg Mic-A-Mute&#10;Bass Trombone/Cup/Jo Ral Aluminium&#10;Bass Trombone/Straight/Denis Wick Aluminium&#10;Bass Trombone/Straight/Jo Ral Brass Bottom&#10;Bass Trombone/Straight/Humes &amp; Berg Stonelined&#10;Bass Trombone/Misc/Plunger 1&#10;Bass Trombone/Misc/Plunger 2"
                saveInPreset="0" text="Preset" isPluginParameter="1" pluginParameterName="Preset"/>
   </Component>
-  <Component type="ScriptPanel" id="pnlAbout" x="150" y="200" width="400"
-             height="200" borderSize="5" bgColour="4278190080" itemColour="4281221461"
+  <Component type="ScriptPanel" id="pnlAbout" x="150.0" y="200.0" width="400.0"
+             height="200.0" borderSize="5.0" bgColour="4278190080" itemColour="4281221461"
              itemColour2="4281221461" textColour="822083584" visible="0">
-    <Component type="ScriptFloatingTile" id="fltAbout" x="132" y="16" width="183"
-               height="175" ContentType="AboutPagePanel" bgColour="0" itemColour="4294967295"
+    <Component type="ScriptFloatingTile" id="fltAbout" x="132.0" y="16.0" width="183.0"
+               height="175.0" ContentType="AboutPagePanel" bgColour="0" itemColour="4294967295"
                itemColour2="4294951115" Data="{&#13;&#10;  &quot;CopyrightNotice&quot;: &quot;Copyright David Healey 2019&quot;,&#13;&#10;  &quot;ShowLicensedEmail&quot;: false,&#13;&#10;  &quot;ShowVersion&quot;: true,&#13;&#10;  &quot;BuildDate&quot;: true,&#13;&#10;  &quot;WebsiteURL&quot;: &quot;http://librewave.com&quot;,&#13;&#10;  &quot;ShowProductName&quot;: true,&#13;&#10;  &quot;UseCustomImage&quot;: false&#13;&#10;}"
                parentComponent="pnlAbout"/>
-    <Component type="ScriptButton" id="btnURL" x="121" y="161" width="145" height="22"
-               parentComponent="pnlAbout" itemColour="0" itemColour2="0" bgColour="0"
-               filmstripImage="{PROJECT_FOLDER}empty.png" scaleFactor="0.4"
+    <Component type="ScriptButton" id="btnURL" x="121.0" y="161.0" width="145.0"
+               height="22.0" parentComponent="pnlAbout" itemColour="0" itemColour2="0"
+               bgColour="0" filmstripImage="{PROJECT_FOLDER}empty.png" scaleFactor="0.4000000059604645"
                saveInPreset="0"/>
   </Component>
-  <Component type="ScriptButton" id="btnAbout" x="277" y="573" width="145"
-             height="24" itemColour="0" itemColour2="0" bgColour="0" filmstripImage="{PROJECT_FOLDER}empty.png"
-             scaleFactor="0.4" saveInPreset="0"/>
-  <Component type="ScriptPanel" id="btnDocs" x="674" y="574" width="20" height="20"
-             itemColour="2591723434" allowCallbacks="Clicks &amp; Hover"/>
-  <Component type="ScriptPanel" id="pnlDocs" x="0" y="54" width="700" height="515"
-             bgColour="4012650293" visible="0">
-    <Component type="ScriptFloatingTile" id="fltDocs" x="5" y="5" width="695"
-               height="508" parentComponent="pnlDocs" ContentType="MarkdownPanel"
+  <Component type="ScriptButton" id="btnAbout" x="277.0" y="573.0" width="145.0"
+             height="24.0" itemColour="0" itemColour2="0" bgColour="0" filmstripImage="{PROJECT_FOLDER}empty.png"
+             scaleFactor="0.4000000059604645" saveInPreset="0"/>
+  <Component type="ScriptPanel" id="btnDocs" x="674.0" y="574.0" width="20.0"
+             height="20.0" itemColour="2591723434" allowCallbacks="Clicks &amp; Hover"/>
+  <Component type="ScriptPanel" id="pnlDocs" x="0.0" y="54.0" width="700.0"
+             height="515.0" bgColour="4012650293" visible="0">
+    <Component type="ScriptFloatingTile" id="fltDocs" x="5.0" y="5.0" width="695.0"
+               height="508.0" parentComponent="pnlDocs" ContentType="MarkdownPanel"
                bgColour="0" itemColour="4289769648" itemColour2="4285563024"
                Data="{&#13;&#10;  &quot;ShowBack&quot;: false,&#13;&#10;  &quot;ShowSearch&quot;: false,&#13;&#10;  &quot;ShowToc&quot;: true,&#13;&#10;  &quot;BoldFontName&quot;: &quot;&quot;,&#13;&#10;  &quot;FixTocWidth&quot;: 200,&#13;&#10;  &quot;StartURL&quot;: &quot;/&quot;,&#13;&#10;  &quot;ServerUpdateURL&quot;: &quot;https://docs.librewave.com/content/sordina&quot;&#13;&#10;}"
-               FontSize="16"/>
+               FontSize="16.0"/>
   </Component>
 </ContentProperties>

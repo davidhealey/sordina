@@ -2,24 +2,30 @@
 
 <ProjectSettings>
   <Name value="Sordina"/>
-  <Version value="1.0.1"/>
+  <Version value="1.0.3"/>
   <Description value="Instrument mute simulator"/>
   <BundleIdentifier value="com.librewave.sordina"/>
   <PluginCode value="Srdn"/>
-  <EmbedAudioFiles value="Yes"/>
+  <EmbedAudioFiles value="1"/>
+  <EmbedImageFiles value="1"/>
   <AdditionalDspLibraries value=""/>
   <OSXStaticLibs value=""/>
   <WindowsStaticLibFolder value=""/>
-  <ExtraDefinitionsWindows value="ENABLE_ALL_PEAK_METERS=1"/>
-  <ExtraDefinitionsOSX value="ENABLE_ALL_PEAK_METERS=1"/>
-  <ExtraDefinitionsIOS value="ENABLE_ALL_PEAK_METERS=1"/>
+  <ExtraDefinitionsWindows value="ENABLE_ALL_PEAK_METERS=1&#10;HISE_DEACTIVATE_OVERLAY=1&#10;HISE_USE_OPENGL_FOR_PLUGIN=1&#10;AUDIOFFT_FFTW3=1&#10;HISE_INCLUDE_RLOTTIE=0&#10;HISE_USE_ONLINE_DOC_UPDATER=0"/>
+  <ExtraDefinitionsOSX value="ENABLE_ALL_PEAK_METERS=1&#10;HISE_DEACTIVATE_OVERLAY=1&#10;HISE_USE_OPENGL_FOR_PLUGIN=1&#10;AUDIOFFT_FFTW3=1&#10;HISE_INCLUDE_RLOTTIE=0&#10;HISE_USE_ONLINE_DOC_UPDATER=0"/>
+  <ExtraDefinitionsIOS value=""/>
+  <ExtraDefinitionsLinux value="ENABLE_ALL_PEAK_METERS=1&#10;HISE_DEACTIVATE_OVERLAY=1&#10;HISE_USE_OPENGL_FOR_PLUGIN=1&#10;AUDIOFFT_FFTW3=1&#10;HISE_INCLUDE_RLOTTIE=0&#10;HISE_USE_ONLINE_DOC_UPDATER=0"/>
   <AppGroupID value=""/>
   <RedirectSampleFolder value=""/>
-  <AAXCategoryFX value="AAX_ePlugInCategory_Modulation"/>
-  <SupportMonoFX value="1"/>
+  <AAXCategoryFX value="AAX_EPlugInCategory_Effect"/>
+  <SupportMonoFX value="0"/>
   <SupportFullDynamicsHLAC value="1"/>
   <UseRawFrontend value="No"/>
-  <EmbedImageFiles value="Yes"/>
-  <ExtraDefinitionsLinux value="ENABLE_ALL_PEAK_METERS=1"/>
-  <VST3Support value="No"/>
+  <VST3Support value="1"/>
+  <EnableMidiInputFX value="0"/>
+  <ExpansionType value="Disabled"/>
+  <EncryptionKey value=""/>
+  <EnableSoundGeneratorsFX value="No"/>
+  <LinkExpansionsToProject value="No"/>
+  <ReadOnlyFactoryPresets value="No"/>
 </ProjectSettings>
