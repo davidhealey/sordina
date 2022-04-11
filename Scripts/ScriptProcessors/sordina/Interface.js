@@ -8,9 +8,9 @@
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Sordina is distributed in the hope that it will be useful,s
+    Sordina is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
@@ -23,7 +23,7 @@ include("paths.js");
 
 Content.makeFrontInterface(700, 600);
 
-Synth.deferCallbacks(true);
+Synth.deferCallbacks(false);
 
 Engine.loadFontAs("{PROJECT_FOLDER}Aller_Rg.ttf", "Aller");
 
@@ -169,46 +169,7 @@ VuMeter.setModule(outputMeter, Synth.getEffect("Output"));
 inline function loadIR(folder, file)
 {            
     ConvolutionReverb.setFile("{PROJECT_FOLDER}"+folder+"/"+file);
-}
-
-//Docs button
-const var btnDocs = Content.getComponent("btnDocs");
-btnDocs.setPaintRoutine(function(g)
-{
-    this.data.hover ? g.setColour(this.get("bgColour")) : g.setColour(this.get("itemColour"));
-    g.fillPath(Paths.help, [0, 0, this.getWidth(), this.getHeight()]);
-});
-
-btnDocs.setMouseCallback(function(e)
-{
-    if (e.mouseUp)
-    {
-        this.setValue(1-this.getValue());
-        this.changed();
-    }
-    else
-    {
-        this.data.hover = e.hover;
-        this.repaint();
-    }
-});
-
-inline function onbtnDocsControl(component, value)
-{
-	pnlDocs.showControl(value);
-};
-
-btnDocs.setControlCallback(onbtnDocsControl);
-
-//Docs panel
-const var pnlDocs = Content.getComponent("pnlDocs");
-
-pnlDocs.setPaintRoutine(function(g)
-{
-    g.fillAll(this.get("bgColour"));
-    g.setColour(0xFF222222);
-    g.fillRect([0, 0, 205, this.getHeight()]);
-});function onNoteOn()
+}function onNoteOn()
 {
 	
 }
