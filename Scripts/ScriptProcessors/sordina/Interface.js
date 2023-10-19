@@ -26,6 +26,10 @@ Content.makeFrontInterface(700, 600);
 Synth.deferCallbacks(false);
 
 Engine.loadFontAs("{PROJECT_FOLDER}Aller_Rg.ttf", "Aller");
+Engine.loadFontAs("{PROJECT_FOLDER}Inter-Regular.ttf", "regular");
+Engine.loadFontAs("{PROJECT_FOLDER}Inter-Medium.ttf", "medium");
+Engine.loadFontAs("{PROJECT_FOLDER}Inter-SemiBold.ttf", "semibold");
+Engine.loadFontAs("{PROJECT_FOLDER}Inter-Bold.ttf", "bold");
 
 Content.setValuePopupData(
 {
