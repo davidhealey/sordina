@@ -2,7 +2,7 @@
 
 <ProjectSettings>
   <Name value="Sordina"/>
-  <Version value="1.0.3"/>
+  <Version value="1.1.0"/>
   <Description value="Instrument mute simulator"/>
   <BundleIdentifier value="com.librewave.sordina"/>
   <PluginCode value="Srdn"/>
@@ -28,4 +28,14 @@
   <EnableSoundGeneratorsFX value="No"/>
   <LinkExpansionsToProject value="No"/>
   <ReadOnlyFactoryPresets value="No"/>
+  <VST3Category value="Filter"/>
+  <EnableMidiOut value="No"/>
+  <ForceStereoOutput value="No"/>
+  <AdminPermissions value="No"/>
+  <EmbedUserPresets value="Yes"/>
+  <OverwriteOldUserPresets value="No"/>
+  <EnableGlobalPreprocessor value="No"/>
+  <UseGlobalAppDataFolderWindows value="No"/>
+  <UseGlobalAppDataFolderMacOS value="No"/>
+  <DefaultUserPreset value=""/>
 </ProjectSettings>

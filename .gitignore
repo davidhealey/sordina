@@ -1,13 +1,20 @@
 Binaries/
-build/
 Installer/
-Images/dev
+AudioFiles/
+Documentation/
+Expansions/
 Presets/
 Packaging/GNU/temp
 Packaging/GNU/makeself
 Samples/
 PooledResources/
-GnuLinux Deliverables/
-.st*
-*.sync-conflict
-._build
+Packaging/
+Compiled/
+*build
+*dev
+*.hxi
+*.hxp
+*.hr*
+*.ch*
+.DS_Store
+user_info.xml

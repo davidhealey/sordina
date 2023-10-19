@@ -26,6 +26,10 @@ Content.makeFrontInterface(700, 600);
 Synth.deferCallbacks(false);
 
 Engine.loadFontAs("{PROJECT_FOLDER}Aller_Rg.ttf", "Aller");
+Engine.loadFontAs("{PROJECT_FOLDER}Inter-Regular.ttf", "regular");
+Engine.loadFontAs("{PROJECT_FOLDER}Inter-Medium.ttf", "medium");
+Engine.loadFontAs("{PROJECT_FOLDER}Inter-SemiBold.ttf", "semibold");
+Engine.loadFontAs("{PROJECT_FOLDER}Inter-Bold.ttf", "bold");
 
 Content.setValuePopupData(
 {
@@ -169,46 +173,7 @@ VuMeter.setModule(outputMeter, Synth.getEffect("Output"));
 inline function loadIR(folder, file)
 {            
     ConvolutionReverb.setFile("{PROJECT_FOLDER}"+folder+"/"+file);
-}
-
-//Docs button
-const var btnDocs = Content.getComponent("btnDocs");
-btnDocs.setPaintRoutine(function(g)
-{
-    this.data.hover ? g.setColour(this.get("bgColour")) : g.setColour(this.get("itemColour"));
-    g.fillPath(Paths.help, [0, 0, this.getWidth(), this.getHeight()]);
-});
-
-btnDocs.setMouseCallback(function(e)
-{
-    if (e.mouseUp)
-    {
-        this.setValue(1-this.getValue());
-        this.changed();
-    }
-    else
-    {
-        this.data.hover = e.hover;
-        this.repaint();
-    }
-});
-
-inline function onbtnDocsControl(component, value)
-{
-	pnlDocs.showControl(value);
-};
-
-btnDocs.setControlCallback(onbtnDocsControl);
-
-//Docs panel
-const var pnlDocs = Content.getComponent("pnlDocs");
-
-pnlDocs.setPaintRoutine(function(g)
-{
-    g.fillAll(this.get("bgColour"));
-    g.setColour(0xFF222222);
-    g.fillRect([0, 0, 205, this.getHeight()]);
-});function onNoteOn()
+}function onNoteOn()
 {
 	
 }
